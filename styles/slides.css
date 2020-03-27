@@ -1,0 +1,72 @@
+/* Slideshow slides are adapted from https://www.tottenhamhotspur.com/the-club/history/white-hart-lane/ */
+#slideshow * {
+	box-sizing:border-box;
+}
+.slideshow-container {
+	max-width:960px;
+	position: relative;
+	margin:auto;
+
+}
+.slide > img {
+	width: 100%;
+}
+
+.prev, .next {
+	cursor:pointer;
+	color: #ffffff;
+	position:absolute;
+	top:50%;
+	width:auto;
+	margin-top:-1.8em;
+	padding:16px;
+	border-radius: 0 3px 3px 0;
+	-webkit-transition: all 1s;
+}
+.next {
+	right:0;
+	border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+	color:#1b1b1d;
+	display:inline-block;
+	background-color:#aaaaaa;
+	opacity:0.5;
+	transition: ease 0.5s;
+}
+/* Slideshow dots underneath the slides */
+.dot {
+	cursor: pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: #aaaaaa;
+	/* radius of border in this case is round */
+	border-radius: 50%;
+	display:inline-block;
+	-webkit-transition: all 0.5s;
+
+}
+/* Styling of active slide and button */
+.slide.active,
+.dot.active,
+.dot:hover {
+	background-color: #1b1b1d;
+	width: 14px;
+	height: 14px;
+}
+.dots {
+	text-align:center;
+	margin-bottom:1em;
+}
+/* caption styling */
+.slide > figcaption{
+	color:#141623;
+	font-size:1em;
+	padding: 8px 12px;
+	margin-top: 10px;
+	width:100%;
+	text-align:center;
+	/* space between bottom element's top edge and bottom edge of figcaption */
+	bottom:8px;
+}

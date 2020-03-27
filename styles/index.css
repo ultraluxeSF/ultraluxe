@@ -1,0 +1,384 @@
+/* Comments are above the elements */
+
+html {
+	/* font used in the document */
+	font-family: 'Roboto', sans-serif;
+}
+/* @-ms-viewport{
+  width: device-width;
+} */
+/* Logotype in the left top corner */
+#logo {
+	width: 5vh;
+	margin-left: 2vh;
+	margin-top: 1.1vh;
+	height: auto;
+	z-index: 3;
+	position: fixed;
+	top:0
+}
+#logopic {
+		height: 100px;
+		width: auto;
+		z-index: 1;
+		margin-top: 10vh;
+		margin-left:-2.5%;
+		overflow: hidden;
+		position: absolute;
+}
+*{
+	padding: 0vh;
+	margin: 0px;
+	box-sizing: border-box;
+}
+.sec1 {
+	height: 100vh;
+	background-image: url('../images/p2b.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	z-index: -1;
+}
+.box {
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	padding: 0.001vh;
+	z-index: -1;
+}
+.sec2 {
+	background: #ffffff;
+}
+.sec2:hover .ud1 {
+	-webkit-animation: viewportfolio:hover 2s;
+}
+.sec3 {
+	background-image: url('../images/artistblur.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	z-index: -1;
+	overflow: hidden;
+}
+.sec4 {
+	background: #ffffff;
+}
+/* .quote {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 300px;
+	bottom: 100px;
+	height: 550px;
+	background-color: #ffffff;
+	opacity: 0.1;
+	z-index: 1;
+} */
+/* Quote inside block */
+.box p {
+	color: #ffffff;
+	font-size: 1vh;
+	margin-top: 10vh;
+}
+#qq {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+}
+.box blockquote {
+	color: #ffffff;
+	font-size: 4vh;
+	margin-top: 40vh;
+	margin-left: -25vh;
+	margin-right: auto;
+	text-align: center;
+	width: 50vh;
+	text-transform: uppercase;
+	letter-spacing: 0.09vh;
+	position: absolute;
+	z-index: 1;
+}
+.box h1 {
+	font-size: 3vh;
+	letter-spacing: 0.1vh;
+}
+.h1 {
+	color: #ffffff;
+	padding-top: 4vh;
+	font-size: 4vh;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+.lightbar {
+	display: block;
+	height: 0.25vh;
+	width: 10vh;
+	background-color: #fff;
+	margin-top: 2.5vh;
+	margin-left: auto;
+	margin-right: auto;
+}
+.box2 p {
+	color: #fff;
+	font-size: 2vh;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 2.6vh;
+	font-weight: 100;
+	letter-spacing: 0.05vh;
+}
+.box2 h1 {
+	font-weight: 200;
+	font-size: 4vh;
+	letter-spacing: 0.1vh;
+
+}
+.box2 .ud1 {
+	color: #3dd38a;
+	font-size: 2vh;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 1.6vh;
+	letter-spacing: 0.05vh;
+}
+.images figure {
+	display: inline-block;
+	overflow: hidden;
+	margin-left: 1.7vh;
+	margin-top: 2.7vh;
+}
+.box2 img {
+	width: 26.7vh;
+	height: 24vh;
+	border: 0.15vh solid #ffffff;
+	object-fit: cover;
+	cursor: pointer;
+	transition: border 0.5s;
+	/* transition: transform 0.25s ease; */
+}
+.box2 img:hover {
+	border: 0.15vh solid #1b1b1d;
+	/* transition: border 0.5s ease; */
+	/* transition: transform 0.25s ease; */
+	/* transform: scale(1.075); */
+	opacity: 0.7;
+}
+.box2 img:focus {
+
+}
+/* 2nd devider */
+.box2 {
+	width: 100%;
+	height: 63vh;
+	background-color: #1b1b1d;
+	text-align: center;
+	overflow: auto;
+	/* background-image: url('../images/pf.jpg');
+	background-attachment: absolute;
+	background-size: cover; */
+}
+.viewportfolio {
+	display: block;
+	color: #fff;
+	border: 0.2vh solid #3dd38a;
+	width: 20.2vh;
+	height: 5.3vh;
+	font-size: 2.4vh;
+	font-weight: 100;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4.5vh;
+	padding: 1vh;
+	text-decoration: none;
+	transition: border-radius 0.5s;
+}
+.viewportfolio:hover {
+	/* border-radius: 2.6vh; */
+	transition: ease-in-out 0.5s;
+	background-color: #3dd38a;
+}
+.images figure figcaption {
+	width: 23.5vh;
+	margin-left: 1.6vh;
+	margin-top: -1.2vh;
+	text-align: center;
+	font-size: 1.7vh;
+	color: #fff;
+	opacity: 0;
+	transition: ease-out 0.5s;
+	position: absolute;
+}
+.box2 figure:hover figcaption {
+	opacity: 1;
+	transform: translateY(1.7vh);
+}
+/* .inbox2 {
+	background-color: #ffffff;
+	width: 100%;
+	height: 450px;
+	margin-left: 100%;
+} */
+
+.box3 {
+	background-color: #ffffff;
+	width: 100%;
+	height: 75vh;
+	/* text-align: center; */
+	padding: 1vh;
+	overflow: hidden;
+}
+.box3 h1 {
+	color: #fff;
+	font-size: 4.5vh;
+	letter-spacing: 0.1vh;
+	font-weight: 200;
+	text-align: center;
+	padding-top: 7.9vh;
+}
+
+/* Hoverable 2 decorative blocks serving as deviders*/
+blockquote .devider1 {
+	display: block;
+	width: 10vh;
+	height: 1vh;
+	background-color: #ffffff;
+	/* left and right as auto to central alignment */
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2.6vh;
+	/* 1 second to get the original shape after transition */
+	-webkit-transition: width 1s;
+	/* delay of the transition after mouse is not hovered */
+	transition-delay: 1s;
+}
+blockquote .devider2 {
+	display: block;
+	width: 10vh;
+	height: 1vh;
+	background-color: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2.6vh;
+	-webkit-transition: width 1s;
+	transition-delay: 1s;
+}
+.devider1:hover {
+	width: 35vh;
+	/* effect and duration of the transition */
+	transition: ease-out 1s;
+	/* transition happens after 0.3s after hover */
+	transition-delay: 0.3s;
+}
+.devider2:hover {
+	width: 35vh;
+	transition: ease-out 1s;
+	transition-delay: 0.3s;
+}
+
+/* The text below the quote */
+blockquote .qt {
+	font-size: 2.3vh;
+	margin-top: 3.6vh;
+	color: #3dd38a;
+	text-transform: none;
+	letter-spacing: 0.5vh;
+	font-weight: 300;
+}
+.box3 p {
+	margin-top: 1vh;
+}
+.id {
+	font-size: 80px;
+	color: #141623;
+	text-align: center;
+	margin-left: 450px;
+	margin-right: auto;
+	margin-top: 425px;
+	/* absolute value to make .id independent from its parent */
+	position:absolute;
+}
+
+/* SERVICES */
+
+.service-section {
+	display: block;
+	height: 14vh;
+	margin-left: 20vh;
+	margin-top: 4vh;
+}
+.service-icons {
+	display: block;
+	margin-top: 1vh;
+}
+.service-heading {
+	color: #fff;
+	font-weight: 100;
+	letter-spacing: 0.09vh;
+	text-transform: uppercase;
+	margin-left: 5.1em;
+	width: 35vh;
+	font-size: 3.2vh;
+	position: absolute;
+}
+.service-section p {
+	color: #fff;
+	position: absolute;
+	margin: 2.7em 0em 0em 7.2em;
+	font-size: 2.24vh;
+}
+.service-ico {
+	height: 9.4vh;
+	width: auto;
+}
+.wtfweare {
+	display: block;
+	width: 45vh;
+	height: 45vh;
+	position: absolute;
+	margin-left: 135vh;
+	margin-top: 9vh;
+	text-align: center;
+}
+.wtfweare h2 {
+	color: #fff;
+	font-size: 4vh;
+	font-weight: 200;
+}
+.names {
+	font-size: 4vh;
+	color: #fff;
+}
+#behind {
+	display: block;
+	width: 26vh;
+	height: 6.5vh;
+	border: 0.2vh solid #fff;
+	color: #fff;
+	text-align: center;
+	margin-left: 9vh;
+	font-size: 3.5vh;
+	padding: 1vh;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-top: 4vh;
+	transition: all 0.5s;
+	letter-spacing: 0.1vh;
+}
+#behind:hover {
+	transform-origin: center;
+	color: #1b1b1d;
+	transition: ease-out 0.5s;
+	background-color: #fff;
+}
+#arrow {
+	height: 10vh;
+	width: 4vh;
+	object-fit: cover;
+	margin-top: 2.5vh;
+}
+.click {
+	font-size: 2.4vh;
+	color: #fff;
+}

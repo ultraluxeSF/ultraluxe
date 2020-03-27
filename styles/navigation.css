@@ -1,0 +1,333 @@
+/* Header */
+header {
+	position: fixed;
+	z-index: 2;
+}
+.headblock {
+	display: block;
+	width: 100%;
+	height: 8vh;
+	border-bottom: 0.15vh solid #3dd38a;
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	box-shadow: 0px 1vh 2vh 0px rgba(0,0,0,0.2);
+}
+.headblockc {
+	background-color: #1b1b1d;
+}
+
+nav a {
+	display: inline-block;
+	width: 13vh;
+	height: 8vh;
+  text-align: center;
+  padding: 2.65vh 0;
+	font-size: 1.8vh;
+}
+nav a.active{
+	display: inline-block;
+	/* color: #fff; */
+	background-color: #141623;
+	width: 13vh;
+	height: 8vh;
+  text-align: center;
+  padding: 1.4vh;
+	font-size: 1.8vh;
+}
+/* no decoration for links */
+nav a,
+nav a:hover {
+	text-decoration: none;
+}
+/* dropdown */
+nav li:hover,
+nav li.active,
+.dropdown-content a:hover {
+	color: #3dd38a;
+	width: 13vh; /*width of opening dropdown*/
+	transition: background-color 0.5s;
+}
+#ud {
+	color: #3dd38a;
+	font-family: 'Roboto', sans-serif;
+	width: 65vh;
+	height: 5vh;
+	font-size: 1.6vh;
+	font-weight: bold;
+	letter-spacing: 0.2vh;
+	max-width: 11vh;
+	/* content: 'ULTRALUXE DESIGNS'; */
+	visibility: visible;
+	overflow: hidden;
+	z-index: 3;
+	margin-left: 10vh;
+	margin-top: 2.2vh;
+	position: fixed;
+	transition: color 0.5s;
+	/* text-align: center; */
+}
+#logo:hover #ud{
+	color: #fff;
+}
+.dropdown {
+	font-family: "Raleway";
+  background-color: #1b1b1d;
+  border: none;
+	width: 13vh;
+	height: 8vh;
+	border-bottom: 0.15vh solid #3dd38a;
+  color: #ffffff;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.8vh;
+	float: right;
+	/* style of cursor when hovered */
+  cursor: pointer;
+	transition: all 0.5s;
+	overflow: hidden;
+	/* left border */
+	/* border-left: 0.5px solid #3dd38a; */
+}
+/* contents of dropdown */
+.dropdown-content {
+	  display: none;
+    position: absolute;
+    background-color: #1b1b1d;
+    min-width: 180px;
+    box-shadow: 0px 1vh 2vh 0px rgba(0,0,0,0.2);
+    z-index: 1;
+		transition: color 0.5s;
+}
+
+.dropdown-content a {
+    color: #ffffff;
+    padding: 2.1vh 1vh;
+		font-size: 1.8vh;
+    text-decoration: none;
+    display: block;
+		width: 13vh;
+    text-align: center;
+		transition: color 0.5s;
+}
+.dropdown:hover {
+	color: #3dd38a;
+	transition: border 0.25s ease-in-out;
+	border-bottom: 0.7vh solid #3dd38a;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+button a {
+	color:inherit;
+}
+.buttonnavact {
+	font-family: "Raleway";
+  background-color: #1b1b1d;
+  border: none;
+	border-bottom: 0.25vh solid #3dd38a;
+	width: 13vh;
+	height: 8vh;
+  color: #3dd38a;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.8vh;
+	float: right;
+	margin-right: 0;
+  cursor: pointer;
+	transition: color 0.5s;
+	transition: border 0.1s ease-out;
+}
+.buttonnavact:hover {
+	color: #555;
+	transition: border 0.25s ease-in-out;
+	border-bottom: 0.7vh solid #555;
+}
+.button2 {
+	font-family: "Raleway";
+  background-color: #1b1b1d;
+  border: none;
+	border-bottom: 0.15vh solid #3dd38a;
+	width: 13vh;
+	height: 8vh;
+  color: #ffffff;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+	/* overflow: hidden; */
+  font-size: 1.8vh;
+	float: right;
+	/* position: fixed; */
+	/* margin-top: -75px; */
+	margin-right: 0;
+  cursor: pointer;
+	transition: color 0.5s;
+	transition: border 0.1s ease-out;
+}
+.button2:hover {
+	color: #3dd38a;
+	transition: border 0.25s ease-in-out;
+	border-bottom: 0.7vh solid #3dd38a;
+}
+
+.button4 {
+	font-family: "Raleway";
+  background-color: #1b1b1d;
+  border: none;
+	border-bottom: 0.15vh solid #3dd38a;
+	width: 13vh;
+	height: 8vh;
+  color: #ffffff;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+	/* overflow: hidden; */
+  font-size: 1.8vh;
+	float: right;
+	/* position: fixed; */
+	/* margin-top: -75px; */
+	margin-right: 0;
+  cursor: pointer;
+	transition: color 0.5s;
+	transition: border 0.1s ease-out;
+}
+.button4:hover {
+	color: #3dd38a;
+	transition: border 0.25s ease-in-out;
+	border-bottom: 0.7vh solid #3dd38a;
+}
+.pull-right {
+	float: right;
+}
+.activepage {
+	color: #3dd38a;
+	background-color: #1b1b1d;
+}
+.activepage:hover {
+	color: #ffffff;
+	background-color: #1b1b1d;
+}
+.dropdown-content .activepage {
+	color: #3dd38a;
+}
+.dropdown-content .activepage:hover {
+	color: #555;
+	width: 13vh; /*width of opening dropdown*/
+	transition: color 0.5s;
+}
+
+/* FOOTER */
+
+footer {
+	background-color: #1b1b1d;
+	text-align: center;
+}
+#footerlogo {
+	height: 13vh;
+	width: auto;
+	z-index: 1;
+	margin-top: 1vh;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	padding-bottom: 3vh;
+	border-bottom: 0.2vh solid #ffffff;
+	content: url('../images/Logow.png');
+	transition: border-bottom 0.5s;
+}
+#footerlogo:hover {
+	border-bottom: 0.2vh solid #3dd38a;
+}
+footer div {
+	color: #ffffff;
+	text-align: center;
+	padding: 1.2vh;
+	font-size: 1.4vh;
+}
+footer a {
+	text-decoration: none;
+	 overflow: auto;
+}
+footer section ul {
+	margin-top: 0.8vh;
+	list-style: none;
+	/* width: 120px; */
+	height: 6vh;
+	text-align: center;
+	margin-left: 3vh;
+}
+footer section a {
+	text-decoration: none;
+	font-size: 1.9vh;
+	margin-right: auto;
+	float: left;
+}
+footer section a:hover {
+	color: #3dd38a;
+	transition: all 0.5s;
+}
+footer section {
+	/* margin-left: 55px; */
+	display: inline-block;
+}
+footer a {
+	color: #fff;
+	transition: background-color 0.5s;
+}
+footer p {
+	color: #fff;
+	text-align: center;
+	height: 5.6vh;
+	padding: 0.7vh;
+}
+footer a:hover {
+	color: #3dd38a;
+	transition: all 0.5s;
+}
+footer .gi {
+	display: inline-block;
+	overflow: hidden;
+	margin: 0px;
+}
+footer .gi img {
+	width: 3vh;
+	height: 3vh;
+}
+.you {
+	margin-left: 1.2vh;
+}
+.twitter {
+	margin-left: 1.2vh;
+}
+.copyright{
+	font-size: 1.5vh;
+	color: #dddddd;
+}
+.factive {
+	color: #3dd38a;
+	transition: background-color 0.5s;
+}
+.factive:hover {
+	color: #555555;
+}
+
+																/* OBJECTS */
+
+.ptc {
+	z-index: 10;
+	margin-top: -10vh;
+	width: 100%;
+	height: 10vh;
+	background-image: url('../images/ptc.svg');
+	background-attachment: local;
+	background-size: cover;
+	position: absolute;
+}

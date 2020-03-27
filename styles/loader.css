@@ -1,0 +1,48 @@
+@import "compass/css3";
+
+*, *:before, *:after { @include box-sizing(border-box) }
+
+html, body {
+  background: #1b1b1d;
+}
+
+$size: 2em;
+
+.circle {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 0; height: 0;
+  border-radius: 50%;
+  z-index: 1;
+  @include transform(translate(-50%, -50%));
+  @include transition(all 200ms ease);
+
+  $duration: 1s;
+
+  &:nth-child(1){
+    z-index: 2;
+    background: #FF7200;
+    animation-name: explode;
+    animation-duration: $duration;
+    animation-timing-function: ease;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    //animation-direction: alternate;
+  }
+
+  &:nth-child(2){
+    background: #3dd38a;
+    animation-name: explode;
+    animation-duration: $duration;
+    animation-timing-function: ease;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    //animation-direction: alternate;
+  }
+}
+
+@keyframes explode {
+  0% { width: 0; height: 0; z-index: 1 }
+  50% { width: $size; height: $size; z-index: 1 }
+  100% { display: none; }
+}
