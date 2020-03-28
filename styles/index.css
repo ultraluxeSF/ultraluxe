@@ -3,6 +3,8 @@
 html {
 	/* font used in the document */
 	font-family: 'Roboto', sans-serif;
+	margin-right: 0 !important;
+	/* overflow: auto !important; */
 }
 /* @-ms-viewport{
   width: device-width;
@@ -32,11 +34,13 @@ html {
 	box-sizing: border-box;
 }
 .sec1 {
-	height: 100vh;
-	background-image: url('../images/p2b.jpg');
-	background-attachment: fixed;
-	background-size: cover;
-	z-index: -1;
+	background: url('../images/p2b.jpg')  -25px -50px;
+	top:0;
+	width:100%;
+	z-index:0;
+	  height:100%;
+	  background-size: calc(100% + 50px);
+		position: absolute;
 }
 .box {
 	width: 100%;

@@ -48,7 +48,9 @@ nav li.active,
 .dropdown-content a:hover {
 	color: #3dd38a;
 	width: 13vh; /*width of opening dropdown*/
-	transition: background-color 0.5s;
+	transition: border 0.5s;
+	border-bottom: 0.5vh solid #3dd38a;
+
 }
 #ud {
 	color: #3dd38a;
@@ -301,8 +303,25 @@ footer .gi img {
 	width: 3vh;
 	height: 3vh;
 }
+
+figure {
+	padding: 1vh;
+}
+.inst {
+	transition: opacity 0.5s;
+	opacity: 0.4;
+}
+.inst:hover {
+	transition: opacity 0.5s;
+	opacity: 1;
+}
 .you {
-	margin-left: 1.2vh;
+	transition: opacity 0.5s;
+	opacity: 0.4;
+}
+.you:hover {
+	transition: opacity 0.5s;
+	opacity: 1;
 }
 .twitter {
 	margin-left: 1.2vh;
@@ -310,6 +329,7 @@ footer .gi img {
 .copyright{
 	font-size: 1.5vh;
 	color: #dddddd;
+	margin-top: 15px;
 }
 .factive {
 	color: #3dd38a;
@@ -318,7 +338,9 @@ footer .gi img {
 .factive:hover {
 	color: #555555;
 }
-
+.freepic-rights {
+	margin-bottom: 15px;
+}
 																/* OBJECTS */
 
 .ptc {

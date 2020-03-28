@@ -14,14 +14,13 @@
 		<link rel="stylesheet" href="styles/navigation.css">
 		<link rel="stylesheet" href="styles/index.css">
 		<link rel="stylesheet" href="styles/responsive.css">
-		<script src="scripts/scripts.js" defer></script>
+		<script src="scripts/movingbg.js" defer></script>
 		<!-- Link to the fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		 <!-- Title of the webpage -->
 		<title>Ultraluxe Designs</title>
 		<meta charset="utf-8">
-
 		<!-- update the version number as needed -->
 		<script defer src="/__/firebase/5.10.0/firebase-app.js"></script>
 		<!-- include only the Firebase features as you need -->
@@ -47,6 +46,7 @@
 		</script>
 		<noscript><div><img src="https://mc.yandex.ru/watch/54894073" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 		<!-- /Yandex.Metrika counter -->
+
 		<style media="screen">
 			body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
 			#message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
@@ -64,29 +64,7 @@
 	</head>
 	<body>
 
-		<script>
-			document.addEventListener('DOMContentLoaded', function() {
-				// // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-				// // The Firebase SDK is initialized and available here!
-				//
-				// firebase.auth().onAuthStateChanged(user => { });
-				// firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-				// firebase.messaging().requestPermission().then(() => { });
-				// firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-				//
-				// // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-				try {
-					let app = firebase.app();
-					let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-					document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-				} catch (e) {
-					console.error(e);
-					document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-				}
-			});
-		</script>
-<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
 <script>
   // Initialize Firebase
   var config = {
@@ -125,10 +103,8 @@
 			</nav>
 		</header>
 <!-- Background image comes here inside div -->
-			<div class="sec1 box">
-				<!-- <img id="logopic" src="icon/Logotpf.png" alt='logo'> -->
-
-				<!-- Quote -->
+			<div class="box">
+				<div class="sec1"></div>
 				<div id="qq">
 				<blockquote cite="Ultraluxe Designs">
 						<div class="devider2"></div>
@@ -137,10 +113,6 @@
 					<p class="qt"><b>ULTRALUXE DESIGNS</b></p>
 				</blockquote>
 				</div>
-				<!-- White transparent block behind the quote -->
-								<!-- <div class="quote">
-
-								</div> -->
 			</div>
 			<div class="sec2 box2">
 				<h1 class="h1">Recent Work</h1>
@@ -149,7 +121,7 @@
 				<p class="ud1">Ultraluxe Designs' Team!</p>
 					<div class="images">
 						<figure><a href="images/captiva.jpg" target="_blank"><img src="images/captiva.jpg"></a>
-						<figcaption>Chevrolet Captiva UI</figcaption></figure>
+						<figcaption class="capt1">Chevrolet Captiva UI</figcaption></figure>
 						<figure><a href="images/hike.jpg" target="_blank"><img src="images/hike.jpg"></a>
 						<figcaption class="capt1">Leslie Allen</figcaption></figure>
 						<figure><a href="images/BL.png" target="_blank"><img src="images/BL.png"></a>
@@ -202,7 +174,7 @@
 			<footer>
 				<div class="ptc"></div>
 				<div>
-				<a href="https://ultraluxe.tk/" title="Ultraluxe Designs" target="_blank">
+				<a href="https://ultraluxe.tk/" title="Ultraluxe Designs">
 					<div id="footerlogo"></div>
 									<!-- <img id="footerlogo" src="images/lightlogo.png" alt="logo"> -->
 				</a>
@@ -234,26 +206,26 @@
 				</section>
 				<section>
 					<ul>
-						<li><a href="404.html">About Us</a></li>
+						<li><a href="404.html">About</a></li>
 					</ul>
 				</section>
-				<p class="copyright">Contact us <a href="ultraluxe43@gmail.com" title="Mail us" class="copyright">Ultraluxe Designs</a> © 2019</p>
+				<div class="freepic-rights">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> and downloaded from from <a href="https://icons8.ru/" title="icons8" target="_blank">www.icons8.ru</a></div>
 				<a href="https://www.instagram.com/utraluxe/" title="Instagram" target="_blank" class="gi">
 					<figure>
-						<img class="inst" src="icon/instagram.png" alt="instagram">
+						<img class="inst" src="icon/instagram.png" color="#fff"alt="instagram">
 					</figure>
 				</a>
-				<a href="https://t.me/ultraluxeart" title="Youtube" target="_blank" class="gi">
+				<a href="https://t.me/ultraluxeart" title="Telegram" target="_blank" class="gi">
 					<figure>
-						<img class="you" src="icon/tg1.png" alt="youtube">
+						<img class="you" src="icon/tg1.png" alt="telegram">
 					</figure>
 				</a>
-			<a href="https://twitter.com/SpursOfficial" title="Twitter" target="_blank" class="gi">
+			<!-- <a href="https://twitter.com/SpursOfficial" title="Twitter" target="_blank" class="gi">
 				<figure>
 					<img class="you" src="icon/twitter.png" alt="twitter">
 				</figure>
-			</a>
-				<div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://icons8.ru/" title="icons8" target="_blank">www.icons8.ru</a></div>
+			</a> -->
+			<p class="copyright"><a href="ultraluxe43@gmail.com" title="Mail us" class="copyright">Ultraluxe Designs</a> all rights reserved © 2020</p>
 			</footer>
 
 

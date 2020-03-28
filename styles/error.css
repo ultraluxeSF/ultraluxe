@@ -76,13 +76,13 @@ body {
 }
 #homebutton {
   display: block;
-	width: 185px;
+	width: 190px;
 	height: 30px;
 	border: 1px solid #fff;
 	color: #fff;
 	text-align: center;
-	font-size: 20px;
-	padding: 10px 10px 5px 10px;
+	font-size: 19px;
+	padding: 14px 10px 5px 10px;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 400;
