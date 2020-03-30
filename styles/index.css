@@ -34,7 +34,7 @@ html {
 	box-sizing: border-box;
 }
 .sec1 {
-	background: url('../images/p2b.jpg')  -25px -50px;
+	background: url('../images/p2b.jpg')  -25px -50px no-repeat;
 	top:0;
 	width:100%;
 	z-index:0;
