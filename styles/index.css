@@ -34,13 +34,14 @@ html {
 	box-sizing: border-box;
 }
 .sec1 {
-	background: url('../images/p2b.jpg')  -25px -50px no-repeat;
+	background: url('../images/BG.png') no-repeat;
 	top:0;
-	width:100%;
 	z-index:0;
-	  height:100%;
-	  background-size: calc(100% + 50px);
+	height: 100vh;
+	width: 100%;
+	  background-size: cover;
 		position: absolute;
+		background-attachment: fixed;
 }
 .box {
 	width: 100%;
