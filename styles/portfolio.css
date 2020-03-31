@@ -1,6 +1,13 @@
 /* @media screen and (min-width: 600px) { */
 html {
 	font-family: 'Roboto', sans-serif;
+	background: #1b1b1d;
+}
+.margintr {
+	margin-bottom: 25vh;
+}
+.section {
+	margin-bottom: 5vh;
 }
 #logo {
 	width: 5vh;
@@ -17,25 +24,24 @@ html {
 }
 .sec1-club {
 	height: 100vh;
-	background-image: url('../images/team.jpg');
-	background-attachment: fixed;
+	background-image: url('../images/BG1.png');
+	background-attachment: inherit;
 	background-size: cover;
 	z-index: -1;
 }
 .box-club {
 	width: 100%;
-	height: 970px;
+	height: 600px;
 	text-align: center;
 	z-index: -1;
-	border-bottom: 150px solid #141623;
 }
 .wp-club {
 	font-size: 80px;
-	color: #ffffff;
+	color: #fff;
 	text-align: center;
 	margin-left: 450px;
 	margin-right: auto;
-	margin-top: 845px;
+	margin-top: 485px;
 	position:absolute;
 	height: 150px;
 }
@@ -61,7 +67,7 @@ html {
 	z-index: -1;
 }
 .sec2 {
-	background: #141623;
+	background: #1b1b1d;
 }
 .sec3 {
 	background-image: url('../images/WHL.jpg');
@@ -69,8 +75,7 @@ html {
 	background-size: cover;
 }
 .sec4 {
-	background: #ffffff;
-	background-image: url('../images/sh.svg');
+	background: #1b1b1d;
 	background-attachment: local;
 	background-size: cover;
 }
@@ -98,7 +103,7 @@ html {
 	position: absolute;
 }
 .box blockquote {
-	color: #141623;
+	color: #1b1b1d;
 	font-size: 26pt;
 	margin-top: 430px;
 	margin-left: -250px;
@@ -110,12 +115,12 @@ html {
 	z-index: 1;
 }
 .box h1 {
-	color: #141623;
+	color: #fff;
 	font-size: 40px;
 	letter-spacing: 2px;
 }
 .h1 {
-	color: #ffffff;
+	color: #ffffff !important;
 	text-transform: uppercase;
 	margin-top: 40px;
 }
@@ -129,17 +134,23 @@ html {
 	font-size: 40px;
 	letter-spacing: 2px;
 }
+.box3 {
+	padding-top: 50px;
+}
+
 .box3 p {
-	color: #141623;
+	color: #fff;
 }
 .box3 {
 	width: 100%;
 	min-height: 450px;
 	text-align: center;
 	padding: 10px;
+	margin-top: 30px;
+	background: #1b1b1d;
 }
 .box3 h1 {
-	color: #141623;
+	color: #1b1b1d;
 	font-size: 40px;
 	letter-spacing: 2px;
 }
@@ -206,13 +217,13 @@ blockquote .qt {
 	display: block;
 	width: 100%;
 	height: 30px;
-	background-color: #141623;
+	background-color: #1b1b1d;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0;
 }
 .btn {
-	background-color: #141623; /* Green */
+	background-color: #1b1b1d; /* Green */
   border: none;
 	width: 200px;
 	height: 30px;
@@ -240,7 +251,7 @@ blockquote .qt {
 
 /*WHL button*/
 .btn-whl {
-	background-color: #141623; /* Green */
+	background-color: #1b1b1d; /* Green */
   border: none;
 	width: 200px;
 	height: 30px;
@@ -267,7 +278,7 @@ blockquote .qt {
 }
 /*active button*/
 .btnactive {
-	background-color: #141623; /* Green */
+	background-color: #1b1b1d; /* Green */
 	border: none;
 	width: 200px;
 	height: 30px;
@@ -295,7 +306,7 @@ blockquote .qt {
 }
 /*WHL active button */
 .btnactive-whl {
-	background-color: #141623; /* Green */
+	background-color: #1b1b1d; /* Green */
 	border: none;
 	width: 200px;
 	height: 30px;
@@ -324,7 +335,7 @@ td .name {
  text-align: left;
  font-size: 24px;
 margin-top: 5px;
-color: #141623;
+color: #fff;
 /* font weight bold in order to emphasize the information contained under this class */
 font-weight: bold;
 overflow: visible;
@@ -333,40 +344,48 @@ td .place{
  font-size: 13px;
   margin-top: -15px;
 	margin-left: 12px;
-	color: #141623;
+	color: #fff;
 }
 td .num {
 	font-size: 60px;
 	position: absolute;
 	margin-top: -60px;
 	margin-left: 190px;
-	color: #141623;
-	font-weight: normal;
+	color: #fff;
+	font-weight: 500;
 	z-index: 1;
 	text-align: left;
+	-webkit-transition: all 0.5s;
+
 }
 td .bott {
 	border-bottom: 6px solid #2ec0dc;
+	margin-top: 50px;
+
 }
 td img {
 	width: 300px;
-	height: auto;
+	height: 300px;
 	-webkit-transition: all 0.5s;
 	position: sticky;
+
 }
 td img:hover{
 	width: 300px;
-	height: auto;
+	height: 300px;
 	cursor: pointer;
 	-webkit-transition: all 0.5s;
 	overflow: hidden;
 }
 /* bottom border will have yellow color when the image is hovered */
 td:hover .bott {
-	border-bottom: 6px solid #ffff00;
+	border-bottom: 6px solid #3dd38a;
 	/* margin-bottom: 3px; */
 }
-
+td:hover .num {
+	color: #3dd38a;
+	-webkit-transition: all 0.5s;
+}
 /* STADIUM PAGE */
 
 .sec1-stad {
@@ -383,6 +402,7 @@ iframe {
 	height: 506px;
 	margin-top: 50px;
 }
+
 .box3 article * {
 	max-width: 900px;
 	margin: 0 auto;
@@ -391,3 +411,5 @@ iframe {
 	box-sizing: border-box;
 	text-align: left;
 }
+
+/* --------------------------------------------------------------------------- */

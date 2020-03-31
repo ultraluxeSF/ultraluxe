@@ -23,7 +23,7 @@
 	text-align: center;
 	z-index: -1;
 	background: #1b1b1d;
-	border-bottom: 1.2vh solid #3dd38a;
+	border-bottom: 2px solid #3dd38a;
 }
 .aboutp {
 	width: 100%;
@@ -32,7 +32,7 @@
 	padding-top: 10vh;
 	padding-bottom: 23vh;
 }
-.aboutp section* {
+.aboutp section * {
 	text-align: center;
 }
 .aboutp p {
@@ -53,4 +53,9 @@
 	letter-spacing: 0.3px;
 	box-sizing: border-box;
 	text-align: left;
+}
+.sec5 {
+	background: #fff;
+	background-attachment: local;
+	background-size: cover;
 }

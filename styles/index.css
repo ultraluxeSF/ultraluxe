@@ -10,6 +10,18 @@ html {
   width: device-width;
 } */
 /* Logotype in the left top corner */
+
+
+
+#overlay{
+  height:100%;
+  width:100%;
+  background:rgba(0, 0, 0, 1);
+  position:fixed;
+  left:0;
+  top:0;
+ }
+
 #logo {
 	width: 5vh;
 	margin-left: 2vh;
@@ -34,7 +46,7 @@ html {
 	box-sizing: border-box;
 }
 .sec1 {
-	background: url('../images/BG.png') no-repeat;
+	background: url('../images/BG1.png') no-repeat;
 	top:0;
 	z-index:0;
 	height: 100vh;
@@ -54,7 +66,8 @@ html {
 	background: #ffffff;
 }
 .sec2:hover .ud1 {
-	-webkit-animation: viewportfolio:hover 2s;
+	color: #3dd38a;
+	transition: color 0.5s ease-in-out;
 }
 .sec3 {
 	background-image: url('../images/artistblur.jpg');
@@ -139,13 +152,15 @@ html {
 
 }
 .box2 .ud1 {
-	color: #3dd38a;
+	color: #2ec0dc;
 	font-size: 2vh;
 	text-align: center;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 1.6vh;
 	letter-spacing: 0.05vh;
+	font-weight: 400;
+	transition: color 0.5s ease-out;
 }
 .images figure {
 	display: inline-block;
@@ -186,7 +201,7 @@ html {
 .viewportfolio {
 	display: block;
 	color: #fff;
-	border: 0.2vh solid #3dd38a;
+	border: 0.2vh solid #2ec0dc;
 	width: 20.2vh;
 	height: 5.3vh;
 	font-size: 2.4vh;
@@ -196,13 +211,15 @@ html {
 	margin-top: 4.5vh;
 	padding: 1vh;
 	text-decoration: none;
-	transition: border-radius 0.5s;
+	transition: all 0.5s;
 }
 .viewportfolio:hover {
 	/* border-radius: 2.6vh; */
 	transition: ease-in-out 0.5s;
 	background-color: #3dd38a;
+	border: 0.2vh solid #3dd38a;
 }
+
 .images figure figcaption {
 	width: 23.5vh;
 	margin-left: 1.6vh;
@@ -237,7 +254,7 @@ html {
 	color: #fff;
 	font-size: 4.5vh;
 	letter-spacing: 0.1vh;
-	font-weight: 200;
+	font-weight: 400;
 	text-align: center;
 	padding-top: 7.9vh;
 }

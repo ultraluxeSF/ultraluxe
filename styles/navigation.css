@@ -7,7 +7,7 @@ header {
 	display: block;
 	width: 100%;
 	height: 8vh;
-	border-bottom: 0.15vh solid #3dd38a;
+	border-bottom: 0.15vh solid #2ec0dc;
 	position: fixed;
 	margin: 0;
 	padding: 0;
@@ -80,7 +80,7 @@ nav li.active,
   border: none;
 	width: 13vh;
 	height: 8vh;
-	border-bottom: 0.15vh solid #3dd38a;
+	border-bottom: 0.15vh solid #2ec0dc;
   color: #ffffff;
   padding: 0;
   text-align: center;
@@ -90,7 +90,7 @@ nav li.active,
 	float: right;
 	/* style of cursor when hovered */
   cursor: pointer;
-	transition: all 0.5s;
+	transition: all 0.25s;
 	overflow: hidden;
 	/* left border */
 	/* border-left: 0.5px solid #3dd38a; */
@@ -117,9 +117,9 @@ nav li.active,
 		transition: color 0.5s;
 }
 .dropdown:hover {
-	color: #3dd38a;
-	transition: border 0.25s ease-in-out;
-	border-bottom: 0.7vh solid #3dd38a;
+	color: #3dd38a !important;
+	transition: border 0.25s ease-in-out !important;
+	border-bottom: 0.7vh solid #3dd38a !important;
 }
 .dropdown:hover .dropdown-content {
     display: block;
@@ -155,7 +155,7 @@ button a {
 	font-family: "Raleway";
   background-color: #1b1b1d;
   border: none;
-	border-bottom: 0.15vh solid #3dd38a;
+	border-bottom: 0.15vh solid #2ec0dc;
 	width: 13vh;
 	height: 8vh;
   color: #ffffff;
@@ -174,9 +174,21 @@ button a {
 	transition: border 0.1s ease-out;
 }
 .button2:hover {
-	color: #3dd38a;
-	transition: border 0.25s ease-in-out;
-	border-bottom: 0.7vh solid #3dd38a;
+	color: #3dd38a !important;
+	transition: border 0.25s ease-in-out !important;
+	border-bottom: 0.7vh solid #3dd38a !important;
+}
+header:hover .button2 {
+	border-bottom: 0.15vh solid #3dd38a;
+	transition: border 0.25s ease-in-out
+}
+header:hover .dropdown {
+	border-bottom: 0.15vh solid #3dd38a;
+	transition: border 0.25s ease-in-out
+}
+header:hover .headblock {
+	border-bottom: 0.15vh solid #3dd38a;
+	transition: border 0.25s ease-in-out
 }
 
 .button4 {
@@ -222,9 +234,12 @@ button a {
 }
 .dropdown-content .activepage:hover {
 	color: #555;
-	width: 13vh; /*width of opening dropdown*/
+	width: 13vh;
 	transition: color 0.5s;
+		transition: border 0.25s ease-in-out;
+		border-bottom: 0.7vh solid #555;
 }
+
 
 /* FOOTER */
 
@@ -300,7 +315,7 @@ footer .gi {
 	margin: 0px;
 }
 footer .gi img {
-	width: 3vh;
+	width: auto;
 	height: 3vh;
 }
 
@@ -344,6 +359,16 @@ figure {
 																/* OBJECTS */
 
 .ptc {
+	z-index: 10;
+	margin-top: -10vh;
+	width: 100%;
+	height: 10vh;
+	background-image: url('../images/ptc1.svg');
+	background-attachment: local;
+	background-size: cover;
+	position: absolute;
+}
+footer:hover .ptc {
 	z-index: 10;
 	margin-top: -10vh;
 	width: 100%;

@@ -11,16 +11,25 @@
 		<meta name="theme-color" content="#1b1b1d" />
 		<!-- icon on the tab -->
 		<link rel="icon" href="icon/Logotpf.png">
+		<link rel="stylesheet" href="styles/preloader.css">
 		<link rel="stylesheet" href="styles/navigation.css">
 		<link rel="stylesheet" href="styles/index.css">
 		<link rel="stylesheet" href="styles/responsive.css">
+
+		<script src="scripts/preloader.js" defer></script>
 		<script src="scripts/movingbg.js" defer></script>
+		<script src="scripts/scrollreveal.js" defer></script>
+		<script src="scripts/lightbox.js" defer></script>
+		<script src="https://unpkg.com/scrollreveal"></script>
+
 		<!-- Link to the fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&display=swap" rel="stylesheet">
+
 		 <!-- Title of the webpage -->
 		<title>Ultraluxe Designs</title>
 		<meta charset="utf-8">
+
 		<!-- update the version number as needed -->
 		<script defer src="/__/firebase/5.10.0/firebase-app.js"></script>
 		<!-- include only the Firebase features as you need -->
@@ -62,8 +71,11 @@
 			}
 		</style>
 	</head>
-	<body>
+	<div id="overlay">
+	<div class="spinner"></div>
+	</div>
 
+	<body>
 
 <script>
   // Initialize Firebase
@@ -92,7 +104,7 @@
             <a class="button1">Menu ☰</a>
             <div class="dropdown-content">
               <a href="404.html">The Team</a>
-              <a href="404.html">Portfolio</a>
+              <a href="portfolio.html">Portfolio</a>
               <a href="404.html">Services</a>
             </div>
           </li>
@@ -191,7 +203,7 @@
 				</section>
 				<section>
 					<ul>
-						<li><a href="404.html">Portfolio</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
 					</ul>
 				</section>
 				<section>
@@ -233,4 +245,5 @@
 
 
 	</body>
+
 </html>
