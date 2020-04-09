@@ -134,10 +134,10 @@ button a {
 	font-family: "Raleway";
   background-color: #1b1b1d;
   border: none;
-	border-bottom: 0.25vh solid #ec008c;
+	border-bottom: 0.25vh solid #f25a28;
 	width: 13vh;
 	height: 8vh;
-  color: #ec008c;
+	color: #f25a28;
   padding: 0;
   text-align: center;
   text-decoration: none;
@@ -147,12 +147,17 @@ button a {
 	margin-right: 0;
   cursor: pointer;
 	transition: color 0.5s;
-	transition: border 0.1s ease-out;
+	transition: border 0.25s ease-out;
 }
 .buttonnavact:hover {
-	color: #555;
+	color: #555 !important;
 	transition: border 0.25s ease-in-out;
-	border-bottom: 0.7vh solid #555;
+	border-bottom: 0.7vh solid #555 !important;
+}
+header:hover .buttonnavact {
+	color: #ec008c;
+	border-bottom: 0.25vh solid #ec008c;
+	transition: all 0.25s ease-in-out;
 }
 .button2 {
 	font-family: "Raleway";
@@ -174,7 +179,7 @@ button a {
 	margin-right: 0;
   cursor: pointer;
 	transition: color 0.5s;
-	transition: border 0.1s ease-out;
+	transition: border 0.25s ease-out;
 }
 .button2:hover {
 	color: #ec008c !important;
@@ -198,7 +203,7 @@ header:hover .headblock {
 	font-family: "Raleway";
   background-color: #1b1b1d;
   border: none;
-	border-bottom: 0.15vh solid #ec008c;
+	border-bottom: 0.15vh solid #f25a28;
 	width: 13vh;
 	height: 8vh;
   color: #ffffff;
@@ -214,13 +219,18 @@ header:hover .headblock {
 	margin-right: 0;
   cursor: pointer;
 	transition: color 0.5s;
-	transition: border 0.1s ease-out;
+	transition: border 0.25s ease-out;
 }
 .button4:hover {
 	color: #ec008c;
 	transition: border 0.25s ease-in-out;
-	border-bottom: 0.7vh solid #ec008c;
+	border-bottom: 0.7vh solid #ec008c !important;
 }
+header:hover .button4 {
+	transition: border 0.25s ease-in-out;
+	border-bottom: 0.15vh solid #ec008c;
+}
+
 .pull-right {
 	float: right;
 }
