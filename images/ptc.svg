@@ -7,7 +7,7 @@
 	.st1{display:inline;fill:#FFFFFF;}
 	.st2{display:inline;fill:#3DD38A;}
 	.st3{display:inline;fill:#1B1B1D;}
-	.st4{fill:#3DD38A;}
+	.st4{fill:url(#SVGID_1_);}
 	.st5{fill:#1B1B1D;}
 </style>
 <g id="Layer_2_1_" class="st0">
@@ -27,6 +27,10 @@
 		1608.3,43.7 1612.4,52.9 1616.5,63.8 1639,58.1 1705.3,51.9 1871,74.1 2018,46.3 2018,131.8 -36.9,131.8 	"/>
 </g>
 <g id="Layer_5">
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-22.6383" y1="98.5" x2="2017.8765" y2="98.5">
+		<stop  offset="0" style="stop-color:#F25A28"/>
+		<stop  offset="1" style="stop-color:#EC008C"/>
+	</linearGradient>
 	<polygon class="st4" points="-18,146.1 -18,86.1 1004.9,57.4 979,85.6 2018,50.9 2018,128.1 	"/>
 </g>
 <g id="Layer_4">

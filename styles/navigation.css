@@ -1,3 +1,6 @@
+/* $pink: #ec008c;
+$orange: #f25a28; */
+
 /* Header */
 header {
 	position: fixed;
@@ -7,7 +10,7 @@ header {
 	display: block;
 	width: 100%;
 	height: 8vh;
-	border-bottom: 0.15vh solid #2ec0dc;
+	border-bottom: 0.15vh solid #f25a28;
 	position: fixed;
 	margin: 0;
 	padding: 0;
@@ -46,14 +49,14 @@ nav a:hover {
 nav li:hover,
 nav li.active,
 .dropdown-content a:hover {
-	color: #3dd38a;
+	color: #ec008c;
 	width: 13vh; /*width of opening dropdown*/
 	transition: border 0.5s;
-	border-bottom: 0.5vh solid #3dd38a;
-
+	border-bottom: 0.5vh solid #ec008c;
 }
+
 #ud {
-	color: #3dd38a;
+	color: #ec008c;
 	font-family: 'Roboto', sans-serif;
 	width: 65vh;
 	height: 5vh;
@@ -80,7 +83,7 @@ nav li.active,
   border: none;
 	width: 13vh;
 	height: 8vh;
-	border-bottom: 0.15vh solid #2ec0dc;
+	border-bottom: 0.15vh solid #f25a28;
   color: #ffffff;
   padding: 0;
   text-align: center;
@@ -93,7 +96,7 @@ nav li.active,
 	transition: all 0.25s;
 	overflow: hidden;
 	/* left border */
-	/* border-left: 0.5px solid #3dd38a; */
+	/* border-left: 0.5px solid #ec008c; */
 }
 /* contents of dropdown */
 .dropdown-content {
@@ -117,9 +120,9 @@ nav li.active,
 		transition: color 0.5s;
 }
 .dropdown:hover {
-	color: #3dd38a !important;
+	color: #ec008c !important;
 	transition: border 0.25s ease-in-out !important;
-	border-bottom: 0.7vh solid #3dd38a !important;
+	border-bottom: 0.7vh solid #ec008c !important;
 }
 .dropdown:hover .dropdown-content {
     display: block;
@@ -131,10 +134,10 @@ button a {
 	font-family: "Raleway";
   background-color: #1b1b1d;
   border: none;
-	border-bottom: 0.25vh solid #3dd38a;
+	border-bottom: 0.25vh solid #ec008c;
 	width: 13vh;
 	height: 8vh;
-  color: #3dd38a;
+  color: #ec008c;
   padding: 0;
   text-align: center;
   text-decoration: none;
@@ -155,7 +158,7 @@ button a {
 	font-family: "Raleway";
   background-color: #1b1b1d;
   border: none;
-	border-bottom: 0.15vh solid #2ec0dc;
+	border-bottom: 0.15vh solid #f25a28;
 	width: 13vh;
 	height: 8vh;
   color: #ffffff;
@@ -174,28 +177,28 @@ button a {
 	transition: border 0.1s ease-out;
 }
 .button2:hover {
-	color: #3dd38a !important;
+	color: #ec008c !important;
 	transition: border 0.25s ease-in-out !important;
-	border-bottom: 0.7vh solid #3dd38a !important;
+	border-bottom: 0.7vh solid #ec008c !important;
 }
 header:hover .button2 {
-	border-bottom: 0.15vh solid #3dd38a;
+	border-bottom: 0.15vh solid #ec008c;
 	transition: border 0.25s ease-in-out
 }
 header:hover .dropdown {
-	border-bottom: 0.15vh solid #3dd38a;
+	border-bottom: 0.15vh solid #ec008c;
 	transition: border 0.25s ease-in-out
 }
 header:hover .headblock {
-	border-bottom: 0.15vh solid #3dd38a;
-	transition: border 0.25s ease-in-out
+	border-bottom: 0.15vh solid #ec008c;
+	transition: border 0.25s ease-in-out;
 }
 
 .button4 {
 	font-family: "Raleway";
   background-color: #1b1b1d;
   border: none;
-	border-bottom: 0.15vh solid #3dd38a;
+	border-bottom: 0.15vh solid #ec008c;
 	width: 13vh;
 	height: 8vh;
   color: #ffffff;
@@ -214,15 +217,15 @@ header:hover .headblock {
 	transition: border 0.1s ease-out;
 }
 .button4:hover {
-	color: #3dd38a;
+	color: #ec008c;
 	transition: border 0.25s ease-in-out;
-	border-bottom: 0.7vh solid #3dd38a;
+	border-bottom: 0.7vh solid #ec008c;
 }
 .pull-right {
 	float: right;
 }
 .activepage {
-	color: #3dd38a;
+	color: #ec008c;
 	background-color: #1b1b1d;
 }
 .activepage:hover {
@@ -230,7 +233,7 @@ header:hover .headblock {
 	background-color: #1b1b1d;
 }
 .dropdown-content .activepage {
-	color: #3dd38a;
+	color: #ec008c;
 }
 .dropdown-content .activepage:hover {
 	color: #555;
@@ -257,11 +260,11 @@ footer {
 	overflow: hidden;
 	padding-bottom: 3vh;
 	border-bottom: 0.2vh solid #ffffff;
-	content: url('../images/Logow.png');
+	content: url('../images/Logow.svg');
 	transition: border-bottom 0.5s;
 }
 #footerlogo:hover {
-	border-bottom: 0.2vh solid #3dd38a;
+	border-bottom: 0.2vh solid #ec008c;
 }
 footer div {
 	color: #ffffff;
@@ -288,7 +291,7 @@ footer section a {
 	float: left;
 }
 footer section a:hover {
-	color: #3dd38a;
+	color: #ec008c;
 	transition: all 0.5s;
 }
 footer section {
@@ -306,7 +309,7 @@ footer p {
 	padding: 0.7vh;
 }
 footer a:hover {
-	color: #3dd38a;
+	color: #ec008c;
 	transition: all 0.5s;
 }
 footer .gi {
@@ -347,7 +350,7 @@ figure {
 	margin-top: 15px;
 }
 .factive {
-	color: #3dd38a;
+	color: #ec008c;
 	transition: background-color 0.5s;
 }
 .factive:hover {
@@ -363,12 +366,12 @@ figure {
 	margin-top: -10vh;
 	width: 100%;
 	height: 10vh;
-	background-image: url('../images/ptc1.svg');
+	background-image: url('../images/ptc.svg');
 	background-attachment: local;
 	background-size: cover;
 	position: absolute;
 }
-footer:hover .ptc {
+/* footer:hover .ptc {
 	z-index: 10;
 	margin-top: -10vh;
 	width: 100%;
@@ -377,4 +380,4 @@ footer:hover .ptc {
 	background-attachment: local;
 	background-size: cover;
 	position: absolute;
-}
+} */

@@ -359,7 +359,7 @@ td .num {
 
 }
 td .bott {
-	border-bottom: 6px solid #2ec0dc;
+	border-bottom: 6px solid #f25a28;
 	margin-top: 50px;
 
 }
@@ -379,11 +379,11 @@ td img:hover{
 }
 /* bottom border will have yellow color when the image is hovered */
 td:hover .bott {
-	border-bottom: 6px solid #3dd38a;
+	border-bottom: 6px solid #ec008c;
 	/* margin-bottom: 3px; */
 }
 td:hover .num {
-	color: #3dd38a;
+	color: #ec008c;
 	-webkit-transition: all 0.5s;
 }
 /* STADIUM PAGE */

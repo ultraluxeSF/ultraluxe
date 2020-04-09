@@ -1,7 +1,10 @@
+
+
 .about {
 
 }
 .id {
+	font-family: "Roboto", sans-serif;
 	font-size: 5vh;
 	color: #fff;
 	text-align: center;
@@ -9,6 +12,19 @@
 	margin-right: auto;
 	margin-top: 16vh;
 	position: absolute;
+	font-weight: 900;
+}
+.pink {
+	color: #ec008c;
+	font-family: "Roboto", sans-serif;
+	font-size: 5vh;
+	text-align: center;
+	margin-left: 65vh;
+	margin-right: auto;
+	margin-top: 16vh;
+	position: absolute;
+	font-weight: 900;
+	text-transform: uppercase;
 }
 .aboutsec1 {
 	height: 100vh;
@@ -22,8 +38,8 @@
 	height: 30vh;
 	text-align: center;
 	z-index: -1;
-	background: #1b1b1d;
-	border-bottom: 2px solid #3dd38a;
+	background: #191919;
+	border-bottom: 2px solid #ec008c;
 }
 .aboutp {
 	width: 100%;
@@ -37,10 +53,10 @@
 }
 .aboutp p {
 	font-size: 2vh;
-	color: #1b1b1d;
+	color: #fff;
 }
 .aboutp h1 {
-	color: #1b1b1d;
+	color: #ec008c;
 	font-size: 40px;
 	letter-spacing: 2px;
 	margin-top: 1vh;
@@ -55,7 +71,7 @@
 	text-align: left;
 }
 .sec5 {
-	background: #fff;
+	background: #1b1b1d;
 	background-attachment: local;
 	background-size: cover;
 }

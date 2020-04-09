@@ -1,3 +1,6 @@
+/* $pink: #ec008c;
+$orange: #f25a28; */
+
 /* Comments are above the elements */
 
 html {
@@ -66,7 +69,7 @@ html {
 	background: #ffffff;
 }
 .sec2:hover .ud1 {
-	color: #3dd38a;
+	color: #ec008c;
 	transition: color 0.5s ease-in-out;
 }
 .sec3 {
@@ -152,7 +155,7 @@ html {
 
 }
 .box2 .ud1 {
-	color: #2ec0dc;
+	color: #f25a28;
 	font-size: 2vh;
 	text-align: center;
 	margin-right: auto;
@@ -201,7 +204,7 @@ html {
 .viewportfolio {
 	display: block;
 	color: #fff;
-	border: 0.2vh solid #2ec0dc;
+	background-image: linear-gradient(90deg, #f25a28, #ec008c);
 	width: 20.2vh;
 	height: 5.3vh;
 	font-size: 2.4vh;
@@ -209,16 +212,42 @@ html {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 4.5vh;
-	padding: 1vh;
+	padding: 1.2vh;
 	text-decoration: none;
 	transition: all 0.5s;
 }
 .viewportfolio:hover {
-	/* border-radius: 2.6vh; */
 	transition: ease-in-out 0.5s;
-	background-color: #3dd38a;
-	border: 0.2vh solid #3dd38a;
+	/* background-color: #ec008c; */
 }
+.vpbutton {
+  position: relative;
+  /* border-radius: 26px; */
+	background-image: linear-gradient(90deg, #ec008c, #f25a28, #ec008c);
+  background-size: 500%;
+  background-position: 0% 0%;
+}
+
+.vpbutton:hover {
+    animation: gradientRotate 6s infinite;
+	}
+    .vpbutton::before {
+      opacity: 1;
+      animation: gradientRotate 6s infinite;
+    }
+  }
+
+.vpbutton:active {
+    color: #ec008c;
+  }
+	@keyframes gradientRotate {
+	  0% {
+	    background-position: 0% 0%;
+	  }
+	  100% {
+	    background-position: 90% 80%;
+	  }
+	}
 
 .images figure figcaption {
 	width: 23.5vh;
@@ -302,7 +331,7 @@ blockquote .devider2 {
 blockquote .qt {
 	font-size: 2.3vh;
 	margin-top: 3.6vh;
-	color: #3dd38a;
+	color: #ec008c;
 	text-transform: none;
 	letter-spacing: 0.5vh;
 	font-weight: 300;
