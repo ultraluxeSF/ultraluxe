@@ -1,5 +1,6 @@
 /* $pink: #ec008c;
-$orange: #f25a28; */
+$orange: #f25a28;
+$mid-gradient: #ef2d5b*/
 
 /* Comments are above the elements */
 
@@ -197,7 +198,8 @@ html {
 	height: 63vh;
 	background-color: #1b1b1d;
 	text-align: center;
-	overflow: auto;
+	overflow: hidden;
+	/* padding-bottom: 65vh; */
 	/* background-image: url('../images/pf.jpg');
 	background-attachment: absolute;
 	background-size: cover; */
@@ -209,16 +211,17 @@ html {
 	width: 20.2vh;
 	height: 5.3vh;
 	font-size: 2.4vh;
-	font-weight: 100;
+	font-weight: 300;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 4.5vh;
+	margin-top: 4vh;
 	padding: 1.2vh;
 	text-decoration: none;
 	transition: all 0.5s;
 }
 .viewportfolio:hover {
 	transition: ease-in-out 0.5s;
+	box-shadow: 0vh 0vh 2vh 0.5vh rgba(239, 45, 91, 1);
 	/* background-color: #ec008c; */
 }
 .vpbutton {

@@ -19,7 +19,7 @@ body {
   margin: 16px 0 12px;
 }
 #message h2 {
-  color: #3dd38a;
+  color: #ec008c;
   font-weight: bold;
   font-size: 16px;
   margin: 0 0 8px; }
@@ -97,3 +97,55 @@ body {
 	transition: ease-out 0.5s;
 	background-color: #fff;
 }
+.viewportfolio {
+  display: block;
+  width: 190px;
+  height: 30px;
+	background-image: linear-gradient(90deg, #f25a28, #ec008c);
+  color: #fff;
+  text-align: center;
+  font-size: 19px;
+  padding: 14px 10px 5px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.5s;
+  letter-spacing: 1px;
+  margin-top: 50px;
+}
+.viewportfolio:hover {
+	transition: ease-in-out 0.5s;
+  /* box-shadow: 0px 0px 10px 5px #ef2d5b; */
+  box-shadow: 0px 0px 20px 2px rgba(239, 45, 91, 1);
+	/* background-color: #ec008c; */
+}
+.vpbutton {
+  position: relative;
+  /* border-radius: 26px; */
+	background-image: linear-gradient(90deg, #ec008c, #f25a28, #ec008c);
+  background-size: 500%;
+  background-position: 0% 0%;
+}
+
+.vpbutton:hover {
+    animation: gradientRotate 6s infinite;
+	}
+    .vpbutton::before {
+      opacity: 1;
+      animation: gradientRotate 6s infinite;
+    }
+  }
+
+.vpbutton:active {
+    color: #ec008c;
+  }
+	@keyframes gradientRotate {
+	  0% {
+	    background-position: 0% 0%;
+	  }
+	  100% {
+	    background-position: 90% 80%;
+	  }
+	}
