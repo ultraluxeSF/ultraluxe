@@ -292,7 +292,10 @@ footer section ul {
 	/* width: 120px; */
 	height: 6vh;
 	text-align: center;
-	margin-left: 3vh;
+	margin-left: 2vh;
+}
+.homelinkfooter {
+	margin-left: 0 !important;
 }
 footer section a {
 	text-decoration: none;
@@ -318,6 +321,7 @@ footer p {
 	height: 5.6vh;
 	padding: 0.7vh;
 }
+
 footer a:hover {
 	color: #ec008c;
 	transition: all 0.5s;
