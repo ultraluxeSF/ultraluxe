@@ -6,6 +6,7 @@
 		<meta name="theme-color" content="#ffffff" />
 		<link rel="icon" href="icon/Logoh.png">
 		<link rel="stylesheet" href="styles/preloader.css">
+		<link rel="stylesheet" href="styles/progressbar.css">
 		<link rel="stylesheet" href="styles/navigation.css">
 		<link rel="stylesheet" href="styles/portfolio.css">
 
@@ -23,8 +24,10 @@
 	</div>
 
 	<body>
+		<div id="progressbar"></div>
+		<div id="scrollpath"></div>
 
-		<a href="index.html">
+		<a href="home.html">
 		<img id="logo" src="icon/Logoh.png" alt='logo'>
 		<section id="ud">ULTRALUXE DESIGNS</section>
 	  </a>
@@ -43,7 +46,7 @@
           </li>
 					<!-- Main buttons -->
 					<button class="button2"><a href="about.html">About</a></button>
-					<button class="button2"><a href="index.html">Home</a></button>
+					<button class="button2"><a href="home.html">Home</a></button>
 				</div>
 			</nav>
 		</header>
@@ -304,7 +307,7 @@
 		</div>
 		<section>
 			<ul>
-				<li><a href="index.html">Home</a></li>
+				<li><a href="home.html">Home</a></li>
 			</ul>
 		</section>
 		<section>
@@ -350,8 +353,19 @@
 	</a> -->
 	<p class="copyright"><a href="mailto:ultraluxe43@gmail.com" title="Mail us" class="copyright">Ultraluxe Designs</a> all rights reserved © <span id="year"></span></p>
 	<script src="scripts/year.js" charset="utf-8"></script>
+
+
+
 	</footer>
 
+	<script type="text/javascript">
+	let progress = document.getElementById('progressbar');
+	let totalHeight = document.body.scrollHeight - window.innerHeight;
+	window.onscroll = function(){
+		let progressHeight = (window.pageYOffset / totalHeight) * 100;
+		progress.style.height = progressHeight + "%";
+	}
+	</script>
 
 
 	</body>

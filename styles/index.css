@@ -8,14 +8,14 @@ html {
 	/* font used in the document */
 	font-family: 'Roboto', sans-serif;
 	margin-right: 0 !important;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
 	/* overflow: auto !important; */
 }
 /* @-ms-viewport{
   width: device-width;
 } */
 /* Logotype in the left top corner */
-
-
 
 #overlay{
   height:100%;
@@ -32,10 +32,11 @@ html {
 	margin-left: 2vh;
 	margin-top: 1.1vh;
 	height: auto;
-	z-index: 3;
+	z-index: 53;
 	position: fixed;
-	top:0
+	top:0;
 }
+
 #logopic {
 		height: 100px;
 		width: auto;
@@ -154,7 +155,6 @@ html {
 	font-weight: 200;
 	font-size: 4vh;
 	letter-spacing: 0.1vh;
-
 }
 .box2 .ud1 {
 	color: #f25a28;
@@ -174,8 +174,8 @@ html {
 	margin-top: 2.7vh;
 }
 .box2 img {
-	width: 26.7vh;
-	height: 24vh;
+	width: 27vh;
+	height: 26vh;
 	border: 0.15vh solid #ffffff;
 	object-fit: cover;
 	cursor: pointer;
@@ -195,7 +195,7 @@ html {
 /* 2nd devider */
 .box2 {
 	width: 100%;
-	height: 63vh;
+	height: 66.5vh;
 	background-color: #1b1b1d;
 	text-align: center;
 	overflow: hidden;

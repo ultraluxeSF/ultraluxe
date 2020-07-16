@@ -1,256 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-	<head>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <meta name="theme-color" content="#1b1b1d" />
+    <link rel="icon" href="icon/Logoh.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
 
-		<!-- <link rel="stylesheet" href="styles/loader.css"> -->
-		<!-- The tag below is for mobile device optimization in terms of scaling -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-		<!-- Specifies the character encoding for the document -->
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<!-- The following tag stands for the mobile device browser's navigation panel color -->
-		<meta name="theme-color" content="#1b1b1d" />
-		<!-- icon on the tab -->
-		<link rel="icon" href="icon/Logoh.png">
-		<link rel="stylesheet" href="styles/preloader.css">
-		<link rel="stylesheet" href="styles/navigation.css">
-		<link rel="stylesheet" href="styles/index.css">
-		<link rel="stylesheet" href="styles/responsive.css">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-		<script src="scripts/preloader.js" defer></script>
-		<script src="scripts/movingbg.js" defer></script>
-		<script src="scripts/scrollreveal.js" defer></script>
-		<script src="scripts/lightbox.js" defer></script>
-		<script src="scripts/smoothscroll.js" defer></script>
-		<script src="https://unpkg.com/scrollreveal"></script>
+       ym(54894073, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+       });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/54894073" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 
-		<!-- Link to the fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&display=swap" rel="stylesheet">
+    <ul>
+      <li data-text="Home"><a href="home.html">Home</a></li>
+      <li data-text="About"><a href="about.html">About</a></li>
+      <li data-text="Portfolio"><a href="portfolio.html">Portfolio</a></li>
+      <li data-text="Services"><a href="services.html">Services</a></li>
+      <li data-text="Contact"><a href="contact.html">Contact</a></li>
+    </ul>
 
-		 <!-- Title of the webpage -->
-		<title>Ultraluxe Designs</title>
-		<meta charset="utf-8">
+    <p class="ultraluxe">Ultraluxe Designs</p>
 
-		<!-- update the version number as needed -->
-		<script defer src="/__/firebase/5.10.0/firebase-app.js"></script>
-		<!-- include only the Firebase features as you need -->
-		<script defer src="/__/firebase/5.10.0/firebase-auth.js"></script>
-		<script defer src="/__/firebase/5.10.0/firebase-database.js"></script>
-		<script defer src="/__/firebase/5.10.0/firebase-messaging.js"></script>
-		<script defer src="/__/firebase/5.10.0/firebase-storage.js"></script>
-		<!-- initialize the SDK after all desired features are loaded -->
-		<script defer src="/__/firebase/init.js"></script>
-
-		<!-- Yandex.Metrika counter -->
-		<script type="text/javascript" >
-		   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-		   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-		   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-		   ym(54894073, "init", {
-		        clickmap:true,
-		        trackLinks:true,
-		        accurateTrackBounce:true,
-		        webvisor:true
-		   });
-		</script>
-		<noscript><div><img src="https://mc.yandex.ru/watch/54894073" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-		<!-- /Yandex.Metrika counter -->
-
-		<style media="screen">
-			body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-			#message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-			#message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-			#message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-			#message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-			#message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-			#message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-			#load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-			@media (max-width: 600px) {
-				body, #message { margin-top: 0; background: white; box-shadow: none; }
-				body { border-top: 16px solid #ffa100; }
-			}
-		</style>
-	</head>
-	<div id="overlay">
-	<div class="spinner"></div>
-	</div>
-
-	<body>
-
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyDfe_ES0cVOerlfCTBhRabCFxg1sf1lPXg",
-    authDomain: "ultraluxe-designs.firebaseapp.com",
-    databaseURL: "https://ultraluxe-designs.firebaseio.com",
-    projectId: "ultraluxe-designs",
-    storageBucket: "ultraluxe-designs.appspot.com",
-    messagingSenderId: "1007649965843"
-  };
-  firebase.initializeApp(config);
-</script>
-		<!-- LOGO -->
-		<a href="index.html">
-		<img id="logo" src="images/Logow.svg" alt="logo">
-		<section id="ud">ULTRALUXE DESIGNS</section>
-	  </a>
-		<!-- Navigation panel -->
-		<header>
-			<nav>
-
-				<div class="headblock headblockc">
-					<!-- Dropdown links -->
-					<li class="dropdown pull-right">
-            <a class="button1">Menu ☰</a>
-            <div class="dropdown-content">
-              <a href="404.html">The Team</a>
-              <a href="portfolio.html">Portfolio</a>
-              <a href="404.html">Services</a>
-            </div>
-          </li>
-					<!-- Main buttons -->
-					<button class="button2"><a href="about.html">About</a></button>
-					<button class="buttonnavact"><a href="index.html">Home</a></button>
-				</div>
-			</nav>
-		</header>
-<!-- Background image comes here inside div -->
-			<div class="box">
-				<div class="sec1"></div>
-				<div id="qq">
-				<blockquote cite="Ultraluxe Designs">
-						<div class="devider2"></div>
-					<b>Explore the freshest designs!</b>
-						<div class="devider1"></div>
-					<p class="qt"><b>ULTRALUXE DESIGNS</b></p>
-				</blockquote>
-				</div>
-			</div>
-			<div class="sec2 box2">
-				<h1 class="h1">Recent Works</h1>
-				<div class="lightbar"></div>
-				<p>Explore the <b>freshest</b> designs recently created by</p>
-				<p class="ud1">Ultraluxe Designs' Team!</p>
-					<div class="images">
-						<figure><img src="images/captiva.jpg">
-						<figcaption class="capt1">Chevrolet Captiva UI</figcaption></figure>
-						<figure><img src="images/hike.jpg">
-						<figcaption class="capt1">Leslie Allen</figcaption></figure>
-						<figure><img src="images/BL.png">
-						<figcaption class="capt1">Black Llama</figcaption></figure>
-						<figure><img src="images/CirillaUIn.jpg">
-						<figcaption class="capt1">Cirilla UI</figcaption></figure>
-					</div>
-				<a href="portfolio.html" class="viewportfolio vpbutton">View all</a>
-				<!-- <div class="inbox2"></div> -->
-			</div>
-
-			<div class="sec3 box3">
-				<h1>Services</h1>
-				<div class="lightbar"></div>
-				<!-- <div class="wtfweare">
-					<h2>Who's behind this?</h2>
-						<a href="about.html" id="behind" title="About us">Know us!</a>
-							<img src="images/arrowup.png" id="arrow">
-								<p class="click">Click onto that!</p>
-				</div> -->
-
-					<div class="service-section">
-						<div class="service-isons">
-							<h2 class="service-heading">Logo design</h2>
-								<p>Clean and high quality design is guaranteed</p>
-							<img src="icon/logodes.png" class="service-ico">
-						</div>
-					</div>
-
-					<div class="service-section">
-						<div class="service-isons">
-							<h2 class="service-heading">UI design</h2>
-								<p>Clean and trendy User Interface design</p>
-							<img src="icon/uides.png" class="service-ico">
-						</div>
-					</div>
-
-					<div class="service-section">
-						<div class="service-isons">
-							<h2 class="service-heading">Miscellaneous</h2>
-								<p>Package design, banners, retouch, portrait drawing etc.</p>
-							<img src="icon/brush.png" class="service-ico">
-						</div>
-					</div>
-
-				</div>
-
-						<!-- FOOTER -->
-
-			<footer>
-				<div class="ptc"></div>
-				<div>
-				<a href="https://ultraluxe.tk/" title="Ultraluxe Designs">
-					<div id="footerlogo"></div>
-									<!-- <img id="footerlogo" src="images/lightlogo.png" alt="logo"> -->
-				</a>
-				</div>
-				<div class="foot-links">
-
-				<section>
-					<ul>
-						<li><a href="index.html" class="factive homelinkfooter">Home</a></li>
-					</ul>
-				</section>
-				<section>
-					<ul>
-						<li><a href="about.html">About</a></li>
-					</ul>
-				</section>
-				<section>
-					<ul>
-						<li><a href="portfolio.html">Portfolio</a></li>
-					</ul>
-				</section>
-				<section>
-					<ul>
-						<li><a href="404.html">Services</a></li>
-					</ul>
-				</section>
-				<section>
-					<ul>
-						<li><a href="404.html">Team</a></li>
-					</ul>
-				</section>
-				<!-- <section>
-					<ul>
-						<li><a href="404.html">About</a></li>
-					</ul>
-				</section> -->
-			</div>
-
-				<div class="freepic-rights">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> and downloaded from from <a href="https://icons8.ru/" title="icons8" target="_blank">www.icons8.ru</a></div>
-				<a href="https://www.instagram.com/utraluxe/" title="Instagram" target="_blank" class="gi">
-					<figure>
-						<img class="inst" src="icon/instagram.png" color="#fff"alt="instagram">
-					</figure>
-				</a>
-				<a href="https://t.me/ultraluxeart" title="Telegram" target="_blank" class="gi">
-					<figure>
-						<img class="you" src="icon/tg1.png" alt="telegram">
-					</figure>
-				</a>
-			<!-- <a href="https://twitter.com/SpursOfficial" title="Twitter" target="_blank" class="gi">
-				<figure>
-					<img class="you" src="icon/twitter.png" alt="twitter">
-				</figure>
-			</a> -->
-			<p class="copyright"><a href="mailto:ultraluxe43@gmail.com" title="Mail us" class="copyright">Ultraluxe Designs</a> all rights reserved © <span id="year"></span></p>
-			<script src="scripts/year.js" charset="utf-8"></script>
-
-			</footer>
-
-
-
-
-
-	</body>
-
+  </body>
 </html>

@@ -1,3 +1,12 @@
+#logo {
+	width: 5vh;
+	margin-left: 2vh;
+	margin-top: 1.1vh;
+	height: auto;
+	z-index: 53;
+	position: fixed;
+	top:0;
+}
 
 #overlay{
   height:100%;

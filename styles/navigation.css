@@ -4,7 +4,7 @@ $orange: #f25a28; */
 /* Header */
 header {
 	position: fixed;
-	z-index: 2;
+	z-index: 51;
 }
 .headblock {
 	display: block;
@@ -67,7 +67,7 @@ nav li.active,
 	/* content: 'ULTRALUXE DESIGNS'; */
 	visibility: visible;
 	overflow: hidden;
-	z-index: 3;
+	z-index: 53;
 	margin-left: 10vh;
 	margin-top: 2.2vh;
 	position: fixed;
@@ -394,4 +394,14 @@ figure {
 	background-attachment: local;
 	background-size: cover;
 	position: absolute;
+} */
+
+
+/* SMOOTHSCROLL  */
+/* .smooth-scroll-wrapper {
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left:0;
+	overflow: hidden;
 } */
