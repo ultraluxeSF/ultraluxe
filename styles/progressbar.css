@@ -10,7 +10,7 @@
 	width: 0.1vw;
 	height: 100%;
 	background: rgba(255,255,255,0.05);
-	z-index: 53;
+	z-index: 3012;
 }
 #progressbar {
 	position: fixed;
@@ -21,7 +21,7 @@
 	animation: animate 5s linear infinite;
 	z-index: 53;
 }
-@keyframes animate{
+/* @keyframes animate{
 	0%, 100%
 	{
 		filter: hue-rotate(0deg);
@@ -30,7 +30,7 @@
 	{
 		filter: hue-rotate(360deg);
 	}
-}
+} */
 #progressbar:before{
 	position: absolute;
 	content: '';

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <meta name="theme-color" content="#1b1b1d" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/progressbar.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="icon" href="images/Logoh.png">
+    <script src="scripts/scrollreveal.js" defer></script>
+    <script src="scripts/reveal.js" defer></script>
+
+    <title>Ultraluxe | Contact</title>
+  </head>
+  <body>
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+
+    <nav id="navbar">
+      <a href="home.html" class="brand">Ultraluxe</a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="contactbanner" id="sec">
+      <header id="header">
+        <a href="#" class="logo">Ultraluxe</a>
+        <div class="toggle" id="toggle" onclick="toggle()"></div>
+      </header>
+      <div class="contact-content">
+        <h2>Contacts<br>Contact <span>Ultraluxe</span></h2>
+        <p class="paragraph">Email: <span><a href="mailto:ultraluxe43@gmail.com" title="Mail">ultraluxe43@gmail.com</a></span></p>
+        <p class="paragraph">Tel: <span><a href="tel:998935989091" title="Call">+998 (93)5989091</a></span></p>
+        <p class="paragraph">Telegram: <span><a href="https://t.me/ultraluxe" title="Text">@ultraluxe</a></span></p>
+        <!-- YANDEX MONEY -->
+        <iframe src="https://money.yandex.ru/quickpay/shop-widget?writer=seller&targets=Comission&targets-hint=&default-sum=&button-text=11&payment-type-choice=on&fio=on&comment=on&mail=on&hint=&successURL=http%3A%2F%2Fultraluxe.tk%2F&quickpay=shop&account=410014412693768" width="100%" height="301" frameborder="0" allowtransparency="true" scrolling="no" background="#1b1b1d"></iframe>
+        <div class="copyr">
+          <p class="copyright"><a href="mailto:ultraluxe43@gmail.com" title="Mail us" class="copyrighta">Ultraluxe Designs</a> all rights reserved © <span id="year"></span></p>
+          <script src="scripts/year.js" charset="utf-8"></script>
+        </div>
+      </div>
+      <ul class="sci">
+        <li><a href="https://www.instagram.com/utraluxe/" target="_blank"><img src="images/instagram.png"></a></li>
+        <li><a href="https://t.me/ultraluxe" target="_blank"><img src="images/tg1.png"></a></li>
+        <li><a href="https://www.youtube.com/c/ultraluxe" target="_blank"><img src="images/youtube.png"></a></li>
+      </ul>
+    </section>
+
+    <div id="navigation">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+    </div>
+
+    <!-- <footer>
+      <p class="copyright"><a href="mailto:ultraluxe43@gmail.com" title="Mail us" class="copyright">Ultraluxe Designs</a> all rights reserved © <span id="year"></span></p>
+      <script src="scripts/year.js" charset="utf-8"></script>
+    </footer> -->
+    <!-- NAVIGATION TOGGLE -->
+    <script type="text/javascript">
+      function toggle(){
+        var sec = document.getElementById('sec');
+        var nav = document.getElementById('navigation');
+        sec.classList.toggle('active');
+        nav.classList.toggle('active');
+      }
+
+    </script>
+
+    <!-- NAVIGATION HIDE/REVEAL -->
+    <script type="text/javascript">
+      var lastScrollTop = 0;
+      navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", function(){
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop){
+          navbar.style.top = "0";
+        } else {
+          navbar.style.top = "-70px";
+        }
+        lastScrollTop = scrollTop;
+      })
+    </script>
+
+    <!-- PROGRESS BAR -->
+    <script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+      let progressHeight = (window.pageYOffset / totalHeight) * 100;
+      progress.style.height = progressHeight + "%";
+    }
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+       ym(54894073, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+       });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/54894073" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+  </body>
+</html>

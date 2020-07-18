@@ -1,142 +1,117 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-	<head>
-		<link rel="stylesheet" href="styles/loader.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="theme-color" content="#ffffff" />
-		<link rel="icon" href="icon/Logoh.png">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <meta name="theme-color" content="#1b1b1d" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/progressbar.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="icon" href="images/Logoh.png">
+    <script src="scripts/scrollreveal.js" defer></script>
+    <script src="scripts/reveal.js" defer></script>
 
-		<link rel="stylesheet" href="styles/preloader.css">
-		<link rel="stylesheet" href="styles/progressbar.css">
-		<link rel="stylesheet" href="styles/navigation.css">
-		<link rel="stylesheet" href="styles/portfolio.css">
-		<link rel="stylesheet" href="styles/about.css">
+    <title>Ultraluxe | About</title>
+  </head>
+  <body>
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
 
-		<script src="scripts/preloader.js" defer></script>
-		<script src="scripts/scripts.js" defer></script>
-		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&display=swap" rel="stylesheet">
-		<title>Ultraluxe Designs | About</title>
-	</head>
-	<body>
-		<div id="overlay">
-		<div class="spinner"></div>
-		</div>
+    <nav id="navbar">
+      <a href="home.html" class="brand">Ultraluxe</a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html" class="active-a">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="aboutbanner" id="sec">
+      <header id="header">
+        <a href="#" class="logo">Ultraluxe</a>
+        <div class="toggle" id="toggle" onclick="toggle()"></div>
+      </header>
+      <div class="content">
+        <h2>About<br>Who's <span>Ultraluxe?</span></h2>
+        <p class="paragraph">Ultraluxe is a passionate graphic designer that loves creating elegant and thoroughly made designs.</p>
+        <a class="btn" href="contact.html">Contact</a>
+      </div>
+      <ul class="sci">
+        <li><a href="https://www.instagram.com/utraluxe/" target="_blank"><img src="images/instagram.png"></a></li>
+        <li><a href="https://t.me/ultraluxe" target="_blank"><img src="images/tg1.png"></a></li>
+        <li><a href="https://www.youtube.com/c/ultraluxe" target="_blank"><img src="images/youtube.png"></a></li>
+      </ul>
+    </section>
 
+    <div id="navigation">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <!-- <p class="copyright"><a href="mailto:ultraluxe43@gmail.com" title="Mail us" class="copyright">Ultraluxe Designs</a> all rights reserved © <span id="year"></span></p>
+      <script src="scripts/year.js" charset="utf-8"></script> -->
 
-		<div class="circle"></div>
-		<div class="circle"></div>
-		<div id="progressbar"></div>
-		<div id="scrollpath"></div>
+    </div>
 
-		<a href="home.html">
-		<img id="logo" src="icon/Logoh.png" alt='logo'>
-		<section id="ud">ULTRALUXE DESIGNS</section>
+    <!-- <footer>
+      <p class="copyright"><a href="mailto:ultraluxe43@gmail.com" title="Mail us" class="copyright">Ultraluxe Designs</a> all rights reserved © <span id="year"></span></p>
+      <script src="scripts/year.js" charset="utf-8"></script>
+    </footer> -->
+    <!-- NAVIGATION TOGGLE -->
+    <script type="text/javascript">
+      function toggle(){
+        var sec = document.getElementById('sec');
+        var nav = document.getElementById('navigation');
+        sec.classList.toggle('active');
+        nav.classList.toggle('active');
+      }
 
-	  </a>
-		<header>
-			<nav>
-								<div class="ud"></div>
-				<div class="headblock headblockc">
-					<li class="dropdown pull-right">
-            <a class="button1">Menu ☰</a>
-            <div class="dropdown-content">
-              <a href="404.html">The Team</a>
-              <a href="portfolio.html">Portfolio</a>
-              <a href="404.html">Services</a>
-            </div>
-          </li>
-					<button class="buttonnavact"><a href="about.html">About</a></button>
-					<!-- <button class="button3">Contacts</button> -->
-					<button class="button4"><a href="home.html">Home</a></button>
-				</div>
-			</nav>
-		</header>
-					<span class="id">About</span> <span class="pink">Ultraluxe Designs</span>
-			<div class="aboutsec1 aboutbox">
-			</div>
-	<div class="sec5 aboutp">
-		<section>
-			<h1>Ultraluxe Designs</h1>
-			<p>There should've been some information about our team, soon it will be filled by our lazy as f*ck web designer :)</p>
-			<p><b>Contact via:</b> ultraluxe43@gmail.com</p>
+    </script>
 
-			<!-- <p>The website serves as a portfolio of Ultraluxe Designs, the freshest designs and comissions as well as our contacts.</p>
-			<p>Clean and high quality design is guaranteed alongside with immense satisfaction of a client.</p> -->
-		</section>
-	</div>
+    <!-- NAVIGATION HIDE/REVEAL -->
+    <script type="text/javascript">
+      var lastScrollTop = 0;
+      navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", function(){
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop){
+          navbar.style.top = "0";
+        } else {
+          navbar.style.top = "-70px";
+        }
+        lastScrollTop = scrollTop;
+      })
+    </script>
 
-	<footer>
-		<div class="ptc"></div>
+    <!-- PROGRESS BAR -->
+    <script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+      let progressHeight = (window.pageYOffset / totalHeight) * 100;
+      progress.style.height = progressHeight + "%";
+    }
+    </script>
 
-		<div>
-		<a href="https://ultraluxe.tk/" id="footerlogo" title="Ultraluxe Designs">
-			<!-- <div ></div> -->
-							<!-- <img id="footerlogo" src="images/lightlogo.png" alt="logo"> -->
-		</a>
-		</div>
-		<section>
-			<ul>
-				<li><a href="home.html">Home</a></li>
-			</ul>
-		</section>
-		<section>
-			<ul>
-				<li><a href="about.html">About</a></li>
-			</ul>
-		</section>
-		<section>
-			<ul>
-				<li><a href="portfolio.html">Portfolio</a></li>
-			</ul>
-		</section>
-		<section>
-			<ul>
-				<li><a href="404.html">Services</a></li>
-			</ul>
-		</section>
-		<section>
-			<ul>
-				<li><a href="404.html">Page</a></li>
-			</ul>
-		</section>
-		<section>
-			<ul>
-				<li><a href="about.html" class="factive">About</a></li>
-			</ul>
-		</section>
-		<div class="freepic-rights">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> and downloaded from from <a href="https://icons8.ru/" title="icons8" target="_blank">www.icons8.ru</a></div>
-	<a href="https://www.instagram.com/utraluxe/" title="Instagram" target="_blank" class="gi">
-		<figure>
-			<img class="inst" src="icon/instagram.png" alt="instagram">
-		</figure>
-	</a>
-	<a href="https://t.me/ultraluxeart" title="Youtube" target="_blank" class="gi">
-		<figure>
-			<img class="you" src="icon/tg1.png" alt="telegram">
-		</figure>
-	</a>
-	<!-- <a href="https://twitter.com/SpursOfficial" title="Twitter" target="_blank" class="gi">
-		<figure>
-			<img class="you" src="icon/twitter.png" alt="twitter">
-		</figure>
-	</a> -->
-	<p class="copyright"><a href="mailto:ultraluxe43@gmail.com" title="Mail us" class="copyright">Ultraluxe Designs</a> all rights reserved © <span id="year"></span></p>
-	<script src="scripts/year.js" charset="utf-8"></script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
+       ym(54894073, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+       });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/54894073" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 
-	</footer>
-
-	<script type="text/javascript">
-	let progress = document.getElementById('progressbar');
-	let totalHeight = document.body.scrollHeight - window.innerHeight;
-	window.onscroll = function(){
-		let progressHeight = (window.pageYOffset / totalHeight) * 100;
-		progress.style.height = progressHeight + "%";
-	}
-	</script>
-
-
-	</body>
+  </body>
 </html>
