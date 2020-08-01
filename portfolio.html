@@ -17,7 +17,9 @@
 
     <title>Ultraluxe | Portfolio</title>
   </head>
+
   <body>
+
     <div id="progressbar"></div>
     <div id="scrollpath"></div>
 
@@ -31,6 +33,7 @@
         <li><a href="http://ultraluxe.tk/contact">Contact</a></li>
       </ul>
     </nav>
+
     <section class="portfoliobanner" id="sec">
       <header id="header">
         <a href="http://ultraluxe.tk/home" class="logo">Ultraluxe</a>
@@ -112,6 +115,7 @@
 
         </div>
 
+        <a href="#header" id="scrolltotop" class="scrolltop">↑</a>
 
       </div>
 
@@ -161,6 +165,21 @@
         lastScrollTop = scrollTop;
       })
     </script>
+
+    <!-- SCROLL TO TOP -->
+    <!-- <script type="text/javascript">
+      var lastScrollTop = 0;
+      scrolltotop = document.getElementById("scrolltotop");
+      window.addEventListener("scroll", function(){
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop){
+          scrolltotop.style.opacity = "0";
+        } else {
+          scrolltotop.style.opacity = "1";
+        }
+        lastScrollTop = scrollTop;
+      })
+    </script> -->
 
     <!-- PROGRESS BAR -->
     <script type="text/javascript">

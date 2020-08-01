@@ -1,4 +1,4 @@
-/* $pink: #ec008c;
+/* $pink: #ec008c; #ffbafe - lightpink
 $orange: #f25a28;
 $mid-gradient: #ef2d5b*/
 
@@ -14,6 +14,7 @@ html {
 }
 body {
   background: #1b1b1d;
+  height: 100%;
 }
 nav {
   top: -70px;
@@ -763,4 +764,27 @@ footer a:hover {
 }
 .contact-content .copyright a:hover {
   color: #ec008c;
+}
+
+#scrolltotop {
+  margin-top: 100px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  /* justify-content: center; */
+  padding: 10px;
+  height: 50px;
+  color: #fff;
+  z-index: 1001;
+  background: #1b1b1d;
+  display: inline-block;
+  opacity: 1;
+  text-decoration: none;
+  transition: 0.5s;
+  font-size: 1.15em;
+  font-weight: 900;
+}
+
+#scrolltotop:hover {
+  background: #2c2c2e;
 }
