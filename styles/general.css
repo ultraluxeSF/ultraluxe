@@ -273,7 +273,14 @@ header #toggle:after {
   /* filter: invert(1); */
   mix-blend-mode: difference;
 }
-
+@media (max-width: 850px){
+  .portfolio-content .pics .ppics {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: 0.5s;
+  }
+}
 @media (max-width: 767px){
   header {
     padding: 20px 50px;
@@ -348,8 +355,127 @@ header #toggle:after {
     margin: initial;
     margin-right: 10px;
   }
+
+  .portfoliobanner .ppics {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: 0.5s;
+  }
+
+  .pics {
+    margin-top: 25px;
+  }
+  .portfoliobanner .ppics-long {
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+    transition: 0.5s;
+  }
+  .brand {
+    display: none;
+  }
+  .portfolio-content .pics .ppics {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: 0.5s;
+  }
+  .recentimg {
+    display: none;
+  }
 }
 
+@media (max-width: 650px){
+  header {
+    padding: 20px 50px;
+  }
+  .banner {
+    padding: 100px 50px 150px;
+  }
+  .banner h2{
+    font-size: 1.8em;
+  }
+  .banner .content p,
+  .banner .content a {
+    font-size: 1em;
+  }
+  .banner.active {
+    transform: translateX(-250px);
+  }
+
+  .banner2 {
+    padding: 100px 50px 150px;
+}
+  .banner2 h2{
+    font-size: 1.8em;
+  }
+  .banner2 .content2 p,
+  .banner2 .content2 a {
+    font-size: 0.9em;
+  }
+  .banner2.active {
+    transform: translateX(-250px);
+  }
+  .aboutbanner {
+    padding: 100px 50px 150px;
+}
+  .aboutbanner h2{
+    font-size: 1.6em;
+  }
+  .aboutbanner .content p,
+  .aboutbanner .content a {
+    font-size: 1em;
+  }
+  .aboutbanner.active {
+    transform: translateX(-250px);
+  }
+  .contactbanner {
+    padding: 100px 50px 150px;
+}
+  .contactbanner h2{
+    font-size: 1.8em;
+  }
+  .contactbanner .contact-content p,
+  .contactbanner .contact-content a {
+    font-size: 1em;
+  }
+  .contactbanner.active {
+    transform: translateX(-250px);
+  }
+  #navigation {
+    width: 250px;
+  }
+  #navigation ul li a{
+    font-size: 1.5em;
+    margin: 5px 0;
+  }
+  .sci {
+    position: absolute;
+    bottom: 50px;
+    right: initial;
+    flex-direction: row;
+  }
+  .sci li a {
+    margin: initial;
+    margin-right: 10px;
+  }
+
+  .portfolio-content .pics .ppics {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    transition: 0.5s;
+  }
+}
+@media (max-width: 410px){
+  .portfolio-content .pics .ppics {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: 0.5s;
+  }
+}
 .smoothscroll {
   width: 100%;
   height: 100%;
