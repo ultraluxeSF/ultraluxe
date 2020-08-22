@@ -317,17 +317,17 @@ header #toggle:after {
     transform: translateX(-250px);
   }
 
-  .banner2 {
+  #sec2 {
     padding: 100px 50px 150px;
 }
-  .banner2 h2{
+  #sec2 h2{
     font-size: 1.8em;
   }
-  .banner2 .content2 p,
-  .banner2 .content2 a {
+  #sec2 .content2 p,
+  #sec2 .content2 a {
     font-size: 1em;
   }
-  .banner2.active {
+  #sec2.active {
     transform: translateX(-250px);
   }
   .aboutbanner {
@@ -343,17 +343,17 @@ header #toggle:after {
   .aboutbanner.active {
     transform: translateX(-250px);
   }
-  .contactbanner {
+  #sec {
     padding: 100px 50px 150px;
 }
-  .contactbanner h2{
+  #sec h2{
     font-size: 1.8em;
   }
-  .contactbanner .contact-content p,
-  .contactbanner .contact-content a {
+  #sec .contact-content p,
+  #sec .contact-content a {
     font-size: 1em;
   }
-  .contactbanner.active {
+  #sec.active {
     transform: translateX(-250px);
   }
   #navigation {
@@ -402,6 +402,9 @@ header #toggle:after {
   .portfoliobanner .portfolio-content p,
   .portfoliobanner .portfolio-content a {
     font-size: 1em;
+  }
+  #sec .contact-content .copyr .copyright {
+    font-size: 0.7em;
   }
 
   /* nav ul li a {
