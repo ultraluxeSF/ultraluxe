@@ -406,6 +406,10 @@ header #toggle:after {
   #sec .contact-content .copyr .copyright {
     font-size: 0.7em;
   }
+  .portfoliobanner .pics .ppics:hover {
+    border-bottom: 1vh solid #ec008c;
+    transition: border 0.5;
+  }
 
   /* nav ul li a {
     padding: 15px;
@@ -677,10 +681,14 @@ header #toggle:after {
   width: 25%;
   height: auto;
   object-fit: cover;
-  transition: border 0.5s;
-
+  transition: 0.5s;
 }
-
+.banner2 .recentimg:hover {
+  /* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3); */
+  /* border-bottom: 20px solid #ec008c; */
+  /* outline: 10px solid red;
+  outline-offset: -30px; */
+}
 
 /* FOOTER */
 
@@ -895,10 +903,12 @@ footer a:hover {
   width: 300px;
   height: 300px;
   object-fit: cover;
-  transition: 0.5s;
+  transition: border 0.5s;
 }
 .portfoliobanner .ppics:hover {
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+  /* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3); */
+  border-bottom: 2vh solid #ec008c;
+  transition: border 0.5;
 }
 .pics {
   margin-top: 25px;
