@@ -284,6 +284,23 @@ header #toggle:after {
     margin: initial;
     margin-right: 10px;
   }
+  #sec {
+    padding: 100px 50px 150px;
+  }
+  #sec h2{
+    font-size: 1.8em;
+  }
+  #sec .contact-content p,
+  #sec .contact-content a {
+    font-size: 1em;
+  }
+  header {
+    padding: 20px 50px;
+  }
+  .contactbanner {
+    background: #1b1b1d !important; 
+  }
+
 }
 @media (max-width: 1000px){
   .brand {
@@ -982,4 +999,15 @@ footer a:hover {
 
 #scrolltotop:hover {
   background: #2c2c2e;
+}
+
+#trustpilot {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-top: -9px;
+  margin-left: -6px;
+}
+.trustpilot-widget {
+  margin-top: 25px;
 }
