@@ -91,7 +91,8 @@ ul li a:hover:before {
   color: #fff;
   z-index: 6000;
   font-size: 1.5em;
-  margin-top: 400px;
+  margin-top: 500px;
   opacity: 0.05;
   text-transform: uppercase;
+	letter-spacing: 4px;
 }
