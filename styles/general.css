@@ -294,13 +294,17 @@ header #toggle:after {
   #sec .contact-content a {
     font-size: 1em;
   }
+  #sec .artwork-content p,
+  #sec .artwork-content a {
+    font-size: 1em;
+  }
+
   header {
     padding: 20px 50px;
   }
   .contactbanner {
-    background: #1b1b1d !important; 
+    background: #1b1b1d !important;
   }
-
 }
 @media (max-width: 1000px){
   .brand {
@@ -368,6 +372,10 @@ header #toggle:after {
   }
   #sec .contact-content p,
   #sec .contact-content a {
+    font-size: 1em;
+  }
+  #sec .artwork-content p,
+  #sec .artwork-content a {
     font-size: 1em;
   }
   #sec.active {
@@ -494,6 +502,10 @@ header #toggle:after {
   }
   .contactbanner .contact-content p,
   .contactbanner .contact-content a {
+    font-size: 1em;
+  }
+  .artwork-banner .artwork-content p,
+  .artwork-banner .artwork-content a {
     font-size: 1em;
   }
   .contactbanner.active {
@@ -868,7 +880,7 @@ footer a:hover {
   /* background: url('../images/contactbanner.svg'); */
   background-size: cover;
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   align-items: center;
   transition: 0.5s;
   z-index: 1;
@@ -926,6 +938,7 @@ footer a:hover {
   /* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3); */
   border-bottom: 2vh solid #ec008c;
   transition: border 0.5;
+  cursor: pointer;
 }
 .pics {
   margin-top: 25px;
@@ -1010,4 +1023,106 @@ footer a:hover {
 }
 .trustpilot-widget {
   margin-top: 25px;
+}
+
+
+
+
+/* ----------DESIGNS---------- */
+
+
+
+.artwork-banner.active header #toggle:before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+.artwork-banner.active header #toggle:after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(-45deg);
+  transition: 0.5s;
+}
+.artwork-banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  background: #1b1b1d;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  z-index: 1;
+  scroll-snap-type: y mandatory;
+  scroll-snap-align: start;
+  /* text-align: center; */
+  justify-content: space-around;
+}
+.artwork-banner.active {
+  transform: translateX(-400px);
+  z-index: 2;
+}
+
+.artwork-content {
+  max-width: 800px;
+  margin-top: 100px;
+}
+.artwork-content h2 {
+  color: #fff;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+}
+.artwork-content h2 span {
+  color: #ec008c;
+  /* font-size: 1.2em; */
+}
+.artwork-content .p1 {
+  margin-top: 50px;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 400;
+}
+.artwork-content p {
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 400;
+}
+.artwork-content .hashtags {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #666;
+  font-weight: 400;
+}
+.artwork-content .date {
+  margin-top: 25px;
+  font-size: 1em;
+  color: #666;
+  font-weight: 400;
+  float: right;
+}
+.artwork-content a:hover {
+  z-index: 1000;
+  color: #ec008c;
+}
+
+.artwork-content a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 300;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.artwork-content iframe {
+  margin-top: 20px;
+}
+.artwork {
+  width: 800px;
+  height: 100%;
+  object-fit: cover;
+  transition: border 0.5s;
+  margin-top: 50px;
 }
