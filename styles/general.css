@@ -310,7 +310,13 @@ header #toggle:after {
   .brand {
     display: none;
   }
-
+  .artwork-content .artwork {
+    width: 700px;
+    height: 100%;
+    object-fit: cover;
+    transition: border 0.5s;
+    margin-top: 50px;
+  }
 }
 @media (max-width: 850px){
   .portfolio-content .pics .ppics {
@@ -318,6 +324,13 @@ header #toggle:after {
     height: 200px;
     object-fit: cover;
     transition: 0.5s;
+  }
+  .artwork-content .artwork {
+    width: 700px;
+    height: 100%;
+    object-fit: cover;
+    transition: border 0.5s;
+    margin-top: 50px;
   }
 }
 @media (max-width: 767px){
@@ -435,7 +448,13 @@ header #toggle:after {
     border-bottom: 1vh solid #ec008c;
     transition: border 0.5;
   }
-
+  .artwork-content .artwork {
+    width: 600px;
+    height: 100%;
+    object-fit: cover;
+    transition: border 0.5s;
+    margin-top: 50px;
+  }
   /* nav ul li a {
     padding: 15px;
     font-size: 0.65em;
@@ -545,6 +564,13 @@ header #toggle:after {
     font-size: 0.9em;
     margin-left: 5px;
   }
+  .artwork-content .artwork {
+    width: 370px;
+    height: 100%;
+    object-fit: cover;
+    transition: border 0.5s;
+    margin-top: 50px;
+  }
 }
 
 /* 410 PX */
@@ -565,6 +591,13 @@ header #toggle:after {
     padding: 15px;
     font-size: 0.65em;
     margin-left: 5px;
+  }
+  .artwork-content .artwork {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+    transition: border 0.5s;
+    margin-top: 50px;
   }
 }
 .smoothscroll {
@@ -1116,9 +1149,7 @@ footer a:hover {
   overflow: hidden;
   transition: 0.5s;
 }
-.artwork-content iframe {
-  margin-top: 20px;
-}
+
 .artwork {
   width: 800px;
   height: 100%;
