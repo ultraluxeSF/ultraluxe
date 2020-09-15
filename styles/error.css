@@ -56,7 +56,7 @@ body {
   text-align: center;
   font-size: 13px;
 }
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   body, #message {
     margin-top: 0;
     background: white;
@@ -65,7 +65,7 @@ body {
   body {
     border-top: 16px solid #ffa100;
   }
-}
+} */
 #message h4 {
   margin-top: 50px;
   font-size: 20px;
