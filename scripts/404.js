@@ -197,7 +197,7 @@ function Eye( canvas, x, y, scale, time ) {
 		this.context.translate(this.iris.x*0.1,0);
 		this.context.scale(0.9,1);
 		this.context.strokeStyle = 'rgba(0,0,0,0.5)';
-		this.context.fillStyle = 'rgba(130,50,90,0.9)';
+		this.context.fillStyle = 'rgba(236, 0, 140, 0.9)';
 		this.context.lineWidth = 2;
 		this.context.beginPath();
 		this.context.arc(this.iris.x, this.iris.y, this.iris.size, 0, Math.PI*2, true);
