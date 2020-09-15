@@ -202,6 +202,9 @@ header #toggle:after {
   color: #fff;
   font-size: 2.5em;
 }
+.content h2:hover {
+  cursor: default;
+}
 .content h2 span {
   color: #ec008c;
   font-size: 1.2em;
@@ -671,6 +674,10 @@ header #toggle:after {
   color: #fff;
   font-size: 2.5em;
 }
+.content2 h2:hover {
+  cursor: default;
+}
+
 .content2 h2 span {
   color: #ec008c;
   font-size: 1.2em;
@@ -863,6 +870,9 @@ footer a:hover {
   color: #fff;
   font-size: 2.5em;
 }
+.contact-content h2:hover {
+  cursor: default;
+}
 .contact-content h2 span {
   color: #ec008c;
   font-size: 1.2em;
@@ -989,7 +999,7 @@ footer a:hover {
 /* UNNECESSARY */
 .copyr {
   position: absolute;
-  margin-top: 50px;
+  margin-top: 35px;
 }
 #navigation span, .copyright {
   color: #fff;
@@ -1106,6 +1116,9 @@ footer a:hover {
   font-size: 2.5em;
   letter-spacing: 2px;
 }
+.artwork-content h2:hover {
+  cursor: default;
+}
 .artwork-content h2 span {
   color: #ec008c;
   /* font-size: 1.2em; */
@@ -1128,12 +1141,21 @@ footer a:hover {
   color: #666;
   font-weight: 400;
 }
+.artwork-content .hashtags:hover {
+  cursor: default;
+}
 .artwork-content .date {
   margin-top: 25px;
   font-size: 1em;
   color: #666;
   font-weight: 400;
   float: right;
+  transition: 0.5s;
+
+}
+.artwork-content .date:hover {
+  color: #fff;
+  cursor: default;
 }
 .artwork-content a:hover {
   z-index: 1000;
