@@ -981,7 +981,10 @@ footer a:hover {
   /* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3); */
   border-bottom: 2vh solid #ec008c;
   transition: border 0.5;
-  cursor: pointer;
+  cursor: default;
+}
+.portfoliobanner a .ppics:hover {
+  cursor: pointer !important;
 }
 .pics {
   margin-top: 25px;
