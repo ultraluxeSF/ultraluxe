@@ -186,7 +186,7 @@ header #toggle:after {
   transition: 0.5s;
 }
 #navigation ul:hover li a {
-  opacity: 0;
+  opacity: 0.5;
 }
 #navigation ul li a:hover {
   transform: scale(1.4);
@@ -276,7 +276,9 @@ header #toggle:after {
   /* filter: invert(1); */
   mix-blend-mode: difference;
 }
-@media (max-width: 1200px){
+
+
+@media (max-width: 1450px){
   .sci {
     position: absolute;
     bottom: 50px;
