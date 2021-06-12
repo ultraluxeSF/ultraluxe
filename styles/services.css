@@ -1,0 +1,58 @@
+.table {
+  margin-top: 35px;
+  border: 1px solid #2b2b2d;
+  text-align: left;
+}
+th {
+  color: #ffbafe;
+  padding: 10px;
+  border: 1px solid #2b2b2d;
+}
+
+td {
+  padding: 10px;
+  color: #fff;
+  border: 1px solid #2b2b2d;
+}
+
+.best-deal {
+  color: #f25a28;
+}
+
+.price {
+  color: #ffbafe;
+  font-weight: bold;
+}
+.dmm {
+  float: left;
+  margin-top: 35px;
+  font-size: 1em !important;
+
+}
+.dm {
+  font-size: 1em !important;
+  color: #666;
+  font-weight: 400;
+}
+.moddate {
+  font-size: 1em !important;
+  color: #666;
+  font-weight: 400;
+  transition: 0.5s;
+}
+.moddate:hover {
+  color: #fff;
+  cursor: default;
+}
+.linq {
+  text-decoration: underline !important;
+  color: #fff !important;
+  transition: 0.5s;
+}
+.linq:hover {
+  color: #ec008c !important;
+}
+
+.btn {
+  margin-top: 35px !important;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <meta name="theme-color" content="#1b1b1d" />
+    <meta name="description" content="Ultraluxe Designs. The most recent designs created by Ultraluxe. Graphic Design Portfolio. Web Design. Artwork. Logotypes. Logo creation. Graphic Designer in Uzbekistan.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/progressbar.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/services.css">
+
+    <link rel="icon" href="images/Logoh.png">
+
+    <!-- TrustBox script -->
+    <!-- <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script> -->
+    <!-- End TrustBox script -->
+
+    <!-- <script src="scripts/scrollreveal.js" defer></script>
+    <script src="scripts/reveal.js" defer></script> -->
+
+    <title>Ultraluxe | Services</title>
+
+  </head>
+  <body>
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+
+    <nav id="navbar">
+      <a href="http://ultraluxe.tk/home" class="brand">Ultraluxe</a>
+      <ul>
+        <li><a href="http://ultraluxe.tk/home">Home</a></li>
+        <li><a href="http://ultraluxe.tk/portfolio">Portfolio</a></li>
+        <li><a href="http://ultraluxe.tk/services" class="active-a">Services</a></li>
+        <li><a href="http://ultraluxe.tk/about">About</a></li>
+        <li><a href="http://ultraluxe.tk/contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="servbanner" id="sec">
+      <header id="header">
+        <a href="http://ultraluxe.tk/home" class="logo">Ultraluxe</a>
+        <div class="toggle" id="toggle" onclick="toggle()"></div>
+      </header>
+      <div class="serv-content">
+        <table class="table">
+          <tr>
+            <th>Service</th>
+            <th>Starting Price</th>
+            <th>Notes*</th>
+          </tr>
+          <tr>
+            <td class="best-deal">Logotype Creation</td>
+            <td class="price">$75.00</td>
+            <td class="best-deal">BEST DEAL</td>
+          </tr>
+          <tr>
+            <td>Avatar Creation</td>
+            <td class="price">$55.00</td>
+            <td>Depends on complexity</td>
+          </tr>
+          <tr>
+            <td>Banner Creation</td>
+            <td class="price">$55.00</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>UI Design</td>
+            <td class="price">$109.00</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Mobile UI</td>
+            <td class="price">$125.00</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Picture Processing</td>
+            <td class="price">$6.99</td>
+            <td>Depends on complexity (per picture)</td>
+          </tr>
+          <tr>
+            <td>Photoshop Services</td>
+            <td>~</td>
+            <td><a href="https://docs.google.com/spreadsheets/d/1qXdJAKW5RIDjpzUy4SgB9glQAT4fiaZ1UkVF9o3zYLM/edit#gid=162785300" target="_blank" class="linq">Depends on the type of service</a></td>
+          </tr>
+          <tr>
+            <td>Drawing a Portrait (head only)</td>
+            <td class="price">$45.00</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Design of a Telegram Post</td>
+            <td class="price">$15.00</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Design of a Telegram Channel</td>
+            <td class="price">$75.00</td>
+            <td>(Avatar + Post Designs)</td>
+          </tr>
+
+        </table>
+
+        <div class="content">
+          <a class="btn" href="http://ultraluxe.tk/contact">Contact Me</a>
+        </div>
+        <p class="dmm"><span class="dm">Date Modified: </span><span class ="moddate" title="Date modified">12.06.2021</span></p>
+
+      </div>
+      <ul class="sci">
+        <li><a href="https://www.instagram.com/utraluxe/" target="_blank"><img src="images/instagram.png"></a></li>
+        <li><a href="https://t.me/ultraluxe" target="_blank"><img src="images/tg1.png"></a></li>
+        <li><a href="https://www.youtube.com/c/ultraluxe" target="_blank"><img src="images/youtube.png"></a></li>
+      </ul>
+    </section>
+
+    <div id="navigation">
+      <ul>
+        <li><a href="http://ultraluxe.tk/home">Home</a></li>
+        <li><a href="http://ultraluxe.tk/portfolio">Portfolio</a></li>
+        <li><a href="http://ultraluxe.tk/services">Services</a></li>
+        <li><a href="http://ultraluxe.tk/about">About</a></li>
+        <li><a href="http://ultraluxe.tk/contact">Contact</a></li>
+      </ul>
+
+    </div>
+
+    <!-- <footer>
+      <p class="copyright"><a href="mailto:info@ultraluxe.tk" title="Mail us" class="copyright">Ultraluxe Designs</a> all rights reserved © <span id="year"></span></p>
+      <script src="scripts/year.js" charset="utf-8"></script>
+    </footer> -->
+    <!-- NAVIGATION TOGGLE -->
+    <script type="text/javascript">
+      function toggle(){
+        var sec = document.getElementById('sec');
+        var nav = document.getElementById('navigation');
+        sec.classList.toggle('active');
+        nav.classList.toggle('active');
+      }
+
+    </script>
+
+    <!-- NAVIGATION HIDE/REVEAL -->
+    <script type="text/javascript">
+      var lastScrollTop = 0;
+      navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", function(){
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop){
+          navbar.style.top = "0";
+        } else {
+          navbar.style.top = "-70px";
+        }
+        lastScrollTop = scrollTop;
+      })
+    </script>
+
+    <!-- PROGRESS BAR -->
+    <script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+      let progressHeight = (window.pageYOffset / totalHeight) * 100;
+      progress.style.height = progressHeight + "%";
+    }
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+       ym(54894073, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+       });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/54894073" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+
+  </body>
+</html>
