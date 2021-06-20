@@ -17,6 +17,8 @@
 	top: 0;
 	right: 0;
 	width: 0.1vw;
+	/* background: linear-gradient(to top, #666666, #1a1a1a); */
+
 	background: linear-gradient(to top, #f25a28, #ec008c);
 	animation: animate 5s linear infinite;
 	z-index: 53;

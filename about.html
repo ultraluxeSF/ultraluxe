@@ -3,16 +3,18 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
     <meta name="theme-color" content="#1b1b1d" />
-    <meta name="description" content="Ultraluxe Designs. The most recent designs created by Ultraluxe. Graphic Design Portfolio. Web Design. Artwork. Logotypes. Logo creation. Graphic Designer in Uzbekistan.">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/progressbar.css">
-    <link rel="stylesheet" href="styles/general.css">
-    <link rel="icon" href="images/Logoh.png">
-    <script src="scripts/scrollreveal.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="scripts/reveal.js" defer></script>
 
-    <title>Ultraluxe | About</title>
+    <link rel="icon" href="images/Logoh.png">
+
+    <title>Ultraluxe Designs | About</title>
 
     <!-- GOOGLE -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -28,78 +30,46 @@
 
   </head>
   <body>
-    <div id="progressbar"></div>
     <div id="scrollpath"></div>
 
     <nav id="navbar">
-      <a href="http://ultraluxe.tk/home" class="brand">Ultraluxe</a>
-      <ul>
-        <li><a href="http://ultraluxe.tk/home">Home</a></li>
-        <li><a href="http://ultraluxe.tk/portfolio">Portfolio</a></li>
-        <li><a href="http://ultraluxe.tk/services">Services</a></li>
-        <li><a href="http://ultraluxe.tk/about" class="active-a">About</a></li>
-        <li><a href="http://ultraluxe.tk/contact">Contact</a></li>
+      <span class="udlogo"><a href="D:\Luxe\UD\dist-v3\index.html">Ultraluxe</a></span>
+      <span class="grd">Graphic Design</span>
+      <a href="D:\Luxe\UD\dist-v3\index.html" class="centerlogo"></a>
+
+      <ul class="navbtns">
+        <li><a class="activelink" href="D:\Luxe\UD\dist-v3\about.html">About</a></li>
+        <li><a href="D:\Luxe\UD\dist-v3\contact.html">Contact</a></li>
+        <li><a href="https://www.instagram.com/utraluxe" target="_blank">Instagram</a></li>
+        <li><a href="https://www.trustpilot.com/review/ultraluxe.tk" target="_blank">Trustpilot</a></li>
+
       </ul>
     </nav>
-    <section class="aboutbanner" id="sec">
-      <header id="header">
-        <a href="http://ultraluxe.tk/home" class="logo">Ultraluxe</a>
-        <div class="toggle" id="toggle" onclick="toggle()"></div>
-      </header>
-      <div class="content">
-        <h2>About<br>Who's <span>Ultraluxe?</span></h2>
-        <p class="paragraph">Ultraluxe is a passionate graphic designer that loves creating elegant and thoroughly made designs.</p>
-        <a class="btn" href="http://ultraluxe.tk/contact">Contact</a>
+
+<!-- NAVIGATION END -->
+
+    <section class="aboutsection">
+      <h1 class="aboutheader">About</h1>
+      <h2 class="abouttextmain">Ultraluxe is a passionate graphic designer that loves creating elegant and thoroughly made designs. Mostly specialized on graphic design.</h2>
+      <div class="decoration1"></div>
+      <p class="abouttext1">What services does Ultraluxe provide?</p>
+      <div class="services">
+        <li class="abouttext2">- Logotype Creation</li>
+        <li class="abouttext2">- Avatar Creation</li>
+        <li class="abouttext2">- Banner Creation</li>
+        <li class="abouttext2">- UI Design</li>
+        <li class="abouttext2">- Mobile UI</li>
+        <li class="abouttext2">- Picture Processing</li>
+        <li class="abouttext2">- Photoshop Services</li>
+        <li class="abouttext2">- Drawing a Portrait (head only)</li>
+        <li class="abouttext2">- Social Media Post Design</li>
       </div>
-      <ul class="sci">
-        <li><a href="https://www.instagram.com/utraluxe/" target="_blank"><img src="images/instagram.png"></a></li>
-        <li><a href="https://t.me/ultraluxe" target="_blank"><img src="images/tg1.png"></a></li>
-        <li><a href="https://www.youtube.com/c/ultraluxe" target="_blank"><img src="images/youtube.png"></a></li>
-      </ul>
+      <p class="interested">Interested?</p>
+      <p class="contactmemargin"><a class="contactme" href="D:\Luxe\UD\dist-v3\contact.html" title="Contact Me">Contact Me</a></p>
+
     </section>
-
-    <div id="navigation">
-      <ul>
-        <li><a href="http://ultraluxe.tk/home">Home</a></li>
-        <li><a href="http://ultraluxe.tk/portfolio">Portfolio</a></li>
-        <li><a href="http://ultraluxe.tk/services">Services</a></li>
-        <li><a href="http://ultraluxe.tk/about">About</a></li>
-        <li><a href="http://ultraluxe.tk/contact">Contact</a></li>
-      </ul>
-      <!-- <p class="copyright"><a href="mailto:ultraluxe43@gmail.com" title="Mail us" class="copyright">Ultraluxe Designs</a> all rights reserved © <span id="year"></span></p>
-      <script src="scripts/year.js" charset="utf-8"></script> -->
-
-    </div>
-
-    <!-- <footer>
-      <p class="copyright"><a href="mailto:ultraluxe43@gmail.com" title="Mail us" class="copyright">Ultraluxe Designs</a> all rights reserved © <span id="year"></span></p>
-      <script src="scripts/year.js" charset="utf-8"></script>
-    </footer> -->
-    <!-- NAVIGATION TOGGLE -->
-    <script type="text/javascript">
-      function toggle(){
-        var sec = document.getElementById('sec');
-        var nav = document.getElementById('navigation');
-        sec.classList.toggle('active');
-        nav.classList.toggle('active');
-      }
-
-    </script>
-
-    <!-- NAVIGATION HIDE/REVEAL -->
-    <script type="text/javascript">
-      var lastScrollTop = 0;
-      navbar = document.getElementById("navbar");
-      window.addEventListener("scroll", function(){
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        if (scrollTop > lastScrollTop){
-          navbar.style.top = "0";
-        } else {
-          navbar.style.top = "-70px";
-        }
-        lastScrollTop = scrollTop;
-      })
-    </script>
+    <section class="aboutbanner">
+    </section>
 
     <!-- PROGRESS BAR -->
     <script type="text/javascript">
@@ -110,6 +80,8 @@
       progress.style.height = progressHeight + "%";
     }
     </script>
+
+
 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
@@ -126,6 +98,11 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/54894073" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
-
   </body>
+
+  <footer>
+    <p class="copyright"><a href="mailto:info@ultraluxe.tk" title="Mail us" class="copyrighta">Ultraluxe Designs</a> all rights reserved © <span id="year"></span></p>
+    <script src="scripts/year.js" charset="utf-8"></script>
+  </footer>
+
 </html>
