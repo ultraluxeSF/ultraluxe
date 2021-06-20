@@ -258,14 +258,8 @@ nav {
   }
 
   .scrolltop {
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 1.2em;
-    position: absolute;
-    float: left !important;
-    margin-right: 85% !important;
-    transition: 0.2s;
-    color: #1b1b1d;
+    float: right !important;
+    margin-left: 85%;
   }
 
 }
@@ -368,13 +362,16 @@ nav {
 /* FOOTER */
 
 footer {
-  padding: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 42px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   /* box-shadow: inset 0px 0px 10px rgba(0,0,0,0.1); */
   border-top: 1px solid #eee;
-  text-align: center;
+  text-align: left;
 }
 .copyright {
   font-size: 0.7em;
@@ -392,8 +389,8 @@ footer {
   text-decoration: none;
   font-size: 1.2em;
   position: absolute;
-  float: left !important;
-  margin-right: 95%;
+  float: right !important;
+  margin-left: 95%;
   transition: 0.2s;
   color: #1b1b1d;
 }
