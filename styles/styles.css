@@ -351,18 +351,14 @@ nav {
     margin-top: 45px;
     font-size: 0.8em;
   }
-  footer {
-
-
-  }
 
   .copyright {
-    text-align: center;
-    margin-left: 10%;
+    /* text-align: center;
+    margin-left: 10%; */
   }
-  .copyrighta {
+  .scrolltop {
+    display: none !important;
   }
-
 }
 
 /* RESPONSIVE LAYOUT END */

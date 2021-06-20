@@ -1,1 +1,1 @@
-ScrollReveal().reveal('.image');
+ScrollReveal().reveal('.ppic');
