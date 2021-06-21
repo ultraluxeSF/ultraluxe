@@ -17,9 +17,9 @@
 	top: 0;
 	right: 0;
 	width: 0.1vw;
-	/* background: linear-gradient(to top, #666666, #1a1a1a); */
+	background: linear-gradient(to top, #999, #666666);
 
-	background: linear-gradient(to top, #f25a28, #ec008c);
+	/* background: linear-gradient(to top, #f25a28, #ec008c); */
 	animation: animate 5s linear infinite;
 	z-index: 53;
 }
@@ -33,14 +33,17 @@
 		filter: hue-rotate(360deg);
 	}
 } */
-#progressbar:before{
+
+/* GLOWING */
+
+/* #progressbar:before{
 	position: absolute;
 	content: '';
 	top: 0;
 	right: 0;
 	width: 0.1vw;
 	height: 100%;
-	background: linear-gradient(to top, #f25a28, #ec008c);
+	background: linear-gradient(to top, #eeeeee, #666666);
 	filter: blur(5px);
 }
 #progressbar:after{
@@ -50,6 +53,6 @@
 	right: 0;
 	width: 0.1vw;
 	height: 100%;
-	background: linear-gradient(to top, #f25a28, #ec008c);
+	background: linear-gradient(to top, #eee, #666);
 	filter: blur(10px);
-}
+} */
