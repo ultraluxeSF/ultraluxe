@@ -153,6 +153,13 @@ nav {
   }
 }
 
+@media (max-width: 350px){
+.adesign {
+  width: 100% !important;
+}
+
+}
+
 @media (max-width: 450px){
 
   nav {
@@ -235,6 +242,9 @@ nav {
     text-decoration: underline;
   }
 
+  .adesign {
+    width: 100% !important;
+  }
 
 
 }
@@ -261,6 +271,10 @@ nav {
   .scrolltop {
     float: right !important;
     margin-left: 85%;
+  }
+
+  .adesign {
+    width: 100%;
   }
 
 }
@@ -293,7 +307,9 @@ nav {
 .aboutsection {
   width: 800px;
 }
-
+.adesign {
+  width: 100% !important;
+}
 }
 
 @media (max-width: 1500px){
@@ -354,6 +370,8 @@ nav {
   .scrolltop {
     display: none !important;
   }
+
+
 }
 
 /* RESPONSIVE LAYOUT END */
@@ -658,4 +676,8 @@ footer {
   text-align: right;
   margin-top: 45px;
   font-size: 0.8em;
+}
+
+.adesign {
+  width: 100% !important;
 }
