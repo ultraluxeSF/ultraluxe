@@ -354,8 +354,22 @@ nav {
     text-align: center !important;
     position: relative;
   }
-
+  .designheader-wide {
+    font-size: 1.5em !important;
+    font-weight: 800;
+    /* letter-spacing: 1px; */
+    color: #1b1b1d;
+    text-align: center !important;
+    position: relative;
+  }
   .tags {
+    color: #aaa;
+    font-weight: 300;
+    text-align: center !important;
+    margin-top: 45px;
+    font-size: 0.8em;
+  }
+  .tags-wide {
     color: #aaa;
     font-weight: 300;
     text-align: center !important;
@@ -661,6 +675,19 @@ footer {
   display: inline-grid;
 }
 
+.designsection-wide {
+  padding-bottom: 42px;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  display: inline-grid;
+}
+
 .designheader {
   font-size: 2em;
   font-weight: 800;
@@ -669,6 +696,16 @@ footer {
   text-align: left;
   position: relative;
 }
+.designheader-wide {
+  font-size: 2em;
+  font-weight: 800;
+  /* letter-spacing: 1px; */
+  color: #1b1b1d;
+  text-align: left;
+  position: relative;
+  padding-left: 12.5%;
+}
+
 
 .tags {
   color: #aaa;
@@ -677,7 +714,23 @@ footer {
   margin-top: 45px;
   font-size: 0.8em;
 }
+.tags-wide {
+  color: #aaa;
+  font-weight: 300;
+  text-align: right;
+  margin-top: 45px;
+  font-size: 0.8em;
+  padding-right: 12.5%;
+}
 
 .adesign {
   width: 100% !important;
+}
+
+.adesign-wide {
+  width: 75% !important;
+  text-align: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
