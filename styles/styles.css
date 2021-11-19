@@ -132,7 +132,7 @@ nav {
 
 .ppic:hover {
   /* content: url('../images/designs/onm/Sourcery-full-glowing.png'); */
-  cursor: pointer;
+  /* cursor: pointer; */
   /* opacity: 0.9; */
   transform: scale(1.015);
   box-shadow: 0px 0px 25px rgba(25,25,25,0.1);
