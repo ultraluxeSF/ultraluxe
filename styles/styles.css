@@ -445,9 +445,9 @@ footer {
 
 .abouttextmain {
   /* color: #c671cc; */
-  color: #e264bc;
-  font-size: 1.5em;
-  font-weight: 400;
+  color: #777777;
+  font-size: 1.2em;
+  font-weight: 300;
   margin-top: -50px;
 }
 
@@ -706,7 +706,13 @@ footer {
   padding-left: 12.5%;
 }
 
-
+.design-text {
+  text-align: left;
+  position: relative;
+  padding-left: 12.5%;
+  font-weight: 400;
+  font-size: 0.9em;
+}
 .tags {
   color: #aaa;
   font-weight: 300;
