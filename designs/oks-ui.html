@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <meta name="theme-color" content="#1b1b1d" />
+    <meta name="description" content="Ultraluxe Designs. Go Anadolu.">
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../styles/progressbar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../scripts/reveal.js" defer></script>
+
+    <link rel="icon" href="../images/Logoh.png">
+
+    <title>Ultraluxe Designs | OKS Technologies UI</title>
+
+    <!-- GOOGLE -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152878661-1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-152878661-1');
+</script>
+
+  </head>
+  <body>
+    <div id="progressbar"></div>
+
+    <div id="scrollpath"></div>
+
+    <nav id="navbar">
+      <span class="udlogo"><a href="http://ultraluxe.nl">Ultraluxe</a></span>
+      <span class="grd">Graphic Design</span>
+      <a href="http://ultraluxe.nl" class="centerlogo"></a>
+
+      <ul class="navbtns">
+        <li><a href="http://ultraluxe.nl/about">About</a></li>
+        <li><a href="http://ultraluxe.nl/contact">Contact</a></li>
+        <li><a id="instagram" href="https://www.instagram.com/utraluxe" target="_blank">Instagram</a></li>
+        <li><a id="trustpilot" href="https://www.trustpilot.com/review/ultraluxe.nl" target="_blank">Trustpilot</a></li>
+
+      </ul>
+    </nav>
+
+<!-- NAVIGATION END -->
+
+    <section class="designsection">
+          <h1 class="designheader-wide">OKS Technologies Landing Page UI Redesign</h1>
+          <img class="adesign" src="../images/designs/Index-iMac1c.jpg">
+          <p class="tags-wide">#it #oks #technologies #redesign #landing #ui #ux</p>
+    </section>
+
+    <!-- PROGRESS BAR -->
+    <script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+      let progressHeight = (window.pageYOffset / totalHeight) * 100;
+      progress.style.height = progressHeight + "%";
+    }
+    </script>
+
+
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+       ym(54894073, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+       });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/54894073" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+  </body>
+
+  <footer>
+    <a href="#" class="scrolltop">↑</a>
+
+    <p class="copyright"><a href="mailto:info@ultraluxe.nl" title="Mail me" class="copyrighta">Ultraluxe Designs</a> all rights reserved © <span id="year"></span></p>
+    <script src="../scripts/year.js" charset="utf-8"></script>
+  </footer>
+
+</html>
