@@ -4,7 +4,7 @@ $mid-gradient: #ef2d5b*/
 
 * {
   font-family: 'Poppins', sans-serif;
-
+  scroll-behavior: smooth;
 }
 
 body {
@@ -501,6 +501,9 @@ footer {
 .contactmemargin {
   margin-top: -25px;
 }
+.contactmemargin2 {
+  margin-top: -15px;
+}
 
 .decoration1 {
   content: url('../images/decoration1.svg');
@@ -739,4 +742,36 @@ footer {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* CV */
+
+.mesection {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mebanner {
+  content: url('../images/me2.png');
+  width: 100%;
+}
+.mebannerdiv {
+  height: 1080px;
+  text-align: center;
+}
+.cvsection2{
+  margin-top: -100px;
+}
+.indexbanner {
+  content: url('../images/mebanner.png');
+  width: 100%;
+}
+.xpline1{
+  margin-top: -50px;
+}
+.xpline{
+  margin-top: -10px;
+}
+.xptitle{
+  font-weight: 600;
 }
