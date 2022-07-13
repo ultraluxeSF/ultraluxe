@@ -177,7 +177,9 @@ nav {
     letter-spacing: 0px;
     font-size: 1em;
   }
-
+.indexbanner {
+  display: none;
+}
   .grd {
     display: none;
   }
@@ -575,11 +577,12 @@ footer {
 }
 .contacttextmain {
   /* color: #c671cc; */
-  color: #555;
+  color: #333;
   font-size: 1.5em;
   font-weight: 400;
-  margin-top: -50px;
+  margin-top: -40px;
 }
+
 .contacttitle {
   color: #1b1b1d;
   font-weight: 700;
@@ -759,8 +762,14 @@ footer {
   height: 1080px;
   text-align: center;
 }
+.cvsection{
+  margin-top: 0px;
+}
+.cvsection1{
+  margin-top: -150px;
+}
 .cvsection2{
-  margin-top: -100px;
+  margin-top: -70px;
 }
 .indexbanner {
   content: url('../images/mebanner.png');
@@ -774,4 +783,48 @@ footer {
 }
 .xptitle{
   font-weight: 600;
+}
+.xpline-date{
+  margin-top: -20px;
+  color: #9d9d9d;
+}
+.details-text{
+  margin-top: -15px;
+}
+.contacttextmain1 {
+  color: #333;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-top: -70px;
+}
+.contacttextmain2 {
+  color: #333;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.bio {
+  color: #333;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-top: 100px;
+}
+.bio-p{
+  font-weight: 400;
+}
+.details-text1{
+  margin-top: -5px;
+}
+.mename{
+  font-weight: 600;
+}
+.portfoliolink{
+  color: #141414;
+  transition: 0.2s;
+  /* height: 20px; */
+  /* padding-bottom: 50px; */
+}
+.portfoliolink:hover {
+  cursor: pointer;
+  color: #ec008c;
 }
