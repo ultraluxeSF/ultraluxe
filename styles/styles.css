@@ -161,11 +161,53 @@ nav {
 }
 
 @media (max-width: 450px){
-
-  nav {
-    padding: 15px;
+  *{
+    /* width: 360px; */
+    overflow-x: hidden;
   }
-
+  nav {
+    padding: 15px !important;
+  }
+  .contactheader{
+    font-size: 2em !important;
+    margin-top: 0px !important;
+    letter-spacing: normal !important;
+  }
+  .contacttextmain{
+    margin-top: 0px !important;
+  }
+  .contacttitle{
+    font-size: 1.2em !important;
+    margin-top: 0px !important;
+  }
+  .contactlink{
+    font-size: 1em !important;
+  }
+  .contmargin{
+    margin-top: -22px !important;
+  }
+  .decoration1{
+    display: none;
+  }
+  .xpline1{
+    margin-top: 10px !important;
+  }
+  .cvsection2{
+    margin-top: 0px !important;
+  }
+  .maincontacts{
+    margin-top: 0px !important;
+  }
+  .contacttextmain1{
+    margin-top: 10px !important;
+    font-size: 1.4em !important;
+  }
+  .xpline-date{
+    font-size: 0.8em;
+  }
+  .xpline1, .xpline {
+    font-size: 0.9em;
+  }
   #instagram {
   display: none;
 }
@@ -247,7 +289,9 @@ nav {
   .adesign {
     width: 100% !important;
   }
-
+  .additionallinks {
+    display: none;
+  }
 
 }
 
@@ -723,14 +767,14 @@ footer {
   color: #aaa;
   font-weight: 300;
   text-align: right;
-  margin-top: 45px;
+  margin-top: 5px;
   font-size: 0.8em;
 }
 .tags-wide {
   color: #aaa;
   font-weight: 300;
   text-align: right;
-  margin-top: 45px;
+  margin-top: 5px;
   font-size: 0.8em;
   padding-right: 12.5%;
 }
@@ -827,4 +871,19 @@ footer {
 .portfoliolink:hover {
   cursor: pointer;
   color: #ec008c;
+}
+.completion-date {
+  color: #aaa;
+  font-weight: 300;
+  text-align: right !important;
+  margin-top: 35px;
+  font-size: 0.8em;
+}
+.completion-date-wide {
+  color: #aaa;
+  font-weight: 300;
+  text-align: right !important;
+  margin-right: 12.5%;
+  margin-top: 35px;
+  font-size: 0.8em;
 }
