@@ -168,6 +168,16 @@ nav {
   nav {
     padding: 15px !important;
   }
+  .designheader-wide {
+    font-size: 1em !important;
+    font-weight: 700 !important;
+    /* letter-spacing: 1px; */
+    color: #1b1b1d;
+    float: left !important;
+    margin-left: 0 !important;
+    text-align: left !important;
+    position: relative;
+  }
   .contactheader{
     font-size: 2em !important;
     margin-top: 0px !important;
