@@ -27,7 +27,7 @@ body {
   transition: 0.2s;
 }
 .udlogo a:hover {
-  color: #ec008c;
+  color: #808080;
 }
 .grd {
   font-size: 0.7em;
@@ -63,9 +63,11 @@ nav {
   color: #1b1b1d;
   letter-spacing: 1px;
   transition: 0.2s;
+  /* border-bottom: 0px solid #ec008c; */
 }
 .navbtns li a:hover {
-  color: #ec008c;
+  color: #808080;
+  /* border-bottom: 1px solid #000000; */
 }
 .navbtns li .activelink {
   /* color: #ec008c; */
@@ -96,6 +98,18 @@ nav {
   cursor: pointer;
   opacity: 0.8;
 }
+
+/* .ult-ral-uxe {
+  content: url('../images/ult-ral-uxe.svg');
+  transform: scale(1.5);
+  width: 50px;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 0;
+  transition: 0.2s;
+} */
 /* NAV Panel END */
 
 /* PORTFOLIO */
