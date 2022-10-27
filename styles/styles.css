@@ -12,7 +12,12 @@ body {
 }
 
 /* NAV Panel */
-
+/* #instagram {
+  color: #F26D9F;
+}
+#trustpilot {
+  color: #04DA8D;
+} */
 .udlogo {
   letter-spacing: 1px;
   font-size: 1.3em;
@@ -239,6 +244,14 @@ nav {
   #trustpilot {
   display: none;
 }
+
+  #ui-hid {
+display: none;
+}
+
+  #logo-hid {
+display: none;
+}
   .udlogo {
     letter-spacing: 0px;
     font-size: 1em;
@@ -346,11 +359,24 @@ nav {
   .adesign {
     width: 100%;
   }
+  #instagram {
+  display: none;
+}
 
+  #trustpilot {
+  display: none;
+}
 }
 
 
 @media (max-width: 1000px){
+  #instagram {
+  display: none;
+}
+
+  #trustpilot {
+  display: none;
+}
   .ppic {
     width: 50%;
     height: auto;
@@ -386,6 +412,9 @@ nav {
   .ppic {
     width: 33.333%;
     height: auto;
+  }
+  .centerlogo {
+    display: none;
   }
 }
 
