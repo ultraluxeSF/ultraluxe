@@ -43,7 +43,10 @@ body {
   cursor: default;
 }
 nav {
-  padding: 42px;
+  padding-top: 32px;
+  padding-bottom: 24px;
+  padding-left: 32px;
+  padding-right: 32px;
   /* position: fixed; */
   width: 100%;
   display: inline-block;
@@ -95,7 +98,7 @@ nav {
   margin-left:auto;
   margin-right:auto;
   margin-top: 0;
-  top: 25px;
+  top: 20px;
   opacity: 0.2;
   transition: 0.2s;
 }
