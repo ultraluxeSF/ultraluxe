@@ -43,10 +43,10 @@ body {
   cursor: default;
 }
 nav {
-  padding-top: 32px;
-  padding-bottom: 24px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   /* position: fixed; */
   width: 100%;
   display: inline-block;
@@ -57,7 +57,7 @@ nav {
   float: right;
   margin-right: 35px;
   margin-left: 0;
-  margin-top: 0;
+  margin-top: 8px;
   padding: 0;
   display: flex;
 }
@@ -106,7 +106,56 @@ nav {
   cursor: pointer;
   opacity: 0.8;
 }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn {
+  color: #1b1b1d;
+  padding: 5px;
+  font-size: 0.8em;
+  border: none;
+  letter-spacing: 1px;
 
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+  font-size: 0.8em;
+}
+.dropdown-content a:hover {
+  color: #808080;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #808080;
+  cursor: pointer;
+}
+.dropdown-content .activelink-dropdown {
+  color: #000000;
+  font-weight: 500;
+  transition: 0.2s;
+  /* border-bottom: 1px solid #1b1b1d; */
+}
+.navbtns li .activelink:hover {
+  color: #555;
+  /* border-bottom: 1px solid #555; */
+
+}
 /* .ult-ral-uxe {
   content: url('../images/ult-ral-uxe.svg');
   transform: scale(1.5);
@@ -188,7 +237,11 @@ nav {
     overflow-x: hidden;
   }
   nav {
+    display: flex !important;
     padding: 15px !important;
+    flex-direction: row !important;
+justify-content: center !important;
+align-items: center;
   }
   .designheader-wide {
     font-size: 1em !important;
@@ -257,7 +310,8 @@ display: none;
 }
   .udlogo {
     letter-spacing: 0px;
-    font-size: 1em;
+    font-size: 1em !important;
+    margin-top: -14px;
   }
 .indexbanner {
   display: none;
@@ -344,7 +398,8 @@ display: none;
 
   .udlogo {
     letter-spacing: 0px;
-    font-size: 1.1em;
+    font-size: 1.3em;
+    /* margin-top: 14px !important; */
   }
 
   .grd {
@@ -391,7 +446,7 @@ display: none;
 .navbtns {
   margin-right: 15px;
   margin-left: 0;
-  margin-top: 0;
+  margin-top: 6px;
   padding: 0;
   display: flex;
 }
@@ -942,4 +997,12 @@ footer {
   margin-right: 12.5%;
   margin-top: 35px;
   font-size: 0.8em;
+}
+.title-link {
+  text-decoration: underline;
+  color: inherit;
+  transition: 0.2s all;
+}
+.title-link:hover{
+  color: #808080;
 }
