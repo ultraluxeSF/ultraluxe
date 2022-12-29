@@ -1,4 +1,4 @@
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
 	width: 0;
 }
 
@@ -19,10 +19,9 @@
 	width: 0.1vw;
 	background: linear-gradient(to top, #999, #666666);
 
-	/* background: linear-gradient(to top, #f25a28, #ec008c); */
 	animation: animate 5s linear infinite;
 	z-index: 53;
-}
+} */
 /* @keyframes animate{
 	0%, 100%
 	{
