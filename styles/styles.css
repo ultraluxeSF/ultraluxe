@@ -999,8 +999,8 @@ text-decoration-color: #ea0000;
 }
 .indexbanner {
   content: url('../images/mebanner.png');
-  object-fit: cover;
-  height: 400px;
+  /* object-fit: cover;
+  height: 400px; */
   width: 100%;
 }
 .xpline1{
