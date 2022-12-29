@@ -198,7 +198,7 @@ nav {
 .ppic {
   margin: 0;
   object-fit: cover;
-  width: 33.333%;
+  width: 25%;
   height: auto;
   transition: ease 0.2s all;
   opacity: 1;
