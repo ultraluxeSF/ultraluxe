@@ -1,6 +1,7 @@
 /* $pink: #ec008c; #ffbafe - lightpink
 $orange: #f25a28;
-$mid-gradient: #ef2d5b*/
+$mid-gradient: #ef2d5b
+$red:#ea0000 */
 
 * {
   font-family: 'Poppins', sans-serif;
@@ -28,7 +29,7 @@ body {
 }
 .udlogo a{
   text-decoration: none;
-  color: #1b1b1d;
+  color: #141414;
   transition: 0.2s;
 }
 .udlogo a:hover {
@@ -68,7 +69,7 @@ nav {
 .navbtns li a {
   text-decoration: none;
   font-size: 0.8em;
-  color: #1b1b1d;
+  color: #141414;
   letter-spacing: 1px;
   transition: 0.2s;
   /* text-transform: uppercase; */
@@ -113,7 +114,7 @@ nav {
   display: inline-block;
 }
 .dropbtn {
-  color: #1b1b1d;
+  color: #141414;
   padding: 5px;
   font-size: 0.8em;
   border: none;
@@ -154,7 +155,7 @@ nav {
   color: #000000;
   font-weight: 500;
   transition: 0.2s;
-  /* border-bottom: 1px solid #1b1b1d; */
+  /* border-bottom: 1px solid #141414; */
 }
 .navbtns li .activelink:hover {
   color: #555;
@@ -201,7 +202,7 @@ nav {
   height: auto;
   transition: ease 0.2s all;
   opacity: 1;
-  /* background: #1b1b1d; */
+  /* background: #141414; */
   transform: scale(1);
   z-index: 1;
 }
@@ -265,7 +266,7 @@ align-items: center;
     font-size: 1em !important;
     font-weight: 700 !important;
     /* letter-spacing: 1px; */
-    color: #1b1b1d;
+    color: #141414;
     float: left !important;
     margin-left: 0 !important;
     text-align: left !important;
@@ -356,14 +357,14 @@ display: none;
   }
 
   .abouttext1 {
-    color: #1b1b1d;
+    color: #141414;
     font-weight: 700;
     font-size: 1em;
     margin-top: 100px;
   }
 
   .abouttext2 {
-    color: #1b1b1d;
+    color: #141414;
     font-weight: 300;
     font-size: 1em;
     list-style: none;
@@ -377,13 +378,13 @@ display: none;
 
 
   .abouttext {
-    color: #1b1b1d;
+    color: #141414;
     font-weight: 300;
     font-size: 1em;
   }
 
   .interested {
-    color: #1b1b1d;
+    color: #141414;
     font-weight: 700;
     font-size: 2em;
     margin-top: 50px;
@@ -525,7 +526,7 @@ display: none;
     font-size: 1.5em !important;
     font-weight: 800;
     /* letter-spacing: 1px; */
-    color: #1b1b1d;
+    color: #141414;
     text-align: center !important;
     position: relative;
   }
@@ -533,7 +534,7 @@ display: none;
     font-size: 1.5em !important;
     font-weight: 800;
     /* letter-spacing: 1px; */
-    color: #1b1b1d;
+    color: #141414;
     text-align: center !important;
     position: relative;
   }
@@ -587,11 +588,13 @@ footer {
 }
 .copyrighta {
   text-decoration: none;
-  color: #1b1b1d;
+  color: #141414;
   transition: 0.2s;
 }
 .copyrighta:hover {
-  color: #ec008c;
+  color: #808080;
+  /* text-decoration: underline;
+  text-decoration-color: #ea0000; */
 }
 .scrolltop {
   font-weight: 600;
@@ -601,10 +604,10 @@ footer {
   float: right !important;
   margin-left: 95%;
   transition: 0.2s;
-  color: #1b1b1d;
+  color: #141414;
 }
 .scrolltop:hover {
-  color: #ec008c;
+  color: #ea0000;
 }
 
 
@@ -614,7 +617,7 @@ footer {
 .aboutheader {
   font-size: 4em;
   letter-spacing: 1.5px;
-  color: #1b1b1d;
+  color: #141414;
   font-weight: 700;
 }
 
@@ -627,14 +630,14 @@ footer {
 }
 
 .abouttext1 {
-  color: #1b1b1d;
+  color: #141414;
   font-weight: 700;
   font-size: 1em;
   margin-top: 100px;
 }
 
 .abouttext2 {
-  color: #1b1b1d;
+  color: #141414;
   font-weight: 300;
   font-size: 1em;
   list-style: none;
@@ -648,13 +651,13 @@ footer {
 
 
 .abouttext {
-  color: #1b1b1d;
+  color: #141414;
   font-weight: 300;
   font-size: 1em;
 }
 
 .interested {
-  color: #1b1b1d;
+  color: #141414;
   font-weight: 700;
   font-size: 2em;
   margin-top: 50px;
@@ -662,24 +665,60 @@ footer {
 
 .contactme {
   text-decoration: none;
-  color: #e264bc;
+  color: #141414;
   transition: 0.2s;
   font-weight: 400;
-  font-size: 1em;
-  text-decoration: underline;
+  /* font-size: 1em; */
+  /* text-decoration: underline; */
 }
 
 .contactme:hover {
-  color: #ec008c;
+  /* color: #ec008c; */
 }
 
 .contactmemargin {
   margin-top: -25px;
 }
 .contactmemargin2 {
-  margin-top: -15px;
+  margin-top: -10px;
 }
+.btn-outline {
+  text-transform: uppercase;
+  color: #141414;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 0.9em;
+  width: 140px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background: none;
+  border-radius: 4px;
+  border: 1px solid #eaeaea;
+}
+.btn-outline:hover {
+  cursor: pointer;
+  border: 1px solid #141414;
+}
+.btn-bold {
+  text-transform: uppercase;
+  color: #fff;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 0.9em;
+  width: 140px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background: #141414;
+  border-radius: 4px;
+  border: 1px solid #141414;
+}
+.btn-bold:hover {
+  cursor: pointer;
+  background: none;
+  color: #141414;
 
+  border: 1px solid #141414;
+}
 .decoration1 {
   content: url('../images/decoration1.svg');
   background-size: cover;
@@ -745,7 +784,7 @@ footer {
 .contactheader {
   font-size: 4em;
   letter-spacing: 1.5px;
-  color: #1b1b1d;
+  color: #141414;
   font-weight: 700;
 }
 .contacttextmain {
@@ -757,20 +796,20 @@ footer {
 }
 
 .contacttitle {
-  color: #1b1b1d;
+  color: #141414;
   font-weight: 700;
   margin-top: 35px;
   font-size: 1em;
 }
 
 .contacttitle1 {
-  color: #1b1b1d;
+  color: #141414;
   font-weight: 700;
   margin-top: 54px;
   font-size: 1em;
 }
 .contacttitle2 {
-  color: #1b1b1d;
+  color: #141414;
   font-weight: 700;
   margin-top: 35px;
   font-size: 1em;
@@ -800,7 +839,7 @@ footer {
 .contactlink {
   font-weight: 300;
   text-decoration: none;
-  color: #1b1b1d;
+  color: #141414;
   transition: 0.2s;
   font-size: 1.8em;
   margin-top: -20px;
@@ -814,7 +853,7 @@ footer {
 .contactlink1 {
   font-weight: 400;
   text-decoration: none;
-  color: #1b1b1d;
+  color: #141414;
   transition: 0.2s;
   font-size: 1em;
 }
@@ -873,7 +912,7 @@ text-decoration-color: #ea0000;
   font-size: 2em;
   font-weight: 800;
   /* letter-spacing: 1px; */
-  color: #1b1b1d;
+  color: #141414;
   text-align: left;
   position: relative;
 }
@@ -881,7 +920,7 @@ text-decoration-color: #ea0000;
   font-size: 2em;
   font-weight: 800;
   /* letter-spacing: 1px; */
-  color: #1b1b1d;
+  color: #141414;
   text-align: left;
   position: relative;
   padding-left: 12.5%;
