@@ -219,7 +219,7 @@ nav {
   background: #000;
 }
 
-figcaption {
+/* figcaption {
   position: absolute;
   text-align: center;
   margin-left: 0;
@@ -228,7 +228,7 @@ figcaption {
   color: #ffffff;
   background: #000;
   z-index: 1;
-}
+} */
 /* PORTFOLIO END */
 
 
