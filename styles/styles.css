@@ -211,7 +211,7 @@ nav {
   /* content: url('../images/designs/onm/Sourcery-full-glowing.png'); */
   /* cursor: pointer; */
   /* opacity: 0.9; */
-  transform: scale(1.02);
+  transform: scale(1.015);
   box-shadow: 0px 0px 25px rgba(25,25,25,0.1);
   z-index: 10;
   content: attr(title);
@@ -596,15 +596,27 @@ footer {
   /* text-decoration: underline;
   text-decoration-color: #ea0000; */
 }
+.scrolltop::before{
+  display: block;
+  content: '';
+}
 .scrolltop {
   font-weight: 600;
   text-decoration: none;
   font-size: 1.2em;
-  position: absolute;
+  position: fixed;
   float: right !important;
-  margin-left: 95%;
   transition: 0.2s;
   color: #141414;
+}
+.scrolltop-parent{
+  position: absolute;
+  top: 93vh;
+  margin-left: 96%;
+
+  /* right: 4vw; */
+  z-index: 11;
+
 }
 .scrolltop:hover {
   color: #ea0000;
