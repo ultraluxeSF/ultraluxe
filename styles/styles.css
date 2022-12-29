@@ -217,7 +217,6 @@ nav {
   content: attr(title);
   font-size: 16pt;
   background: #000;
-  cursor: default;
 }
 
 figcaption {
