@@ -32,7 +32,15 @@
 
   gtag('config', 'UA-152878661-1');
 </script>
-
+<!-- PROGRESS BAR -->
+<script type="text/javascript">
+let progress = document.getElementById('progressbar');
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function(){
+  let progressHeight = (window.pageYOffset / totalHeight) * 100;
+  progress.style.height = progressHeight + "%";
+}
+</script>
   </head>
   <body>
   <container class="scrolltop-parent"><a href="#" class="scrolltop">↑</a></container>
@@ -141,15 +149,7 @@
 
     </section>
 
-    <!-- PROGRESS BAR -->
-    <script type="text/javascript">
-    let progress = document.getElementById('progressbar');
-    let totalHeight = document.body.scrollHeight - window.innerHeight;
-    window.onscroll = function(){
-      let progressHeight = (window.pageYOffset / totalHeight) * 100;
-      progress.style.height = progressHeight + "%";
-    }
-    </script>
+
 
 
 
