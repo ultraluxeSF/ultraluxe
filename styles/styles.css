@@ -11,7 +11,30 @@ $red:#ea0000 */
 body {
   margin: 0;
 }
+::-webkit-scrollbar {
+	width: 0;
+}
 
+
+#scrollpath {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 0.1vw;
+	height: 100%;
+	background: rgba(255,255,255,0.05);
+	z-index: 2;
+}
+#progressbar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 0.1vw;
+	background: #ea0000;
+
+	animation: animate 5s linear infinite;
+	z-index: 3;
+}
 /* NAV Panel */
 /* #instagram {
   color: #F26D9F;
