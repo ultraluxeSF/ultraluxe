@@ -30,7 +30,7 @@ body {
 	top: 0;
 	right: 0;
 	width: 0.1vw;
-	background: #ea0000;
+	background: #808080;
 
 	animation: animate 5s linear infinite;
 	z-index: 3;
@@ -101,12 +101,12 @@ nav {
 }
 .navbtns li a:hover {
   color: #808080;
-  /* border-bottom: 1px solid #ea0000; */
+  /* border-bottom: 1px solid #808080; */
 }
 .navbtns li .activelink {
   /* color: #ec008c; */
   transition: 0.2s;
-  border-bottom: 1px solid #ea0000;
+  border-bottom: 1px solid #808080;
 }
 .navbtns li .activelink:hover {
   color: #555;
@@ -162,7 +162,7 @@ nav {
 .dropdown-content a:hover {
   color: #808080;
   /* text-decoration: underline; */
-  /* text-decoration-color: #ea0000; */
+  /* text-decoration-color: #808080; */
   /* border-bottom-style: inset; */
 }
 
@@ -614,7 +614,7 @@ footer {
 .copyrighta:hover {
   color: #808080;
   /* text-decoration: underline;
-  text-decoration-color: #ea0000; */
+  text-decoration-color: #808080; */
 }
 
 .scrolltop {
@@ -645,7 +645,7 @@ footer {
 
 }
 .scrolltop:hover {
-  color: #ea0000;
+  color: #808080;
   background: #141414;
 
 }
@@ -887,7 +887,7 @@ footer {
 }
 .contactlink:hover {
   text-decoration: underline;
-  text-decoration-color: #ea0000;
+  text-decoration-color: #808080;
 }
 
 .contactlink1 {
@@ -907,7 +907,7 @@ footer {
 
 .contactlink1:hover {
 text-decoration: underline;
-text-decoration-color: #ea0000;
+text-decoration-color: #808080;
 }
 
 .parentsec {
@@ -1083,7 +1083,7 @@ text-decoration-color: #ea0000;
 .portfoliolink:hover {
   cursor: pointer;
   text-decoration: underline;
-  text-decoration-color: #ea0000;
+  text-decoration-color: #808080;
 }
 .completion-date {
   color: #aaa;
