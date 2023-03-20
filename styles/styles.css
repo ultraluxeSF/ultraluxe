@@ -176,7 +176,7 @@ nav {
 }
 .dropdown-content .activelink-dropdown {
   color: #000000;
-  font-weight: 500;
+  font-weight: 600;
   transition: 0.2s;
   /* border-bottom: 1px solid #141414; */
 }
@@ -1027,6 +1027,12 @@ text-decoration-color: #808080;
 }
 .indexbanner {
   content: url('../images/mebanner.png');
+  object-fit: cover;
+  height: 400px;
+  width: 100%;
+}
+.smmbanner {
+  content: url('../images/SMD-banner.jpg');
   object-fit: cover;
   height: 400px;
   width: 100%;
