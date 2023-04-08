@@ -8,7 +8,7 @@ let currentDate = new Date();
 var gdDifference = currentDate - gdDate;
 
 document.querySelector("#xp-GD-difference").textContent = Math.trunc(gdDifference/(1000 * 3600 * 24));
-document.querySelector("#xp-GD-years").textContent = thisYear - gdYear;
+document.querySelector("#xp-GD-yearss").textContent = thisYear - gdYear;
 
 // UI/UX
 
@@ -18,4 +18,4 @@ let uiDate = new Date("04 March 2021");
 var uiDifference = currentDate - uiDate;
 
 document.querySelector("#xp-UI-difference").textContent = Math.trunc(uiDifference/(1000 * 3600 * 24));
-document.querySelector("#xp-UI-years").textContent = thisYear - uiYear;
+document.querySelector("#xp-UI-yearss").textContent = thisYear - uiYear;

@@ -11,12 +11,12 @@ $red:#ea0000 */
 body {
   margin: 0;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
 	width: 0;
-}
+} */
 
 
-#scrollpath {
+/* #scrollpath {
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -24,8 +24,8 @@ body {
 	height: 100%;
 	background: rgba(255,255,255,0.05);
 	z-index: 2;
-}
-#progressbar {
+} */
+/* #progressbar {
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -34,7 +34,7 @@ body {
 
 	animation: animate 5s linear infinite;
 	z-index: 3;
-}
+} */
 /* NAV Panel */
 /* #instagram {
   color: #F26D9F;
