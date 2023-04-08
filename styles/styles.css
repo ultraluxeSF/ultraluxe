@@ -1043,6 +1043,10 @@ text-decoration-color: #808080;
 .xpline{
   margin-top: -10px;
 }
+.xpline-grey{
+  color: #9d9d9d;
+  font-size: 11pt;
+}
 .xptitle{
   font-weight: 600;
 }
@@ -1053,16 +1057,20 @@ text-decoration-color: #808080;
 .details-text{
   margin-top: -15px;
 }
+.details-text2{
+  margin-top: -15px;
+  font-size: 11pt;
+}
 .contacttextmain1 {
   color: #333;
   font-size: 1.5em;
-  font-weight: 400;
-  margin-top: -70px;
+  font-weight: 900;
+  margin-top: -50px;
 }
 .contacttextmain2 {
   color: #333;
   font-size: 1.5em;
-  font-weight: 400;
+  font-weight: 900;
   margin-top: 30px;
 }
 .bio {
@@ -1087,9 +1095,10 @@ text-decoration-color: #808080;
   /* padding-bottom: 50px; */
 }
 .portfoliolink:hover {
+  color: #9d9d9d;
   cursor: pointer;
   text-decoration: underline;
-  text-decoration-color: #808080;
+  text-decoration-color: #9d9d9d;
 }
 .completion-date {
   color: #aaa;
