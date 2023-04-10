@@ -223,11 +223,11 @@ nav {
   object-fit: cover;
   width: 33.3333%;
   height: auto;
-  transition: ease 0.2s all;
+  transition: ease-out 0.3s all;
   opacity: 1;
   /* background: #141414; */
   transform: scale(1);
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .ppic:hover {
