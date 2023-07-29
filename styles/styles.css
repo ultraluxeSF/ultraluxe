@@ -283,9 +283,9 @@ justify-content: center !important;
 align-items: center;
   }
   .designheader-wide {
-    font-size: 1em !important;
-    font-weight: 700 !important;
-    /* letter-spacing: 1px; */
+    font-size: 16pt !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.5pt;
     color: #141414;
     float: left !important;
     margin-left: 0 !important;
@@ -551,9 +551,9 @@ display: none;
     position: relative;
   }
   .designheader-wide {
-    font-size: 1.5em !important;
+    font-size: 18pt !important;
     font-weight: 800;
-    /* letter-spacing: 1px; */
+    letter-spacing: -0.5pt;
     color: #141414;
     text-align: center !important;
     position: relative;
@@ -957,9 +957,9 @@ text-decoration-color: #808080;
   position: relative;
 }
 .designheader-wide {
-  font-size: 2em;
+  font-size: 22pt;
   font-weight: 800;
-  /* letter-spacing: 1px; */
+  letter-spacing: -0.5pt;
   color: #141414;
   text-align: left;
   position: relative;
