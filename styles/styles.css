@@ -286,6 +286,9 @@ nav {
     /* width: 360px; */
     overflow-x: hidden;
   }
+  .contacts2{
+    display:none;
+  }
   nav {
     display: flex !important;
     padding: 15px !important;
@@ -1078,6 +1081,9 @@ color: #808080;
 .xpline-date{
   margin-top: -20px;
   color: #9d9d9d;
+}
+.details-abouttext{
+  color: #808080;
 }
 .details-text{
   color: #f6f6f6;
