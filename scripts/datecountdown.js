@@ -1,8 +1,8 @@
 // Graphic Design
 
 let thisYear = new Date().getFullYear();
-let gdYear = '2016';
-let gdDate = new Date("01 Jul 2016");
+let gdYear = '2017';
+let gdDate = new Date("01 Jul 2017");
 let currentDate = new Date();
 
 var gdDifference = currentDate - gdDate;
