@@ -9,6 +9,7 @@ var gdDifference = currentDate - gdDate;
 
 document.querySelector("#xp-GD-difference").textContent = Math.trunc(gdDifference/(1000 * 3600 * 24));
 document.querySelector("#xp-GD-yearss").textContent = thisYear - gdYear;
+document.querySelector("#xp-GD-yearss2").textContent = thisYear - gdYear;
 
 // UI/UX
 
