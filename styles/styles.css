@@ -519,7 +519,7 @@ display: none;
 }
 
 .aboutsection {
-  width: 800px;
+  width: 80%;
 }
 .adesign {
   width: 100% !important;
@@ -550,7 +550,7 @@ display: none;
   }
 
   .aboutsection {
-    width: 100% !important;
+    width: 96% !important;
   }
 
   .design {
@@ -697,25 +697,53 @@ footer {
 
 .abouttext1 {
   color: #f6f6f6;
-  font-weight: 700;
-  font-size: 1em;
+  font-weight: 500;
+  font-size: 1.5em;
   margin-top: 100px;
 }
 
 .abouttext2 {
   color: #f6f6f6;
-  font-weight: 300;
-  font-size: 1em;
+  font-weight: 500;
+  font-size: 1.2em;
   list-style: none;
   margin-top: 0px;
 }
-
-
-.services {
-  margin-top: -10px;
+.abouttext3 {
+  color: #999;
+  font-weight: 300;
+  font-size: 0.9em;
+  list-style: none;
+  margin-top: -15px;
+  line-height: 110%;
 }
 
 
+
+.services {
+  
+  margin-left: -20px;
+  display: inline-flex;
+  width: 94%;
+  padding-top: 20px;
+}
+.servicesdiv{
+  width: 100%;
+  height: 150px;
+  background-color: #000;
+  padding-top: 20px;
+  padding-left: 30px;
+  margin-left: 20px;
+  border-radius: 15px;
+  border: 1px solid #222222;
+  transition: 0.2s;
+}
+.servicesdiv:hover{
+  /* height: 100px; */
+  /* width: 100%; */
+  border: 1px solid #555;
+
+}
 .abouttext {
   color: #f6f6f6;
   font-weight: 300;
@@ -804,7 +832,7 @@ footer {
 .aboutsection {
   padding-left: 4%;
   padding-bottom: 42px;
-  width: 1000px;
+  width: 96%;
   text-align: left;
   float:  left;
 }
