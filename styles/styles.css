@@ -515,7 +515,15 @@ display: none;
   display: none;
 }
 
-
+.designheader-wide {
+  font-size: 16pt !important;
+  font-weight: 500;
+  letter-spacing: -0.5pt;
+  color: #f6f6f6;
+  text-align: left !important;
+  position: relative;
+  margin-left: 0px;
+}
 .services {
   
   margin-left: -20px;
@@ -635,8 +643,9 @@ display: none;
     font-weight: 600;
     letter-spacing: -0.5pt;
     color: #f6f6f6;
-    text-align: center !important;
+    text-align: left !important;
     position: relative;
+    /* margin-left: -100px; */
   }
   .tags {
     color: #aaa;
@@ -1073,7 +1082,7 @@ color: #808080;
 }
 .designheader-wide {
   font-size: 22pt;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: -0.5pt;
   color: #f6f6f6;
   text-align: left;
