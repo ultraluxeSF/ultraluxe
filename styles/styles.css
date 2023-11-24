@@ -250,7 +250,15 @@ nav {
   box-shadow: 0px 0px 25px rgba(25,25,25,0.1);
   z-index: 10;
 }
-
+.newdes {
+position: inherit;
+display: inherit;
+}
+figcaption{
+  color: #f6f6f6;
+  z-index: 4;
+  position: absolute;
+}
 /* figcaption {
   position: absolute;
   text-align: center;
@@ -1126,10 +1134,13 @@ color: #808080;
   font-size: 0.8em;
   padding-right: 12.5%;
 }
-
-.adesign {
+.adesign1 {
   width: 100% !important;
   margin-top: 40px;
+}
+.adesign {
+  width: 100% !important;
+  margin-top: 0px;
 }
 
 .adesign-wide {
