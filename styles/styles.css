@@ -285,6 +285,7 @@ figcaption{
 }
 
 @media (max-width: 350px){
+
 .adesign {
   width: 100% !important;
 }
@@ -305,6 +306,9 @@ figcaption{
     flex-direction: row !important;
 justify-content: center !important;
 align-items: center;
+  }
+  nav ul li a {
+    letter-spacing: -0.5pt !important; 
   }
   .designheader-wide {
     font-size: 16pt !important;
