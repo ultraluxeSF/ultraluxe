@@ -601,6 +601,9 @@ display: none;
 .adesign {
   width: 100% !important;
 }
+.newbtn {
+  display: none;
+}
 }
 
 @media (max-width: 1500px){
@@ -1296,4 +1299,24 @@ color: #808080;
   transform: translate(-50%,-50%);
   pointer-events: none;
   z-index: 2;
+}
+
+.newbtn::before {
+  margin-left: -0.05%;
+  /* margin-top: -0.1%; */
+  display: flex;
+  position: absolute;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 5px;
+  padding-right: 6px;
+  background: #fff;
+  content: "new";
+  color: #000;
+  font-size: 8pt;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.newbtn::after {
+  content: "";
 }
