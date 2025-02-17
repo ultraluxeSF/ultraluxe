@@ -1368,14 +1368,22 @@ display: none;
     padding-bottom: 5px !important;
     padding-right: 5px !important;
     margin-left: 16px !important;
-    /* border-radius: 15px; */
-    border: none !important;
+    border-radius: 0px;
+    /* border: none !important; */
     /* border-left: 1px solid #222222 !important; */
     transition: 0.2s;
     overflow: hidden !important;
   }
   .servicesdiv {
-    /* border-left: 1px solid #555; */
+    /* border-image: linear-gradient(to right, #222 100%, #444 100%); */
+    border-top: 1px solid #181818 !important;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  .servocesdiv:hover {
+    border: none !important;
   }
 
   .abouttext {
