@@ -599,11 +599,12 @@ footer {
 /* CONTACT */
 
 .profilepic {
-  width: 55%;
+  width: 50%;
   border-radius: 50%;
 }
 
 .profilepicdiv {
+  display: block;
   position: relative;
   margin-top: 4%;
 }
@@ -613,10 +614,13 @@ footer {
   }
 
 .maincontacts {
+  display: inline-block;
+  /* position: inherit; */
   padding-left: 4%;
   padding-right: 5%;
   padding-bottom: 42px;
   width: 1500px;
+  height: auto;
   text-align: left;
 }
 .extracontacts {
@@ -647,7 +651,7 @@ footer {
 .contacttitle {
   color: #f6f6f6;
   font-weight: 700;
-  margin-top: 35px;
+  margin-top: 15px;
   font-size: 1em;
 }
 
@@ -683,14 +687,14 @@ footer {
   margin-top: -4px;
 }
 .contmargin {
-  margin-top: -17px;
+  margin-top: -20px;
 }
 .contactlink {
   font-weight: 300;
   text-decoration: none;
   color: #f6f6f6;
   transition: 0.2s;
-  font-size: 1.8em;
+  font-size: 1.5em;
   margin-top: 0px;
   letter-spacing: 1px;
 }
