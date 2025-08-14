@@ -106,15 +106,19 @@ nav {
   color: #999999;
   /* border-bottom: 1px solid #808080; */
 }
+
 .navbtns li .activelink {
   /* color: #ec008c; */
   transition: 0.2s;
-  border-bottom: 1px solid #ffffff;
+  color: #555;
+
+  /* text-decoration: line-through; */
+  /* border-bottom: 1px solid #ffffff; */
 }
 .navbtns li .activelink:hover {
   color: #555;
-  border-bottom: 1px solid #555;
-
+  /* border-bottom: 0px solid #555; */
+  text-decoration: line-through;
 }
 
 
@@ -490,12 +494,13 @@ footer {
   transition: 0.2s;
   font-weight: 600;
   font-size: 0.9em;
-  width: 250px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  width: 350px;
+  padding-top: 22px;
+  padding-bottom: 22px;
   background: #141414;
   border-radius: 50px;
   border: 1px solid #f6f6f6;
+  margin-top: 4px;
 }
 .btn-outline:hover {
   cursor: pointer;
@@ -509,9 +514,9 @@ footer {
   transition: 0.2s;
   font-weight: 600;
   font-size: 0.9em;
-  width: 250px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  width: 350px;
+  padding-top: 22px;
+  padding-bottom: 22px;
   background: #ffffff;
   border-radius: 50px;
   border: 1px solid #ffffff;
