@@ -871,7 +871,7 @@ content: url('../images/triangleme-tp.webp');
 display: flex;
 align-items: center;
 justify-content: center;
-transition: transform 1s linear;
+transition: transform 1s ease-out;
 pointer-events: none;
 /* position: relative; */
 }
