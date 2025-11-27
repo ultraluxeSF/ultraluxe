@@ -857,9 +857,6 @@ text-align: center;
 align-items: center;
 margin-left: auto;
 margin-right: auto;
-
-/* left: 50%; */
-/* border-radius: 12px; */
 position: relative;
 overflow: hidden;
 }
@@ -873,7 +870,7 @@ align-items: center;
 justify-content: center;
 transition: transform 1s ease-out;
 pointer-events: none;
-/* position: relative; */
+filter: drop-shadow(-5px -15px 10px rgba(0, 0, 0, 0.589));
 }
 
 .containerrr {
@@ -891,7 +888,7 @@ margin-right: auto;
 position: relative;
 overflow: hidden;
 }
-.float-box-sh {
+.float-box-sh .float-box {
 width: 600px;
 height: 600px;
 content: url('../images/triangleme-shadow-tp.webp');
@@ -900,6 +897,7 @@ align-items: center;
 justify-content: center;
 transition: transform 1s linear;
 pointer-events: none;
+opacity: .5;
 /* position: relative; */
 }
 /* CV */
