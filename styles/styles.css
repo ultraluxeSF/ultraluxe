@@ -5,9 +5,9 @@ $red:#ea0000 */
 
 * {
   font-family: 'Poppins', sans-serif;
-  scroll-behavior: smooth;
   /* cursor: none; */
 }
+
 
 body {
   margin: 0;
