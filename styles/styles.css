@@ -1932,3 +1932,9 @@ display: none;
   .ct-cards { grid-template-columns: 1fr; }
   .ct-photo img { max-width: 140px; border-radius: 18px; }
 }
+
+/* The small-screen "* { overflow-x: hidden }" rule also clips descenders (g, y, p)
+   of tight headings; let text overflow vertically instead */
+@media (max-width: 450px) {
+  h1, h2, h3, h1 *, h2 *, h3 *, .ud-stat strong, .cv-lead, .ct-value { overflow: visible; }
+}
