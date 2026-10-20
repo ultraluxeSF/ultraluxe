@@ -400,7 +400,8 @@ footer {
   line-height: 102%;
   overflow: hidden;
   position: relative;
-  /* padding-bottom: 0.3em; */
+  /* room for descenders (g, y, p) so the last line isn't clipped */
+  padding-bottom: 0.18em;
 }
 .whitetoblack {
   background-color: #f6f6f6;
