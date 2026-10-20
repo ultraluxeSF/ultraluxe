@@ -85,11 +85,43 @@
         <a href="https://ultraluxedesigns.com" class="cv-btn cv-btn-ghost">View portfolio</a>
       </div>
 
-      <ul class="cv-stats">
-        <li><strong><span data-years-since="2017-01-01">9</span>+</strong> years in graphic design</li>
-        <li><strong>2+</strong> years in UI/UX &amp; product design</li>
-        <li><strong>4</strong> companies, plus freelance since 2017</li>
+    <section class="ud-exp">
+      <ul class="ud-stats">
+        <li class="ud-stat"><strong><span data-years-since="2017-01-01">9</span>+</strong><span>years in graphic design</span></li>
+        <li class="ud-stat"><strong>4</strong><span>companies, in-house &amp; agency</span></li>
+        <li class="ud-stat"><strong>9</strong><span>countries my clients come from</span><small class="ud-countries"><span><b>Uzbekistan</b>&nbsp;·</span> <span>Russia&nbsp;·</span> <span>Austria&nbsp;·</span> <span>Germany&nbsp;·</span> <span>Switzerland&nbsp;·</span> <span>UK&nbsp;·</span> <span>Canada&nbsp;·</span> <span>Thailand&nbsp;·</span> <span>Cyprus</span></small></li>
       </ul>
+      <div class="ud-clients">
+        <p class="ud-label">Selected freelance clients</p>
+        <div class="ud-clients-row">
+          <a class="ud-client" href="https://ultraluxedesigns.com/designs/lieblingsgarn" title="Lieblingsgarn">
+            <img src="images/designs/freelance/lieblingsgarn.webp" alt="Lieblingsgarn" loading="lazy" width="480" height="360">
+            <span>Lieblingsgarn</span>
+          </a>
+          <a class="ud-client" href="https://ultraluxedesigns.com/designs/gorinvestment" title="Gorinvestment">
+            <img src="images/designs/freelance/gorinvestment.webp" alt="Gorinvestment" loading="lazy" width="480" height="360">
+            <span>Gorinvestment</span>
+          </a>
+          <a class="ud-client" href="https://ultraluxedesigns.com/designs/mverse" title="Mverse">
+            <img src="images/designs/freelance/mverse.webp" alt="Mverse" loading="lazy" width="480" height="360">
+            <span>Mverse</span>
+          </a>
+          <a class="ud-client" href="https://ultraluxedesigns.com/designs/visualaddiction" title="Visual Addiction">
+            <img src="images/designs/freelance/visualaddiction.webp" alt="Visual Addiction" loading="lazy" width="480" height="360">
+            <span>Visual Addiction</span>
+          </a>
+          <a class="ud-client" href="https://ultraluxedesigns.com/designs/cerom" title="Cerom">
+            <img src="images/designs/freelance/cerom.webp" alt="Cerom" loading="lazy" width="480" height="360">
+            <span>Cerom</span>
+          </a>
+          <a class="ud-client" href="https://ultraluxedesigns.com/designs/bmp" title="BM Prod">
+            <img src="images/designs/freelance/bmp.webp" alt="BM Prod" loading="lazy" width="480" height="360">
+            <span>BM Prod</span>
+          </a>
+          <p class="ud-nda"><strong>10+</strong> projects under NDA</p>
+        </div>
+      </div>
+    </section>
     </section>
 
     <!-- What I do -->
@@ -265,14 +297,7 @@
 
   </main>
 
-  <script>
-    // Years of experience stay current automatically
-    document.querySelectorAll('[data-years-since]').forEach(function (el) {
-      var since = new Date(el.getAttribute('data-years-since'));
-      var years = Math.floor((Date.now() - since) / (365.25 * 24 * 3600 * 1000));
-      el.textContent = years;
-    });
-  </script>
+  <script src="scripts/experience.js"></script>
 
 
 
