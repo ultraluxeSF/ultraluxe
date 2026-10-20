@@ -1,4 +1,4 @@
-/* Click tracking for Google Analytics 4 (G-9ZC80EMF86) and Yandex Metrika (54894073).
+/* Click tracking for Google Analytics 4 (G-FDHWKRH7W0) and Yandex Metrika (54894073).
    Every link click is sent as a "link_click" event with what was clicked and where it leads.
    Project thumbnails also send "select_project"; email/Telegram clicks also send "contact_click". */
 (function () {
