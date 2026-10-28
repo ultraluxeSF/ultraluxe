@@ -90,25 +90,22 @@
   if (!finePointer) return;
 
   /* ---------------------------------------------------------------
-     Brightness under the pointer. Each image is reduced to a 24x24
-     brightness map; maps are cached per image URL because thumbnails
-     swap their src on hover.
+     Colour under the pointer. Each image is drawn once into a small
+     canvas (max 160px side) and its pixels are cached per image URL,
+     because thumbnails swap their src on hover.
   --------------------------------------------------------------- */
-  var GRID = 24;
-  var maps = {}; // url -> Float32Array | "blend" | "pending"
+  var SAMPLE = 160;
+  var maps = {}; // url -> {w, h, data} | "blend" | "pending"
 
   function readMap(source) {
+    var nw = source.naturalWidth || source.width, nh = source.naturalHeight || source.height;
+    var k = Math.min(1, SAMPLE / Math.max(nw, nh));
+    var w = Math.max(1, Math.round(nw * k)), h = Math.max(1, Math.round(nh * k));
     var canvas = document.createElement("canvas");
-    canvas.width = canvas.height = GRID;
+    canvas.width = w; canvas.height = h;
     var ctx = canvas.getContext("2d", { willReadFrequently: true });
-    ctx.drawImage(source, 0, 0, GRID, GRID);
-    var data = ctx.getImageData(0, 0, GRID, GRID).data; // throws if cross-origin
-    var out = new Float32Array(GRID * GRID);
-    for (var i = 0; i < out.length; i++) {
-      var r = data[i * 4], g = data[i * 4 + 1], b = data[i * 4 + 2], a = data[i * 4 + 3] / 255;
-      out[i] = a < 0.3 ? -1 : (0.299 * r + 0.587 * g + 0.114 * b) / 255; // -1 = transparent
-    }
-    return out;
+    ctx.drawImage(source, 0, 0, w, h);
+    return { w: w, h: h, data: ctx.getImageData(0, 0, w, h).data }; // throws if cross-origin
   }
 
   function mapFor(img) {
@@ -131,7 +128,8 @@
     return maps[url];
   }
 
-  function imageBrightness(img, x, y) {
+  // Returns {r, g, b}, "blend" (pixels unreadable) or null (pointer not over the picture)
+  function imageColor(img, x, y) {
     var m = mapFor(img);
     if (!m) return null;
     if (typeof m === "string") return "blend";
@@ -139,23 +137,16 @@
     var nw = img.naturalWidth, nh = img.naturalHeight;
     var fit = getComputedStyle(img).objectFit;
     var scale = fit === "cover" ? Math.max(r.width / nw, r.height / nh)
-      : fit === "fill" ? 0 : Math.min(r.width / nw, r.height / nh);
+      : fit === "contain" || fit === "scale-down" ? Math.min(r.width / nw, r.height / nh) : 0;
     var dw = scale ? nw * scale : r.width, dh = scale ? nh * scale : r.height;
     var u = (x - r.left - (r.width - dw) / 2) / dw;
     var v = (y - r.top - (r.height - dh) / 2) / dh;
     if (u < 0 || u > 1 || v < 0 || v > 1) return null;
-    var cx = Math.min(GRID - 1, Math.floor(u * GRID));
-    var cy = Math.min(GRID - 1, Math.floor(v * GRID));
-    var sum = 0, n = 0;
-    for (var dy = -1; dy <= 1; dy++) {
-      for (var dx = -1; dx <= 1; dx++) {
-        var gx = cx + dx, gy = cy + dy;
-        if (gx < 0 || gy < 0 || gx >= GRID || gy >= GRID) continue;
-        var val = m[gy * GRID + gx];
-        if (val >= 0) { sum += val; n++; }
-      }
-    }
-    return n ? sum / n : null;
+    var px = Math.min(m.w - 1, Math.floor(u * m.w));
+    var py = Math.min(m.h - 1, Math.floor(v * m.h));
+    var i = (py * m.w + px) * 4;
+    if (m.data[i + 3] < 77) return null; // transparent: look at what's behind
+    return { r: m.data[i], g: m.data[i + 1], b: m.data[i + 2] };
   }
 
   function parseColor(str) {
@@ -165,38 +156,49 @@
     return { r: p[0], g: p[1], b: p[2], a: p.length > 3 ? p[3] : 1 };
   }
   function lum(c) { return (0.299 * c.r + 0.587 * c.g + 0.114 * c.b) / 255; }
+  function hex(c) {
+    return [c.r, c.g, c.b].map(function (v) {
+      return ("0" + Math.round(v).toString(16)).slice(-2);
+    }).join("").toUpperCase();
+  }
 
   var waitingForImage = false; // a hovered thumbnail swapped src and is still loading
 
-  function brightnessAt(x, y) {
+  function colorAt(x, y) {
     waitingForImage = false;
     var stack = document.elementsFromPoint(x, y);
     for (var i = 0; i < stack.length; i++) {
       var el = stack[i];
-      if (el.classList && el.classList.contains("cursor")) continue;
+      if (el.closest && el.closest(".cursor")) continue;
       if (el.tagName === "IMG") {
         if (!el.complete || !el.naturalWidth) waitingForImage = true;
-        var v = imageBrightness(el, x, y);
+        var v = imageColor(el, x, y);
         if (v !== null) return v;
         continue;
       }
       // the first solid background hides everything beneath it
       var c = parseColor(getComputedStyle(el).backgroundColor);
-      if (c && c.a > 0.4) return lum(c);
+      if (c && c.a > 0.4) return c;
     }
     var b = parseColor(getComputedStyle(document.body).backgroundColor);
-    return b && b.a > 0.4 ? lum(b) : 0; // the site is dark by default
+    return b && b.a > 0.4 ? b : { r: 0, g: 0, b: 0 }; // the site is dark by default
   }
 
   /* ---------------------------------------------------------------
-     Cursor
+     Cursor: ring + centre dot, with a swatch and hex code of the
+     colour under the dot
   --------------------------------------------------------------- */
   function initCursor() {
     root.classList.add("has-cursor");
     var cursor = document.createElement("div");
     cursor.className = "cursor";
     cursor.setAttribute("aria-hidden", "true");
+    cursor.innerHTML = '<span class="cursor-ring"></span><span class="cursor-dot"></span>' +
+      '<span class="cursor-info"><span class="cursor-swatch"></span><span class="cursor-hex"></span></span>';
     document.body.appendChild(cursor);
+    var info = cursor.querySelector(".cursor-info");
+    var swatch = cursor.querySelector(".cursor-swatch");
+    var label = cursor.querySelector(".cursor-hex");
 
     var mx = -100, my = -100, cx = -100, cy = -100;
     var dirty = true;
@@ -216,25 +218,35 @@
     window.addEventListener("mousedown", function () { cursor.classList.add("is-down"); });
     window.addEventListener("mouseup", function () { cursor.classList.remove("is-down"); });
 
-    var lastCheck = 0;
+    var lastCheck = 0, lastHex = "";
     (function loop(t) {
       var k = reduceMotion ? 1 : 0.32;
       cx += (mx - cx) * k;
       cy += (my - cy) * k;
       cursor.style.transform = "translate3d(" + cx + "px," + cy + "px,0)";
+      // keep the label on screen near the right edge
+      info.classList.toggle("is-left", cx > window.innerWidth - 150);
 
       // re-check the colour under the pointer ~25 times a second
       if (dirty && t - lastCheck > 40) {
         lastCheck = t;
         dirty = false;
-        var b = brightnessAt(mx, my);
-        if (b === "blend") {
+        var c = colorAt(mx, my);
+        if (c === "blend") {
           cursor.style.mixBlendMode = "difference";
           cursor.classList.remove("on-light");
+          cursor.classList.add("no-color");
           dirty = true; // keep checking until the pixels can be read
         } else {
           cursor.style.mixBlendMode = "";
-          cursor.classList.toggle("on-light", b > 0.55);
+          cursor.classList.remove("no-color");
+          cursor.classList.toggle("on-light", lum(c) > 0.55);
+          var h = hex(c);
+          if (h !== lastHex) {
+            lastHex = h;
+            swatch.style.backgroundColor = "#" + h;
+            label.textContent = h;
+          }
         }
         if (waitingForImage) dirty = true; // re-check once the new image has loaded
       }
