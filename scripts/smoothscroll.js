@@ -403,9 +403,17 @@
     cursor.innerHTML = '<span class="cursor-ring"></span><span class="cursor-dot"></span>' +
       '<span class="cursor-info"><span class="cursor-swatch"></span><span class="cursor-hex"></span></span>';
     document.body.appendChild(cursor);
+    // A twin layer drawn with mix-blend-mode: difference carries the hex text and the
+    // swatch outline, so they invert against whatever is behind them, pixel by pixel.
+    // (Blending has to happen on its own top-level layer; the swatch fill stays exact.)
+    var ink = cursor.cloneNode(true);
+    document.body.appendChild(ink);
     var info = cursor.querySelector(".cursor-info");
+    var inkInfo = ink.querySelector(".cursor-info");
     var swatch = cursor.querySelector(".cursor-swatch");
-    var label = cursor.querySelector(".cursor-hex");
+    var label = ink.querySelector(".cursor-hex");
+    var sizer = cursor.querySelector(".cursor-hex"); // invisible copy keeps both layouts identical
+    var solidInk = "", inkClass = "";
 
     var mx = -100, my = -100, cx = -100, cy = -100;
     var dirty = true;
@@ -434,15 +442,20 @@
       var k = reduceMotion ? 1 : 0.32;
       cx += (mx - cx) * k;
       cy += (my - cy) * k;
-      cursor.style.transform = "translate3d(" + cx + "px," + cy + "px,0)";
+      cursor.style.transform = ink.style.transform = "translate3d(" + cx + "px," + cy + "px,0)";
       // keep the label on screen near the right edge
-      info.classList.toggle("is-left", cx > window.innerWidth - 150);
+      var left = cx > window.innerWidth - 150;
+      info.classList.toggle("is-left", left);
+      inkInfo.classList.toggle("is-left", left);
+      var ic = cursor.className + " cursor-ink" + (solidInk ? " solid" : "");
+      if (ic !== inkClass) { ink.className = inkClass = ic; }
 
       // re-check the colour under the pointer ~25 times a second
       if (dirty && t - lastCheck > 40) {
         lastCheck = t;
         dirty = false;
         var c = colorAt(mx, my);
+        var imageLoading = waitingForImage;
         if (c === "blend") {
           cursor.style.mixBlendMode = "difference";
           cursor.classList.remove("on-light");
@@ -458,10 +471,29 @@
           if (h !== lastHex) {
             lastHex = h;
             swatch.style.backgroundColor = "#" + h;
-            label.textContent = h;
+            label.textContent = sizer.textContent = h;
           }
+          // Inverting fails on flat mid-tones (grey on grey, khaki): there, use plain
+          // white or near-black text, whichever contrasts more. Busy or mixed areas
+          // keep the per-pixel invert.
+          var lr = label.getBoundingClientRect();
+          solidInk = "";
+          if (lr.width) {
+            var ls = [], lo = 1, hi = 0, sum = 0;
+            for (var q = 0; q < 5; q++) {
+              var u = colorAt(lr.left + lr.width * (0.1 + q * 0.2), lr.top + lr.height / 2, false);
+              if (u === "blend") { ls = null; break; }
+              var l = lum(u); ls.push(l); sum += l;
+              lo = Math.min(lo, l); hi = Math.max(hi, l);
+            }
+            var avg = ls ? sum / ls.length : 0;
+            if (ls && hi - lo < 0.08 && avg > 0.33 && avg < 0.67) {
+              solidInk = avg < 0.5 ? "#ffffff" : "#1b1b1d";
+            }
+          }
+          ink.style.setProperty("--solid", solidInk || "#ffffff");
         }
-        if (waitingForImage || t < settleUntil) dirty = true; // image loading / hover transition
+        if (imageLoading || t < settleUntil) dirty = true; // image loading / hover transition
       }
       requestAnimationFrame(loop);
     })(0);

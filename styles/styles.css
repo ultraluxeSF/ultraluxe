@@ -1082,37 +1082,40 @@ html.has-smooth { scroll-behavior: auto; }
 }
 .cursor-info {
   position: absolute; top: 0;
-  left: calc(var(--ring) / 2 + 10px);
+  left: calc(var(--ring) / 2 + 12px);
   display: flex; align-items: center; gap: 8px;
   transform: translateY(-50%);
   white-space: nowrap;
-  /* own dark backing so the code stays readable on any background */
-  padding: 4px 9px 4px 4px;
-  background: rgba(20, 20, 20, 0.78);
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
   transition: left 0.35s var(--ease), opacity 0.2s;
 }
 .cursor-info.is-left {
   left: auto;
-  right: calc(var(--ring) / 2 + 10px);
+  right: calc(var(--ring) / 2 + 12px);
   flex-direction: row-reverse;
-  padding: 4px 4px 4px 9px;
   transition: right 0.35s var(--ease), opacity 0.2s;
 }
 .cursor-swatch {
   width: 18px; height: 18px;
   border-radius: 0;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.85);
 }
 .cursor-hex {
   font-family: 'Poppins', sans-serif;
   font-size: 13px; font-weight: 500;
   letter-spacing: 0.5px;
-  color: #ffffff;
   font-variant-numeric: tabular-nums;
+  color: transparent; /* the visible copy lives on the ink layer */
 }
 .cursor.no-color .cursor-info { opacity: 0; }
+
+/* Ink layer: inverts the hex text and the swatch outline against the background */
+.cursor.cursor-ink { mix-blend-mode: difference; }
+.cursor-ink .cursor-ring, .cursor-ink .cursor-dot { display: none; }
+.cursor-ink .cursor-swatch { background: transparent !important; box-shadow: 0 0 0 1px #ffffff; }
+.cursor-ink .cursor-hex { color: #ffffff; }
+/* mid-grey backgrounds: plain high-contrast text instead of inverting */
+.cursor.cursor-ink.solid { mix-blend-mode: normal; }
+.cursor-ink.solid .cursor-hex { color: var(--solid); }
+.cursor-ink.solid .cursor-swatch { box-shadow: 0 0 0 1px var(--solid); }
 @media (hover: hover) and (pointer: fine) {
   html.has-cursor, html.has-cursor * { cursor: none !important; }
 }
