@@ -100,9 +100,29 @@
     probeCanvas.width = probeCanvas.height = 1;
     probeCtx = probeCanvas.getContext("2d", { willReadFrequently: true });
   }
+  // Chrome can't sample a 1px region straight from an SVG, so vector images are
+  // drawn once into a canvas (at up to 2x their natural size) and read from there
+  var rasters = {};
+  function raster(src, url) {
+    var c = rasters[url];
+    if (c) return c;
+    var k = Math.max(1, Math.min(2, 600 / Math.max(src.naturalWidth, src.naturalHeight)));
+    c = document.createElement("canvas");
+    c.width = Math.round(src.naturalWidth * k); c.height = Math.round(src.naturalHeight * k);
+    c.scale = k;
+    c.getContext("2d").drawImage(src, 0, 0, c.width, c.height);
+    return (rasters[url] = c);
+  }
+
   function pixel(src, sx, sy) {
     var url = src.currentSrc || src.src;
     if (unreadable[url]) return "blend";
+    if (/\.svg(\?|#|$)/i.test(url) && src.naturalWidth) {
+      var rc = raster(src, url);
+      sx = Math.min(rc.width - 1, Math.floor(sx * rc.scale));
+      sy = Math.min(rc.height - 1, Math.floor(sy * rc.scale));
+      src = rc;
+    }
     if (!probeCtx) newProbe();
     try {
       probeCtx.clearRect(0, 0, 1, 1);
@@ -130,7 +150,8 @@
     var u = (x - r.left - (r.width - dw) / 2) / dw;
     var v = (y - r.top - (r.height - dh) / 2) / dh;
     if (u < 0 || u >= 1 || v < 0 || v >= 1) return null;
-    return pixel(src, Math.floor(u * nw), Math.floor(v * nh));
+    var isSvg = /\.svg(\?|#|$)/i.test(src.currentSrc || src.src || "");
+    return pixel(src, isSvg ? u * nw : Math.floor(u * nw), isSvg ? v * nh : Math.floor(v * nh));
   }
 
   function parseColor(str) {
@@ -262,7 +283,42 @@
 
   var waitingForImage = false; // a hovered image swapped src or is still loading
 
-  // Layers one element paints at the point, top to bottom: text, image, background
+  // Border colour if the point lies on the element's border (dividers, outlines of
+  // cards and buttons), else null. Rounded corners follow the curve.
+  var SIDES = ["Top", "Right", "Bottom", "Left"];
+  function borderColor(el, cs, x, y) {
+    var w = {}, any = false;
+    SIDES.forEach(function (sd) {
+      w[sd] = cs["border" + sd + "Style"] !== "none" && cs["border" + sd + "Style"] !== "hidden"
+        ? parseFloat(cs["border" + sd + "Width"]) || 0 : 0;
+      if (w[sd]) any = true;
+    });
+    if (!any) return null;
+    var r = el.getBoundingClientRect();
+    // allow half a pixel either side so 1px lines are easy to land on
+    var dl = x - r.left, dr = r.right - x, dt = y - r.top, db = r.bottom - y;
+    if (dl < -0.5 || dr < -0.5 || dt < -0.5 || db < -0.5) return null;
+    var side = null;
+    if (w.Top && dt <= w.Top + 0.5) side = "Top";
+    else if (w.Bottom && db <= w.Bottom + 0.5) side = "Bottom";
+    else if (w.Left && dl <= w.Left + 0.5) side = "Left";
+    else if (w.Right && dr <= w.Right + 0.5) side = "Right";
+    // inside a rounded corner the border follows the curve
+    var rad = parseFloat(cs.borderTopLeftRadius) || 0;
+    if (rad > 0) {
+      var cx = dl < rad ? r.left + rad : dr < rad ? r.right - rad : null;
+      var cy = dt < rad ? r.top + rad : db < rad ? r.bottom - rad : null;
+      if (cx !== null && cy !== null) {
+        var d = Math.hypot(x - cx, y - cy);
+        var bw = Math.max(w.Top, w.Bottom, w.Left, w.Right);
+        side = d >= rad - bw - 0.5 && d <= rad + 0.5 ? (dt < rad ? "Top" : "Bottom") : null;
+      }
+    }
+    if (!side) return null;
+    return parseColor(cs["border" + side + "Color"]);
+  }
+
+  // Layers one element paints at the point, top to bottom: text, border, image, background
   function layersOf(el, x, y, textEl) {
     var out = [];
     var cs = getComputedStyle(el);
@@ -271,6 +327,8 @@
       var tc = parseColor(cs.webkitTextFillColor) || parseColor(cs.color);
       if (tc) out.push(tc);
     }
+    var bc = borderColor(el, cs, x, y);
+    if (bc && bc.a > 0) { out.push(bc); if (bc.a >= 1) return out; }
     var src = null;
     if (el.tagName === "IMG") src = el;
     else {
