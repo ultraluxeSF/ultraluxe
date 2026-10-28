@@ -1096,7 +1096,7 @@ html.has-smooth { scroll-behavior: auto; }
 }
 .cursor-swatch {
   width: 18px; height: 18px;
-  border-radius: 3px;
+  border-radius: 0;
   box-shadow: 0 0 0 1px var(--ink);
   transition: box-shadow 0.25s;
 }
@@ -1115,21 +1115,22 @@ html.has-smooth { scroll-behavior: auto; }
   html.has-cursor, html.has-cursor * { cursor: none !important; }
 }
 
-.newbtn::before {
+/* The badge is the element itself (not a pseudo-element) so the cursor's
+   colour picker can detect it */
+.newbtn {
   margin-left: -0.05%;
-  /* margin-top: -0.1%; */
   display: flex;
   position: absolute;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  padding-left: 5px;
-  padding-right: 6px;
+  padding: 1px 6px 1px 5px;
   background: var(--khaki);
-  content: "new";
   color: #ffffff;
   font-size: 8pt;
   font-weight: 500;
+  line-height: normal;
   border-radius: 5px;
+}
+.newbtn::before {
+  content: "new";
 }
 .newbtn::after {
   content: "";
