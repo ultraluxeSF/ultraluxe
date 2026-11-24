@@ -1,0 +1,60 @@
+import json
+P=[]
+def add(slug,title,cat,date,year,thumb,images,tags,desc="",links=None,client=None):
+    P.append(dict(slug=slug,title=title,category=cat,date=date,year=year,thumb=thumb,images=images,tags=tags.split(),description=desc,links=links or []))
+D="images/designs/"
+add("mverse","Mverse","branding","4 June 2024",2024,D+"mverse-thumb.webp",[D+f"mverse/mverse-{i:02d}.webp" for i in range(1,36)],"tech automatization solutions it modern branding identity logo","Brand identity and logo design for Mverse, a technology and automation company.")
+add("inter-nation","Inter Nation English School","social","Ongoing since May 2023",2023,D+"SMM/internation-thumb.webp",[D+f"SMM/internation/vol{i}/vol{i}-thumb.jpg" for i in range(6,0,-1)]+[D+"SMM/internation/yt/yt-thumb.webp"],"english yellow smmdesign school learningcenter","Daily social media graphics and YouTube thumbnails for Inter Nation English School. Every graphic on their Instagram since 29 May 2023 is made by Ultraluxe Designs.",[["Instagram","https://www.instagram.com/inter_nation_english_school/"]])
+add("icecube","Phone in Melting Ice Cube","3d","1 Feb 2024",2024,D+"3d/IceCube/IcePost-thumb.webp",[D+"3d/IceCube/"+f for f in ["IcePost-thumb.webp","IceCube3dCut.webp","IceCube3dCut2.webp","IceCube-onm.webp"]],"3d ice winter blender render")
+add("cagu","Central Asian Green University","social","Nov 2023",2023,D+"SMM/GIUT-thumb.webp",[D+"SMM/GIUT-SMD.webp"],"university green smmdesign energy","Social media design for Central Asian Green University.")
+add("abstract-glass","Abstract Dispersed Glass","3d","19 Nov 2023",2023,D+"3d/abstractwp/abstractwp-thumb.webp",[D+f"3d/abstractwp/abstr{i}.webp" for i in (1,2,3)],"abstract glass wallpaper blender render","A collection of abstract dispersed-glass wallpapers.")
+add("gorinvestment","Gorinvestment","branding","7 Sep 2023",2023,D+"gor.jpg",[D+f"gor/g{i}.jpg" for i in range(1,31)],"investment guidelines branding identity logo","Logo and brand identity for an investment company based in the UK and Uzbekistan. Created with Afzal Khamidov.",[["gorinvestment.com","https://gorinvestment.com/"],["Afzal Khamidov","https://www.instagram.com/nonsimplay/"]])
+add("onlinepizza","Online Pizza","branding","7 Sep 2023",2023,D+"onm/onlinepizza-onm.jpg",[D+"onlinepizza-bb/"+f.replace(" ","%20") for f in ["OnlinePizza-Pres-v2-01.jpg","OnlinePizza-Pres-v2-02.jpg","OnlinePizza-Pres-v2-03.jpg","OnlinePizza-Pres-v2_Artboard 3.jpg","OnlinePizza-Pres-v2_Artboard 4.jpg"]+[f"OnlinePizza-Pres-v2-{i:02d}.jpg" for i in range(6,20)]],"pizza delivery food branding identity logo","Brand identity for an online pizza delivery service.")
+add("isometric-livingroom","Isometric Living Room","3d","22 Jul 2023",2023,D+"3d/iso-4K-thumb.webp",[D+"3d/iso-4K.webp"],"isometric blender render")
+add("visualaddiction","Visual Addiction","branding","7 May 2023",2023,D+"onm/va-onm.jpg",[D+f"visualaddiction/va-pres-{i:02d}.jpg" for i in range(1,14)],"austria agency redesign logo","Logo redesign for an Austrian design agency.",[["visualaddiction.at","https://www.visualaddiction.at/"]])
+add("lieblingsgarn","Lieblingsgarn","branding","11 Mar 2023",2023,D+"lieblingsgarn-thumb.webp",[D+"lieblingsgarn-pres.webp"],"yarn knitting store berlin logo","Logo for a German yarn store.",[["lieblingsgarn.de","https://lieblingsgarn.de/"]])
+add("asia-alliance-bank","Asia Alliance Bank","social","Mar 2023",2023,D+"SMM/AAB-thumb.jpg",[D+"SMM/AAB1.jpg"],"bank smmdesign","Social media design for Asia Alliance Bank.")
+add("euroasia-insurance","Euroasia Insurance","social","Feb 2023",2023,D+"SMM/EAI-thumb.jpg",[D+"SMM/EAI.jpg"],"insurance smmdesign","Social media design for Euroasia Insurance.")
+add("air-travel-link","Air Travel Link","social","Feb 2023",2023,D+"SMM/ATL-thumb.jpg",[D+"SMM/ATL.jpg"],"tourism travel smmdesign","Social media design for a travel agency.")
+add("agisept","Agisept","social","Jan 2023",2023,D+"SMM/Agisept-rhumb.jpg",[D+"SMM/Agisept.jpg"],"health healthcare smmdesign","Social media design for Agisept, Russia.")
+add("cerom","Cerom","branding","24 Nov 2022",2022,D+"cerom-thumb.jpg",[D+"ceromDesign.jpg"],"tiled stove logo","Logo for an Austrian company that crafts tiled stoves.")
+add("insurance-uz","Insurance UZ","social","Dec 2022",2022,D+"SMM/Insurance-thumb.jpg",[D+"SMM/InsuranceUz.jpg"],"insurance uzbekistan smmdesign","Social media design for the insurance association of Uzbekistan.")
+add("tad-industries","TAD Industries","social","Dec 2022",2022,D+"SMM/TADI-thumb.jpg",[D+"SMM/TADI.jpg"],"industries cameras faceid smmdesign","Social media design for TAD Industries.")
+add("garanti-express","Garanti Express","branding","30 Oct 2022",2022,D+"ge-thumb.jpg",[D+"GE-Pres-v3.jpg"],"turkey ecommerce delivery logo","Logo for a Turkish e-commerce company.")
+add("iconsult","iConsult","ui","20 Oct 2022",2022,D+"iConsult-thumb.jpg",[D+"iConsultBehance.jpg"],"conferencing web app landing ui ux","UI and UX design for an online conferencing web application.")
+add("mywork","MyWork Admin Panel","ui","31 Aug 2022",2022,D+"onm/MW-onm.jpg",[D+"MW.jpg"],"freelance admin dashboard ui ux","Admin panel UI for MyWork, a job platform for construction workers.")
+add("ehub","E-hub","ui","5 Aug 2022",2022,D+"onm/Ehub-onm.jpg",[D+"Ehub.jpg"],"education web mobile ui ux","Web and mobile UI for an education platform.")
+add("bmc","BMC Coffee","branding","25 Jun 2022",2022,D+"bmc-thumb.jpg",[D+"bmc-bb/BMC-Brandbook_"+f+".jpg" for f in "Front Logo-02 Logo-03 Spacing Kerning Colors Mono1 Mono2 Inappropriate Fonts A4 COFFEEEEE Pattern Sticker Apron Cap Tshirt Cup Bag Menu Damas Container LastPage".split()],"coffee brandbook merch branding identity logo","Brand book and identity for Boylaga Mazza Coffee.")
+add("bmc-container","BMC Container","3d","17 Jun 2022",2022,D+"3d/bmc-container/container-thumb.jpg",[D+f"3d/bmc-container/Co{i}.jpg" for i in range(1,5)],"container coffee blender render","A 3D model of the BMC coffee container.")
+add("sk1n","Sk1n","branding","6 Jun 2022",2022,D+"onm/skinonm.jpg",[D+"Sk1nPRSNTTNws.jpg"],"skincare cosmetics beauty logo","Logo for a skincare brand.")
+add("oks","OKS Technologies","ui","25 May 2022",2022,D+"oks-thumb.jpg",[D+"Index-iMac1c.jpg"],"it landing redesign ui ux","Landing page redesign for OKS Technologies.")
+add("deadlines","Deadlines Dashboard","ui","17 May 2022",2022,D+"deadlines-thumb.jpg",[D+"deadlines-prsn.jpg"],"taskmanager dark dashboard ui ux","Dashboard UI for a task manager app.")
+add("bmp","BM Prod","branding","14 May 2022",2022,D+"bmpthumb.jpg",[D+"BMProd-prsntn.jpg"],"media production studio logo","Logo for Boylaga Mazza Production, a media production studio.")
+add("isometric-room","Isometric Room","3d","14 May 2022",2022,D+"3d/Night-thumb.jpg",[D+"3d/Night-des.jpg",D+"3d/IsometricRoom2ed.jpg"],"isometric room blender render")
+add("hestira","Hestira","branding","20 Apr 2022",2022,D+"HestiraThumb.jpg",[D+"HestiraPresentation.jpg"],"pegasus industrial logo","Logo concept. Available for purchase.")
+add("baby-akademiya","Baby Akademiya","branding","31 Mar 2022",2022,D+"Baby-Akademiya-Thumb.png",[D+"BabyAkademiyaPres1.jpg"],"kids kindergarten school logo","Logo for a kindergarten.")
+add("axe","Axe on the Wall","3d","15 Mar 2022",2022,D+"3d/axe3d/axe-thumb.jpg",[D+"3d/axe3d/"+f for f in ["Axe3.jpg","Axe4.jpg","AxeWall.jpg"]+[f"s{i}.png" for i in range(1,8)]],"axe blender render")
+add("iphone13","iPhone 13 Pro","3d","4 Mar 2022",2022,D+"3d/iphone/iphone-thumb.jpg",[D+"3d/iphone/"+f for f in "2ED.png 11ed.png 9ed1.png 9ed.png 8ed1.png 8ed.png".split()],"iphone asset blender render")
+add("erp","ERP System","ui","20 Feb 2022",2022,D+"erp-thumb.png",[D+"erp-ui-onpage.jpg"],"erp payment admin ui ux","Application UI for an ERP system.")
+add("utopia-ui","Utopia Website","ui","20 Jan 2022",2022,D+"onm/utopia-ui-onm.jpg",[D+"utopia-UIWEB.jpg"],"residence website ui ux","Website UI and UX for the Utopia residential complex.")
+add("consultantuz","Consultant.uz","branding","30 Dec 2021",2021,D+"Consultantuz1.png",[D+"Consultantuz.jpg"],"consultation letter logo","Logo for a consulting service.")
+add("utopia-approved","Utopia, approved","branding","21 Dec 2021",2021,D+"utopia-v9.1a.png",[D+"utopiaPresentationV9.1b.jpg"],"residence apartment logo","The approved logo for the Utopia residential complex.")
+add("utopia-rejected","Utopia, rejected","branding","16 Nov 2021",2021,D+"utopiav8.png",[D+"utopiaPresentation.jpg"],"residence apartment logo","An earlier Utopia logo direction that the client turned down.")
+add("aristocrat-home","Aristocrat Home","branding","15 Oct 2021",2021,D+"ahwebsite.png",[D+"AHPRes.jpg"],"luxury porcelain logo","Logo for a luxury porcelain brand.")
+add("bspace","BSpace","ui","16 Sep 2021",2021,D+"MainThumbnailBSpace.png",[D+"WidescreenOnPageBspace.jpg"],"finance fintech dashboard ui","Fintech dashboard UI.")
+add("sourcery","Sourcery","branding","8 Jun 2021",2021,D+"Sourcery.png",[D+"Sourcery-PR-fv.jpg"],"code keycap youtube logo","Logo for a YouTube channel about code.")
+add("go-anadolu","Go Anadolu","branding","15 Sep 2020",2020,D+"rwanadolu.png",[D+"GOAnadolu-PresentationRED.jpg"],"turkey tulip logo")
+add("maktab-bozor","Maktab Bozor","branding","22 Aug 2020",2020,D+"maktabbozor.png",[D+"maktabbozor-Presentation.jpg"],"school store logo")
+add("drone","Drone","3d","14 Mar 2020",2020,D+"3d/drone/drone-thumb.jpg",[D+"3d/drone/"+f for f in ["Drone-d0.jpg","Drone-d1.jpg","Drone.png"]],"drone futuristic blender render")
+# Archive: thumbnails only on the current site
+arch=[("HirerPro-thumb.jpg","HirerPro"),("hhs-thumb.jpg","Happy Horses NFT"),("ct-thumb.jpg","Croc Trading"),("snailscream-thumb.jpg","Snail Cream"),("soqoqfood-thumb.png","Soqoq Food"),("umount.png","Leslie Allen Hiking"),("EconWithFinance.png","Economics with Finance"),("CHWS.png","Cyprus Holidays"),("imitationneww.png","Imitation"),("chess2.png","Chess"),("BlackLlamaRebrand.png","Black Llama"),("Peak.png","Peak"),("Maine-Coon.png","Maine Coon"),("AB.png","Arthritis Block"),("norkulovi.jpg","Norkulov I"),("mandolinmondays.png","Mandolin Mondays"),("Stairway1.png","Stairway"),("vfx.png","VFX Alert"),("tlboxonm.jpg","Taiga Life"),("sketch.png","Sketch"),("morse.png","Morse"),("bc.jpg","Bchannels"),("winnergame.png","Winner Game"),("annoy1.png","Annoy"),("unicorn1.png","Unicorn"),("resortsq.png","Resort"),("notnews.png","Not News"),("spursmooth.png","Spur")]
+for f,t in arch:
+    s=t.lower().replace(" ","-")
+    add(s,t,"branding","",None,D+f,[D+f],"logo")
+    P[-1]["archive"]=True
+# Cirilla UI is an unlinked UI thumb
+add("cirilla","Cirilla","ui","",None,D+"CirillaUI.jpg",[D+"CirillaUI.jpg"],"ui"); P[-1]["archive"]=True
+add("bottles","Bottle Practice","3d","",None,D+"3d/Bottles.png",[D+"3d/Bottles.png"],"blender render"); P[-1]["archive"]=True
+assert len({p["slug"] for p in P})==len(P)
+json.dump(P,open("data/projects.json","w"),indent=1,ensure_ascii=False)
+print(len(P))

@@ -1,0 +1,762 @@
+{
+ "langs": [
+  "en",
+  "ru",
+  "uz"
+ ],
+ "ui": {
+  "en": {
+   "skip": "Skip to content",
+   "homeAria": "Ultraluxe Designs, home",
+   "navWork": "Work",
+   "navServices": "Services",
+   "navAbout": "About",
+   "navCta": "Start a project",
+   "langAria": "Language",
+   "contactH2": "Got a brand<br>to build?",
+   "contactAsk": "Tell me about your company and what you need, and we’ll find the right shape for it.",
+   "btnTelegram": "Message on Telegram",
+   "btnEmail": "Send an email",
+   "basedIn": "Based in",
+   "elsewhere": "Elsewhere",
+   "myCv": "My CV",
+   "backTop": "Back to top",
+   "toTopAria": "Scroll to top",
+   "homeTitle": "Ultraluxe Designs, brand identity and graphic design in Tashkent",
+   "badge": "Taking on new projects",
+   "heroWork": "See selected work",
+   "clientsAria": "Clients",
+   "casesH2": "Selected<br>branding",
+   "casesP": "Identities, brand books and graphic systems for companies in Uzbekistan and ten other countries.",
+   "viewProject": "View project",
+   "allWork": "All work",
+   "allWorkP": "Branding and graphic design first, then 3D and interface work.",
+   "filterAria": "Filter by discipline",
+   "all": "All",
+   "layoutAria": "Layout",
+   "grid": "Grid",
+   "list": "List",
+   "colProject": "Project",
+   "colDiscipline": "Discipline",
+   "colNotes": "Notes",
+   "colYear": "Year",
+   "servicesH2": "What I do",
+   "servicesP": "Most clients come for a brand and stay for the graphics that keep it alive every week.",
+   "processH2": "How it works",
+   "readCv": "Read my CV",
+   "meAlt": "Iskandar Norkulov",
+   "close": "Close",
+   "tagsAria": "Tags",
+   "projectsAria": "Projects",
+   "prev": "Previous",
+   "next": "Next",
+   "discipline": "Discipline",
+   "date": "Date",
+   "links": "Links",
+   "imageOf": "image {i} of {n}",
+   "sectionsAria": "Sections",
+   "railAria": "Jump to section",
+   "byline": "by Ultraluxe Designs",
+   "nextProject": "Next project",
+   "home": "Home",
+   "savePdf": "Save as PDF",
+   "cvAbout": "About",
+   "experience": "Experience",
+   "awards": "Awards",
+   "education": "Education",
+   "languages": "Languages",
+   "years": "years",
+   "clientsFrom": "Clients from",
+   "countries": "countries",
+   "seeWork": "See the work:",
+   "seeLogo": "See the logo",
+   "city": "Tashkent",
+   "cvTitle": "CV",
+   "cvDesc": "CV of {name}: {role} in Tashkent, Uzbekistan."
+  },
+  "ru": {
+   "skip": "Перейти к содержимому",
+   "homeAria": "Ultraluxe Designs, главная",
+   "navWork": "Работы",
+   "navServices": "Услуги",
+   "navAbout": "Обо мне",
+   "navCta": "Обсудить проект",
+   "langAria": "Язык",
+   "contactH2": "Пора создать<br>ваш бренд?",
+   "contactAsk": "Расскажите о своей компании и задаче, и мы вместе найдём для неё точное решение.",
+   "btnTelegram": "Написать в Telegram",
+   "btnEmail": "Написать на почту",
+   "basedIn": "Где я",
+   "elsewhere": "Я в сети",
+   "myCv": "Резюме",
+   "backTop": "Наверх",
+   "toTopAria": "Прокрутить наверх",
+   "homeTitle": "Ultraluxe Designs – брендинг и графический дизайн в Ташкенте",
+   "badge": "Беру новые проекты",
+   "heroWork": "Смотреть работы",
+   "clientsAria": "Клиенты",
+   "casesH2": "Избранный<br>брендинг",
+   "casesP": "Айдентика, брендбуки и графические системы для компаний из Узбекистана и ещё десяти стран.",
+   "viewProject": "Смотреть проект",
+   "allWork": "Все работы",
+   "allWorkP": "Сначала брендинг и графический дизайн, затем 3D и интерфейсы.",
+   "filterAria": "Фильтр по направлению",
+   "all": "Все",
+   "layoutAria": "Вид",
+   "grid": "Сетка",
+   "list": "Список",
+   "colProject": "Проект",
+   "colDiscipline": "Направление",
+   "colNotes": "Теги",
+   "colYear": "Год",
+   "servicesH2": "Чем я занимаюсь",
+   "servicesP": "Большинство клиентов приходят за брендом и остаются ради графики, которая поддерживает его каждую неделю.",
+   "processH2": "Как я работаю",
+   "readCv": "Открыть резюме",
+   "meAlt": "Искандер Норкулов",
+   "close": "Закрыть",
+   "tagsAria": "Теги",
+   "projectsAria": "Проекты",
+   "prev": "Назад",
+   "next": "Далее",
+   "discipline": "Направление",
+   "date": "Дата",
+   "links": "Ссылки",
+   "imageOf": "изображение {i} из {n}",
+   "sectionsAria": "Разделы",
+   "railAria": "Перейти к разделу",
+   "byline": "от Ultraluxe Designs",
+   "nextProject": "Следующий проект",
+   "home": "Главная",
+   "savePdf": "Сохранить в PDF",
+   "cvAbout": "Обо мне",
+   "experience": "Опыт работы",
+   "awards": "Награды",
+   "education": "Образование",
+   "languages": "Языки",
+   "years": "лет",
+   "clientsFrom": "Клиенты из",
+   "countries": "стран",
+   "seeWork": "Работы:",
+   "seeLogo": "Смотреть логотип",
+   "city": "Ташкент",
+   "cvTitle": "Резюме",
+   "cvDesc": "Резюме: {name}, {role}, Ташкент, Узбекистан."
+  },
+  "uz": {
+   "skip": "Asosiy qismga o‘tish",
+   "homeAria": "Ultraluxe Designs, bosh sahifa",
+   "navWork": "Ishlar",
+   "navServices": "Xizmatlar",
+   "navAbout": "Men haqimda",
+   "navCta": "Loyihani boshlash",
+   "langAria": "Til",
+   "contactH2": "Brendingizni<br>yaratamizmi?",
+   "contactAsk": "Kompaniyangiz va vazifangiz haqida yozing, birgalikda eng to‘g‘ri yechimni topamiz.",
+   "btnTelegram": "Telegramda yozish",
+   "btnEmail": "Email yuborish",
+   "basedIn": "Manzil",
+   "elsewhere": "Ijtimoiy tarmoqlar",
+   "myCv": "Rezyume",
+   "backTop": "Yuqoriga",
+   "toTopAria": "Yuqoriga qaytish",
+   "homeTitle": "Ultraluxe Designs – Toshkentda brending va grafik dizayn",
+   "badge": "Yangi loyihalarni qabul qilaman",
+   "heroWork": "Ishlarni ko‘rish",
+   "clientsAria": "Mijozlar",
+   "casesH2": "Tanlangan<br>brending",
+   "casesP": "O‘zbekiston va yana o‘nta davlatdagi kompaniyalar uchun korporativ uslub, brendbuklar va grafik tizimlar.",
+   "viewProject": "Loyihani ko‘rish",
+   "allWork": "Barcha ishlar",
+   "allWorkP": "Avval brending va grafik dizayn, keyin 3D va interfeyslar.",
+   "filterAria": "Yo‘nalish bo‘yicha saralash",
+   "all": "Hammasi",
+   "layoutAria": "Ko‘rinish",
+   "grid": "To‘r",
+   "list": "Ro‘yxat",
+   "colProject": "Loyiha",
+   "colDiscipline": "Yo‘nalish",
+   "colNotes": "Teglar",
+   "colYear": "Yil",
+   "servicesH2": "Xizmatlarim",
+   "servicesP": "Ko‘pchilik mijozlar brend uchun keladi va uni har hafta jonli saqlaydigan grafika uchun qoladi.",
+   "processH2": "Qanday ishlayman",
+   "readCv": "Rezyumeni ochish",
+   "meAlt": "Iskandar Norkulov",
+   "close": "Yopish",
+   "tagsAria": "Teglar",
+   "projectsAria": "Loyihalar",
+   "prev": "Oldingi",
+   "next": "Keyingi",
+   "discipline": "Yo‘nalish",
+   "date": "Sana",
+   "links": "Havolalar",
+   "imageOf": "{n} tadan {i}-rasm",
+   "sectionsAria": "Bo‘limlar",
+   "railAria": "Bo‘limga o‘tish",
+   "byline": "Ultraluxe Designs ishi",
+   "nextProject": "Keyingi loyiha",
+   "home": "Bosh sahifa",
+   "savePdf": "PDF sifatida saqlash",
+   "cvAbout": "Men haqimda",
+   "experience": "Ish tajribasi",
+   "awards": "Mukofotlar",
+   "education": "Ta’lim",
+   "languages": "Tillar",
+   "years": "yil",
+   "clientsFrom": "Mijozlar",
+   "countries": "davlatdan",
+   "seeWork": "Ishlar:",
+   "seeLogo": "Logotipni ko‘rish",
+   "city": "Toshkent",
+   "cvTitle": "Rezyume",
+   "cvDesc": "Rezyume: {name}, {role}, Toshkent, O‘zbekiston."
+  }
+ },
+ "cats": {
+  "en": {
+   "branding": "Branding",
+   "social": "Social media",
+   "3d": "3D",
+   "ui": "UI/UX"
+  },
+  "ru": {
+   "branding": "Брендинг",
+   "social": "Соцсети",
+   "3d": "3D",
+   "ui": "UI/UX"
+  },
+  "uz": {
+   "branding": "Brending",
+   "social": "SMM",
+   "3d": "3D",
+   "ui": "UI/UX"
+  }
+ },
+ "sections": {
+  "ru": {
+   "Vol.": "Выпуск",
+   "YouTube Thumbnails": "Обложки для YouTube"
+  },
+  "uz": {
+   "Vol.": "-son",
+   "YouTube Thumbnails": "YouTube muqovalari"
+  }
+ },
+ "site": {
+  "ru": {
+   "description": "Ultraluxe Designs: айдентика, логотипы и графический дизайн в Ташкенте. Брендбуки, упаковка, дизайн для соцсетей и 3D для компаний из Узбекистана и других стран.",
+   "heroLines": [
+    "Создаю бренды,",
+    "которые помнят."
+   ],
+   "heroPlain": "Создаю бренды, которые помнят.",
+   "intro": "Ultraluxe – дизайнер айдентики и графики из Ташкента. С 2017 года работаю с компаниями из Узбекистана и других стран.",
+   "location": "Ташкент, Узбекистан",
+   "services": [
+    [
+     "Брендинг и айдентика",
+     "Логотипы, брендбуки и целостные системы айдентики: цвет, шрифты, паттерны, деловая документация, упаковка и мерч.",
+     "main"
+    ],
+    [
+     "Графический дизайн",
+     "Постеры, полиграфия, презентации, баннеры и упаковка, в которых сразу узнаётся бренд.",
+     "main"
+    ],
+    [
+     "Дизайн для соцсетей",
+     "Системы постов и сторис, карусели, обложки и превью для YouTube, рассчитанные на еженедельный выпуск.",
+     ""
+    ],
+    [
+     "3D и моушн",
+     "Рендеры продуктов и анимация логотипов в Blender.",
+     ""
+    ],
+    [
+     "Обработка фото",
+     "Ретушь, цветокоррекция, повышение качества и коллажи.",
+     ""
+    ],
+    [
+     "UI/UX-дизайн",
+     "Интерфейсы сайтов и приложений, когда они нужны бренду.",
+     ""
+    ]
+   ],
+   "about": [
+    "Привет, я Искандер. Я графический дизайнер и создаю бренды: логотипы, системы айдентики и повседневную графику, благодаря которой бренд живёт.",
+    "Я работал с клиентами из Узбекистана, России, Австрии, Германии, Швейцарии, Великобритании, Канады, Таиланда, Кипра, Турции и Чили – от магазина пряжи в Берлине до инвестиционной компании в Великобритании. С 2023 года я также делаю всю графику для Instagram школы английского языка Inter Nation."
+   ],
+   "facts": [
+    [
+     "Где я",
+     "Ташкент, Узбекистан"
+    ],
+    [
+     "Специализация",
+     "Брендинг, графический дизайн и дизайн для соцсетей"
+    ],
+    [
+     "Клиенты из",
+     "Узбекистан, Россия, Австрия, Германия, Швейцария, Великобритания, Канада, Таиланд, Кипр, Турция, Чили"
+    ]
+   ],
+   "featured": {
+    "mverse": "Айдентика для компании в сфере технологий и автоматизации: монограмма, кислотно-лаймовая палитра и мерч.",
+    "onlinepizza": "Логотип-маскот, клетчатый паттерн и упаковка для службы доставки пиццы.",
+    "inter-nation": "Вся графика для Instagram с 2023 года: шесть выпусков постов и обложки для YouTube.",
+    "gorinvestment": "Полный брендбук для инвестиционной компании из Великобритании и Узбекистана.",
+    "bmc": "Монохромный кофейный бренд: от правил логотипа до стаканов, кепок и фургона доставки.",
+    "lieblingsgarn": "Логотип и айдентика для магазина пряжи в Берлине: знак-клубок, полосатый паттерн и шоперы."
+   },
+   "process": [
+    [
+     "Бриф",
+     "Обсуждаем ваш бизнес, аудиторию и то, какой результат должен дать дизайн."
+    ],
+    [
+     "Концепции",
+     "Показываю направления сразу на реальных носителях, чтобы их можно было оценить в контексте."
+    ],
+    [
+     "Доработка",
+     "Вместе доводим выбранное направление, пока не заработает каждая деталь."
+    ],
+    [
+     "Передача",
+     "Вы получаете все исходники и гайдлайны, готовые для печати, веба и соцсетей."
+    ]
+   ]
+  },
+  "uz": {
+   "description": "Ultraluxe Designs: Toshkentda korporativ uslub, logotip va grafik dizayn. O‘zbekiston va xorijdagi kompaniyalar uchun brendbuklar, qadoq, ijtimoiy tarmoqlar uchun dizayn va 3D.",
+   "heroLines": [
+    "Esda qoladigan",
+    "brendlar yarataman."
+   ],
+   "heroPlain": "Esda qoladigan brendlar yarataman.",
+   "intro": "Ultraluxe – Toshkentdagi korporativ uslub va grafik dizayn bo‘yicha dizayner. 2017-yildan beri O‘zbekiston va xorijdagi kompaniyalar bilan ishlayman.",
+   "location": "Toshkent, O‘zbekiston",
+   "services": [
+    [
+     "Brending va korporativ uslub",
+     "Logotiplar, brendbuklar va to‘liq korporativ uslub tizimlari: rang, shrift, patternlar, ish hujjatlari, qadoq va merch.",
+     "main"
+    ],
+    [
+     "Grafik dizayn",
+     "Bir qarashda brendga tegishli ekani bilinadigan posterlar, poligrafiya, taqdimotlar, bannerlar va qadoqlar.",
+     "main"
+    ],
+    [
+     "SMM dizayn",
+     "Har hafta chiqarishga mo‘ljallangan post va stories tizimlari, karusellar, muqovalar va YouTube prevyulari.",
+     ""
+    ],
+    [
+     "3D va animatsiya",
+     "Blenderda mahsulot renderlari va logotip animatsiyasi.",
+     ""
+    ],
+    [
+     "Fotolarga ishlov berish",
+     "Retush, rang korreksiyasi, sifatni oshirish va kollajlar.",
+     ""
+    ],
+    [
+     "UI/UX dizayn",
+     "Brendga kerak bo‘lganda saytlar va ilovalar uchun interfeyslar.",
+     ""
+    ]
+   ],
+   "about": [
+    "Salom, men Iskandar. Men brendlar yaratadigan grafik dizaynerman: logotiplar, korporativ uslub tizimlari va brendni har kuni jonli saqlaydigan grafika.",
+    "O‘zbekiston, Rossiya, Avstriya, Germaniya, Shveytsariya, Buyuk Britaniya, Kanada, Tailand, Kipr, Turkiya va Chilidagi mijozlar bilan ishlaganman – Berlindagi ip-kalava do‘konidan tortib Buyuk Britaniyadagi investitsiya kompaniyasigacha. 2023-yildan beri Inter Nation ingliz tili maktabining Instagram sahifasi uchun barcha grafikani ham men tayyorlayman."
+   ],
+   "facts": [
+    [
+     "Manzil",
+     "Toshkent, O‘zbekiston"
+    ],
+    [
+     "Yo‘nalish",
+     "Brending, grafik dizayn va SMM dizayn"
+    ],
+    [
+     "Mijozlar",
+     "O‘zbekiston, Rossiya, Avstriya, Germaniya, Shveytsariya, Buyuk Britaniya, Kanada, Tailand, Kipr, Turkiya, Chili"
+    ]
+   ],
+   "featured": {
+    "mverse": "Texnologiya va avtomatlashtirish kompaniyasi uchun korporativ uslub: monogramma, kislotali laym rangli palitra va merch.",
+    "onlinepizza": "Pitsa yetkazib berish xizmati uchun maskot-logotip, katakli pattern va qadoq.",
+    "inter-nation": "2023-yildan beri Instagram uchun barcha grafika: postlarning olti soni va YouTube muqovalari.",
+    "gorinvestment": "Buyuk Britaniya va O‘zbekistondagi investitsiya kompaniyasi uchun to‘liq brendbuk.",
+    "bmc": "Monoxrom qahva brendi: logotip qoidalaridan stakanlar, kepkalar va yetkazib berish furgonigacha.",
+    "lieblingsgarn": "Berlindagi ip-kalava do‘koni uchun logotip va korporativ uslub: kalava belgisi, yo‘l-yo‘l pattern va sumkalar."
+   },
+   "process": [
+    [
+     "Brif",
+     "Biznesingiz, auditoriyangiz va dizayn qanday natija berishi kerakligini muhokama qilamiz."
+    ],
+    [
+     "Konsepsiyalar",
+     "Yo‘nalishlarni real tashuvchilarda ko‘rsataman, shunda ularni kontekstda baholay olasiz."
+    ],
+    [
+     "Takomillashtirish",
+     "Tanlangan yo‘nalishni har bir detal o‘z joyiga tushguncha birga sayqallaymiz."
+    ],
+    [
+     "Topshirish",
+     "Bosma, veb va ijtimoiy tarmoqlar uchun tayyor barcha manba fayllar va qo‘llanmalarni olasiz."
+    ]
+   ]
+  }
+ },
+ "cv": {
+  "ru": {
+   "role": "Графический дизайнер и дизайнер айдентики",
+   "bio": [
+    "Графический дизайнер из Ташкента, специализируюсь на айдентике и визуальных коммуникациях. Создаю бренды с нуля: системы айдентики, брендбуки, упаковку, полиграфию и контент для соцсетей, благодаря которому бренд остаётся на виду каждый день.",
+    "С 2017 года работаю со стартапами, школами, банками и страховыми компаниями из Узбекистана и ещё десяти стран. Опыт в UI/UX и продуктовом дизайне помогает делать айдентику, которая одинаково хорошо работает и на экране, и в печати. Нет технического задания? Помогу его составить."
+   ],
+   "expertise": [
+    "Графический дизайн",
+    "UI/UX-дизайн"
+   ],
+   "jobs": [
+    {
+     "period": "Июнь 2023 – по настоящее время",
+     "role": "Графический дизайнер, отдел маркетинга",
+     "tags": "Дизайн для соцсетей, полиграфия, моушн-дизайн",
+     "points": [
+      "Единственный графический дизайнер в компании, работаю в команде маркетинга.",
+      "Создаю всю графику для Instagram, YouTube и Telegram, включая основной аккаунт и аккаунт самаркандского филиала: посты, сторис, анимации и обложки для видео.",
+      "Разрабатываю POS-материалы, полиграфию и наружную рекламу.",
+      "Вместе с командой маркетинга работаю над кампаниями и общей стратегией, слежу за единством бренда во всех каналах."
+     ]
+    },
+    {
+     "period": "2017 – по настоящее время",
+     "role": "Основатель и дизайнер (фриланс)",
+     "tags": "Брендинг, дизайн логотипов, упаковка, дизайн для соцсетей, 3D",
+     "points": [
+      "Логотипы, системы айдентики и брендбуки для клиентов из 11 стран.",
+      "Среди клиентов – Gorinvestment, Mverse, Online Pizza, BMC Coffee, Visual Addiction и Lieblingsgarn."
+     ]
+    },
+    {
+     "period": "Ноябрь 2022 – июнь 2023",
+     "role": "Графический и UI/UX-дизайнер",
+     "tags": "Брендинг, дизайн логотипов, упаковка, дизайн для соцсетей, 3D, UI-дизайн, моушн-дизайн",
+     "points": [
+      "Создавал статичный и анимированный контент для соцсетей Euroasia Insurance, Agisept, ART Discoveries Group и Asia Alliance Bank.",
+      "Разрабатывал POS-материалы, логотипы и айдентику, а также UI/UX для клиентских проектов."
+     ]
+    },
+    {
+     "period": "Январь 2022 – ноябрь 2022",
+     "role": "Продуктовый дизайнер",
+     "tags": "Продуктовый дизайн, UX-исследования, пользовательские сценарии, вайрфреймы, прототипирование, юзабилити-тестирование",
+     "points": [
+      "Вёл все этапы дизайна в компании: от исследований и пользовательских сценариев до вайрфреймов, прототипов и финального UI.",
+      "Проектировал продукты для стартапов: CRM для финтех-приложения BSpace, ERP-систему для частных школ, Yubor (приложение для денежных переводов для граждан СНГ), админ-панель MyWork (платформа поиска работы для строителей) и веб-приложение iConsult для видеоконференций и семинаров."
+     ]
+    },
+    {
+     "period": "Май 2019 – июнь 2020",
+     "role": "SMM-менеджер и ведущий дизайнер",
+     "tags": "SMM, графический дизайн, моушн-дизайн, таргетированная реклама, фотосъёмка",
+     "points": [
+      "Отвечал за маркетинг, рекламу, контент, фотосъёмку и дизайн в компании, был ведущим дизайнером всех 13 филиалов.",
+      "За год увеличил аудиторию в Instagram, Telegram, Facebook и YouTube с 10 тыс. до 30 тыс.+ подписчиков и улучшил удержание подписчиков."
+     ]
+    }
+   ],
+   "linkLabels": {
+    "ERP system": "ERP-система"
+   },
+   "awards": [
+    [
+     "1-е место, университетский конкурс логотипов",
+     "Март 2020",
+     "Логотип-победитель для модуля Economics with Finance в Вестминстерском международном университете в Ташкенте."
+    ]
+   ],
+   "education": [
+    [
+     "Вестминстерский международный университет в Ташкенте",
+     "Сентябрь 2018 – май 2022",
+     "Бакалавр, Business Information Systems"
+    ]
+   ],
+   "languages": [
+    [
+     "Английский",
+     "C2"
+    ],
+    [
+     "Русский",
+     "Свободно"
+    ],
+    [
+     "Узбекский",
+     "Свободно"
+    ]
+   ]
+  },
+  "uz": {
+   "role": "Grafik dizayner va korporativ uslub dizayneri",
+   "bio": [
+    "Toshkentlik grafik dizayner, korporativ uslub va vizual kommunikatsiyalarga ixtisoslashganman. Brendlarni noldan yarataman: korporativ uslub tizimlari, brendbuklar, qadoq, poligrafiya va brendni har kuni ko‘z oldida tutadigan ijtimoiy tarmoq kontenti.",
+    "2017-yildan beri O‘zbekiston va yana o‘nta davlatdagi startaplar, maktablar, banklar va sug‘urta kompaniyalari bilan ishlayman. UI/UX va mahsulot dizaynidagi tajribam ekranda ham, bosma nashrda ham birdek yaxshi ishlaydigan korporativ uslub yaratishga yordam beradi. Texnik topshiriq yo‘qmi? Uni tuzishda yordam beraman."
+   ],
+   "expertise": [
+    "Grafik dizayn",
+    "UI/UX dizayn"
+   ],
+   "jobs": [
+    {
+     "period": "2023-yil iyun – hozirgacha",
+     "role": "Grafik dizayner, marketing bo‘limi",
+     "tags": "SMM dizayn, poligrafiya, motion-dizayn",
+     "points": [
+      "Kompaniyadagi yagona grafik dizayner, marketing jamoasida ishlayman.",
+      "Instagram, YouTube va Telegram uchun barcha grafikani, jumladan asosiy va Samarqand filiali akkauntlari uchun tayyorlayman: postlar, stories, animatsiyalar va video muqovalari.",
+      "POS materiallar, poligrafiya va tashqi reklamani ishlab chiqaman.",
+      "Marketing jamoasi bilan kampaniyalar va umumiy strategiya ustida ishlayman, brendning barcha kanallarda bir xil ko‘rinishini ta’minlayman."
+     ]
+    },
+    {
+     "period": "2017 – hozirgacha",
+     "role": "Asoschi va dizayner (frilans)",
+     "tags": "Brending, logotip dizayni, qadoq, SMM dizayn, 3D",
+     "points": [
+      "11 davlatdagi mijozlar uchun logotiplar, korporativ uslub tizimlari va brendbuklar.",
+      "Mijozlar orasida Gorinvestment, Mverse, Online Pizza, BMC Coffee, Visual Addiction va Lieblingsgarn bor."
+     ]
+    },
+    {
+     "period": "2022-yil noyabr – 2023-yil iyun",
+     "role": "Grafik va UI/UX dizayner",
+     "tags": "Brending, logotip dizayni, qadoq, SMM dizayn, 3D, UI dizayn, motion-dizayn",
+     "points": [
+      "Euroasia Insurance, Agisept, ART Discoveries Group va Asia Alliance Bank ijtimoiy tarmoqlari uchun statik va animatsion kontent yaratdim.",
+      "POS materiallar, logotiplar va korporativ uslub, shuningdek mijozlar loyihalari uchun UI/UX ishlab chiqdim."
+     ]
+    },
+    {
+     "period": "2022-yil yanvar – 2022-yil noyabr",
+     "role": "Mahsulot dizayneri",
+     "tags": "Mahsulot dizayni, UX tadqiqotlar, foydalanuvchi ssenariylari, vayrfreymlar, prototiplash, usability-testlash",
+     "points": [
+      "Kompaniyadagi dizaynning barcha bosqichlariga rahbarlik qildim: tadqiqot va foydalanuvchi ssenariylaridan vayrfreymlar, prototiplar va yakuniy UI gacha.",
+      "Startaplar uchun mahsulotlar loyihaladim: BSpace fintex ilovasi uchun CRM, xususiy maktablar uchun ERP tizimi, Yubor (MDH fuqarolari uchun pul o‘tkazmalari ilovasi), MyWork (quruvchilar uchun ish topish platformasi) admin paneli va videokonferensiya hamda seminarlar uchun iConsult veb-ilovasi."
+     ]
+    },
+    {
+     "period": "2019-yil may – 2020-yil iyun",
+     "role": "SMM menejer va yetakchi dizayner",
+     "tags": "SMM, grafik dizayn, motion-dizayn, target reklama, fotosurat",
+     "points": [
+      "Kompaniyada marketing, reklama, kontent, fotosurat va dizayn uchun javob berdim, barcha 13 filialning yetakchi dizayneri bo‘ldim.",
+      "Bir yil ichida Instagram, Telegram, Facebook va YouTube’dagi auditoriyani 10 mingdan 30 mingdan ortiq obunachiga yetkazdim va obunachilarni ushlab qolishni yaxshiladim."
+     ]
+    }
+   ],
+   "linkLabels": {
+    "ERP system": "ERP tizimi"
+   },
+   "awards": [
+    [
+     "1-o‘rin, universitet logotip tanlovi",
+     "2020-yil mart",
+     "Toshkentdagi Vestminster xalqaro universitetida Economics with Finance moduli uchun g‘olib logotip."
+    ]
+   ],
+   "education": [
+    [
+     "Toshkentdagi Vestminster xalqaro universiteti",
+     "2018-yil sentabr – 2022-yil may",
+     "Bakalavr, Business Information Systems"
+    ]
+   ],
+   "languages": [
+    [
+     "Ingliz tili",
+     "C2"
+    ],
+    [
+     "Rus tili",
+     "Erkin"
+    ],
+    [
+     "O‘zbek tili",
+     "Erkin"
+    ]
+   ]
+  }
+ },
+ "dates": {
+  "ru": {
+   "Ongoing since May 2023": "С мая 2023 года по сей день"
+  },
+  "uz": {
+   "Ongoing since May 2023": "2023-yil maydan beri davom etmoqda"
+  }
+ },
+ "projects": {
+  "ru": {
+   "mverse": "Айдентика и логотип для Mverse, компании в сфере технологий и автоматизации.",
+   "inter-nation": "Ежедневная графика для соцсетей и обложки для YouTube школы английского языка Inter Nation. Вся графика в их Instagram с 29 мая 2023 года сделана Ultraluxe Designs.",
+   "icecube": "Телефон во льду, который тает: модель и рендер в Blender для зимнего поста Inter Nation.",
+   "cagu": "Дизайн для соцсетей Central Asian Green University.",
+   "abstract-glass": "Коллекция абстрактных обоев с эффектом дисперсии в стекле.",
+   "gorinvestment": "Логотип и айдентика для инвестиционной компании из Великобритании и Узбекистана. Совместно с Афзалом Хамидовым.",
+   "onlinepizza": "Айдентика для службы онлайн-доставки пиццы.",
+   "isometric-livingroom": "Изометрическая гостиная, модель и рендер в Blender.",
+   "visualaddiction": "Редизайн логотипа для австрийского дизайн-агентства.",
+   "lieblingsgarn": "Логотип для немецкого магазина пряжи.",
+   "asia-alliance-bank": "Дизайн для соцсетей Asia Alliance Bank.",
+   "euroasia-insurance": "Дизайн для соцсетей Euroasia Insurance.",
+   "air-travel-link": "Дизайн для соцсетей туристического агентства.",
+   "agisept": "Дизайн для соцсетей Agisept, Россия.",
+   "cerom": "Логотип для австрийской компании, которая делает кафельные печи.",
+   "insurance-uz": "Дизайн для соцсетей Ассоциации страховщиков Узбекистана.",
+   "tad-industries": "Дизайн для соцсетей TAD Industries.",
+   "garanti-express": "Логотип для турецкой компании электронной коммерции.",
+   "iconsult": "UI/UX-дизайн веб-приложения для онлайн-конференций.",
+   "mywork": "UI админ-панели MyWork, платформы поиска работы для строителей.",
+   "ehub": "Веб- и мобильный UI для образовательной платформы.",
+   "bmc": "Брендбук и айдентика для Boylaga Mazza Coffee.",
+   "sk1n": "Логотип для бренда косметики по уходу за кожей.",
+   "oks": "Редизайн лендинга для OKS Technologies.",
+   "deadlines": "UI дашборда для таск-менеджера.",
+   "bmp": "Логотип для Boylaga Mazza Production, студии видеопроизводства.",
+   "hestira": "Логотип с пегасом для промышленного бренда. Знак доступен для покупки.",
+   "baby-akademiya": "Логотип для детского сада.",
+   "erp": "UI приложения для ERP-системы.",
+   "utopia-ui": "UI/UX сайта жилого комплекса Utopia.",
+   "consultantuz": "Логотип для консалтингового сервиса.",
+   "utopia-approved": "Утверждённый логотип жилого комплекса Utopia.",
+   "aristocrat-home": "Логотип для люксового бренда фарфора.",
+   "sourcery": "Логотип YouTube-канала о программировании Sourcery, построенный на клавише клавиатуры.",
+   "go-anadolu": "Логотип Go Anadolu на основе тюльпана, символа Турции.",
+   "maktab-bozor": "Логотип Maktab Bozor, интернет-магазина школьных принадлежностей.",
+   "drone": "Футуристичный парящий дрон, модель и рендер в Blender.",
+   "happy-horses-nft": "Логотип NFT-коллекции Happy Horses.",
+   "croc-trading": "Логотип для Croc Trading.",
+   "snail-cream": "Логотип для крема с муцином улитки.",
+   "soqoq-food": "Логотип для Soqoq Food.",
+   "leslie-allen-hiking": "Логотип для Leslie Allen Hiking.",
+   "economics-with-finance": "Логотип для модуля Economics with Finance.",
+   "cyprus-holidays": "Логотип для Cyprus Holidays.",
+   "imitation": "Логотип для Imitation.",
+   "chess": "Концепция шахматного логотипа.",
+   "black-llama": "Ребрендинг Black Llama.",
+   "peak": "Логотип для Peak.",
+   "maine-coon": "Концепция логотипа с мейн-куном.",
+   "arthritis-block": "Логотип для Arthritis Block.",
+   "norkulov-i": "Личный логотип.",
+   "stairway": "Логотип для Stairway.",
+   "vfx-alert": "Логотип для VFX Alert.",
+   "taiga-life": "Логотип для Taiga Life.",
+   "sketch": "Концепция логотипа Sketch.",
+   "morse": "Логотип для Morse.",
+   "bchannels": "Логотип для Bchannels.",
+   "winner-game": "Логотип для Winner Game.",
+   "annoy": "Логотип для Annoy.",
+   "unicorn": "Концепция логотипа с единорогом.",
+   "spur": "Логотип для Spur.",
+   "cf-transport": "Логотип и айдентика для грузоперевозчика CF Transport: система логотипов, фирменные цвета, типографика и мокапы."
+  },
+  "uz": {
+   "mverse": "Texnologiya va avtomatlashtirish kompaniyasi Mverse uchun korporativ uslub va logotip.",
+   "inter-nation": "Inter Nation ingliz tili maktabi uchun har kungi SMM grafikasi va YouTube muqovalari. 2023-yil 29-maydan beri ularning Instagram sahifasidagi barcha grafikani Ultraluxe Designs tayyorlagan.",
+   "icecube": "Erib borayotgan muz ichidagi telefon: Inter Nation qishki posti uchun Blenderda modellashtirilgan va render qilingan.",
+   "cagu": "Central Asian Green University uchun SMM dizayn.",
+   "abstract-glass": "Shishada dispersiya effektli abstrakt fon rasmlari to‘plami.",
+   "gorinvestment": "Buyuk Britaniya va O‘zbekistondagi investitsiya kompaniyasi uchun logotip va korporativ uslub. Afzal Hamidov bilan birga.",
+   "onlinepizza": "Onlayn pitsa yetkazib berish xizmati uchun korporativ uslub.",
+   "isometric-livingroom": "Blenderda modellashtirilgan va render qilingan izometrik mehmonxona.",
+   "visualaddiction": "Avstriyalik dizayn agentligi uchun logotip redizayni.",
+   "lieblingsgarn": "Germaniyadagi ip-kalava do‘koni uchun logotip.",
+   "asia-alliance-bank": "Asia Alliance Bank uchun SMM dizayn.",
+   "euroasia-insurance": "Euroasia Insurance uchun SMM dizayn.",
+   "air-travel-link": "Sayyohlik agentligi uchun SMM dizayn.",
+   "agisept": "Agisept (Rossiya) uchun SMM dizayn.",
+   "cerom": "Koshinli pechlar yasaydigan avstriyalik kompaniya uchun logotip.",
+   "insurance-uz": "O‘zbekiston sug‘urtachilar assotsiatsiyasi uchun SMM dizayn.",
+   "tad-industries": "TAD Industries uchun SMM dizayn.",
+   "garanti-express": "Turkiyalik elektron tijorat kompaniyasi uchun logotip.",
+   "iconsult": "Onlayn konferensiyalar uchun veb-ilovaning UI/UX dizayni.",
+   "mywork": "Quruvchilar uchun ish topish platformasi MyWork admin panelining UI dizayni.",
+   "ehub": "Ta’lim platformasi uchun veb va mobil UI.",
+   "bmc": "Boylaga Mazza Coffee uchun brendbuk va korporativ uslub.",
+   "sk1n": "Teri parvarishi brendi uchun logotip.",
+   "oks": "OKS Technologies uchun lending sahifa redizayni.",
+   "deadlines": "Vazifalar menejeri uchun dashboard UI.",
+   "bmp": "Video ishlab chiqarish studiyasi Boylaga Mazza Production uchun logotip.",
+   "hestira": "Sanoat brendi uchun pegasli logotip. Belgini sotib olish mumkin.",
+   "baby-akademiya": "Bolalar bog‘chasi uchun logotip.",
+   "erp": "ERP tizimi uchun ilova UI dizayni.",
+   "utopia-ui": "Utopia turar-joy majmuasi sayti uchun UI/UX.",
+   "consultantuz": "Konsalting xizmati uchun logotip.",
+   "utopia-approved": "Utopia turar-joy majmuasining tasdiqlangan logotipi.",
+   "aristocrat-home": "Hashamatli chinni brendi uchun logotip.",
+   "sourcery": "Dasturlash haqidagi Sourcery YouTube kanali uchun klaviatura tugmasi asosidagi logotip.",
+   "go-anadolu": "Turkiya ramzi bo‘lgan lola asosidagi Go Anadolu logotipi.",
+   "maktab-bozor": "Maktab anjomlari onlayn do‘koni Maktab Bozor uchun logotip.",
+   "drone": "Blenderda modellashtirilgan va render qilingan futuristik uchuvchi dron.",
+   "happy-horses-nft": "Happy Horses NFT to‘plami uchun logotip.",
+   "croc-trading": "Croc Trading uchun logotip.",
+   "snail-cream": "Shilliqqurt kremi uchun logotip.",
+   "soqoq-food": "Soqoq Food uchun logotip.",
+   "leslie-allen-hiking": "Leslie Allen Hiking uchun logotip.",
+   "economics-with-finance": "Economics with Finance moduli uchun logotip.",
+   "cyprus-holidays": "Cyprus Holidays uchun logotip.",
+   "imitation": "Imitation uchun logotip.",
+   "chess": "Shaxmat logotipi konsepsiyasi.",
+   "black-llama": "Black Llama uchun rebrending.",
+   "peak": "Peak uchun logotip.",
+   "maine-coon": "Meyn-kun mushugi tasvirlangan logotip konsepsiyasi.",
+   "arthritis-block": "Arthritis Block uchun logotip.",
+   "norkulov-i": "Shaxsiy logotip.",
+   "stairway": "Stairway uchun logotip.",
+   "vfx-alert": "VFX Alert uchun logotip.",
+   "taiga-life": "Taiga Life uchun logotip.",
+   "sketch": "Sketch logotipi konsepsiyasi.",
+   "morse": "Morse uchun logotip.",
+   "bchannels": "Bchannels uchun logotip.",
+   "winner-game": "Winner Game uchun logotip.",
+   "annoy": "Annoy uchun logotip.",
+   "unicorn": "Yakkashox tasvirlangan logotip konsepsiyasi.",
+   "spur": "Spur uchun logotip.",
+   "cf-transport": "Yuk tashish kompaniyasi CF Transport uchun logotip va korporativ uslub: logotiplar tizimi, brend ranglari, tipografika va mokaplar."
+  }
+ },
+ "groups": {
+  "en": {
+   "branding": "Branding and logos",
+   "social": "Graphic and social media design",
+   "3d": "3D",
+   "ui": "UI/UX design"
+  },
+  "ru": {
+   "branding": "Брендинг и логотипы",
+   "social": "Графика и дизайн для соцсетей",
+   "3d": "3D-графика",
+   "ui": "UI/UX-дизайн"
+  },
+  "uz": {
+   "branding": "Brending va logotiplar",
+   "social": "Grafika va SMM dizayn",
+   "3d": "3D grafika",
+   "ui": "UI/UX dizayn"
+  }
+ }
+}

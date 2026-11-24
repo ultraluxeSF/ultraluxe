@@ -1,0 +1,365 @@
+{
+  "email": "hi@ultraluxedesigns.com",
+  "telegram": {
+    "handle": "@ultraluxe",
+    "url": "https://t.me/ultraluxe"
+  },
+  "location": "Tashkent, Uzbekistan",
+  "description": "Ultraluxe Designs: brand identity, logo and graphic design studio in Tashkent, Uzbekistan. Brand books, packaging, social media design and 3D for companies in Uzbekistan and abroad.",
+  "heroLines": [
+    "I design brands",
+    "people remember."
+  ],
+  "heroPlain": "I design brands people remember.",
+  "intro": "Ultraluxe is a brand identity and graphic designer in Tashkent, working with companies in Uzbekistan and abroad since 2017.",
+  "services": [
+    [
+      "Branding and identity",
+      "Logos, brand books and complete identity systems: colour, type, patterns, stationery, packaging and merch.",
+      "main"
+    ],
+    [
+      "Graphic design",
+      "Posters, print, presentations, banners and packaging that clearly belong to one brand.",
+      "main"
+    ],
+    [
+      "Social media design",
+      "Post and story systems, carousels, covers and YouTube thumbnails built to be produced every week.",
+      ""
+    ],
+    [
+      "3D and motion",
+      "Product renders and logo animation made in Blender.",
+      ""
+    ],
+    [
+      "Photo processing",
+      "Retouching, colour correction, upscaling and composites.",
+      ""
+    ],
+    [
+      "UI/UX design",
+      "Interfaces for websites and apps, when the brand needs one.",
+      ""
+    ]
+  ],
+  "about": [
+    "Hello, I'm Iskandar. I'm a graphic designer who builds brands: logos, identity systems and the everyday graphics that keep a brand alive.",
+    "I've worked with clients in Uzbekistan, Russia, Austria, Germany, Switzerland, the UK, Canada, Thailand, Cyprus, Turkey and Chile, from a yarn store in Berlin to an investment company in the UK. Since 2023 I've also designed every Instagram graphic for Inter Nation English School."
+  ],
+  "facts": [
+    [
+      "Based in",
+      "Tashkent, Uzbekistan"
+    ],
+    [
+      "Focus",
+      "Branding, graphic and social media design"
+    ],
+    [
+      "Clients from",
+      "Uzbekistan, Russia, Austria, Germany, Switzerland, UK, Canada, Thailand, Cyprus, Turkey, Chile"
+    ]
+  ],
+  "social": [
+    [
+      "Behance",
+      "https://www.behance.net/ultraluxedesigns"
+    ],
+    [
+      "Instagram",
+      "https://www.instagram.com/utraluxe/"
+    ],
+    [
+      "LinkedIn",
+      "https://www.linkedin.com/in/ultraluxe/"
+    ],
+    [
+      "YouTube",
+      "https://youtube.com/c/ultraluxe"
+    ],
+    [
+      "ArtStation",
+      "https://www.artstation.com/ultraluxe"
+    ],
+    [
+      "Teepublic",
+      "https://www.teepublic.com/user/ultraluxe"
+    ],
+    [
+      "Google reviews",
+      "https://maps.app.goo.gl/PrbVArp5Sr2XBEWz7"
+    ]
+  ],
+  "clients": [
+    [
+      "Inter Nation",
+      "inter-nation"
+    ],
+    [
+      "Gorinvestment",
+      "gorinvestment"
+    ],
+    [
+      "Mverse",
+      "mverse"
+    ],
+    [
+      "Online Pizza",
+      "onlinepizza"
+    ],
+    [
+      "BMC Coffee",
+      "bmc"
+    ],
+    [
+      "Visual Addiction",
+      "visualaddiction"
+    ],
+    [
+      "Lieblingsgarn",
+      "lieblingsgarn"
+    ],
+    [
+      "Asia Alliance Bank",
+      "asia-alliance-bank"
+    ],
+    [
+      "Euroasia Insurance",
+      "euroasia-insurance"
+    ],
+    [
+      "Garanti Express",
+      "garanti-express"
+    ],
+    [
+      "Cerom",
+      "cerom"
+    ],
+    [
+      "Aristocrat Home",
+      "aristocrat-home"
+    ],
+    [
+      "Utopia",
+      "utopia-approved"
+    ],
+    [
+      "Central Asian Green University",
+      "cagu"
+    ]
+  ],
+  "featured": [
+    {
+      "slug": "mverse",
+      "image": "images/designs/mverse/mverse-feature.webp",
+      "line": "Identity for a tech automation company: a monogram, an acid-lime colour system and merch."
+    },
+    {
+      "slug": "onlinepizza",
+      "image": "images/designs/onlinepizza-bb/OnlinePizza-Pres-v2-13.webp",
+      "line": "Mascot logo, checkered pattern and packaging for a pizza delivery service."
+    },
+    {
+      "slug": "inter-nation",
+      "image": "images/designs/SMM/internation/internation-feature.webp",
+      "line": "Every Instagram graphic since 2023: six volumes of posts plus YouTube thumbnails."
+    },
+    {
+      "slug": "gorinvestment",
+      "image": "images/designs/gor/gor-feature.webp",
+      "line": "A complete brand book for an investment company in the UK and Uzbekistan."
+    },
+    {
+      "slug": "bmc",
+      "image": "images/designs/bmc-bb/bmc-feature.webp",
+      "line": "A monochrome coffee brand, from logo rules to cups, caps and a delivery van."
+    },
+    {
+      "slug": "lieblingsgarn",
+      "image": "images/designs/lieblingsgarn-feature.webp",
+      "line": "Logo and identity for a Berlin yarn store: a yarn-ball mark, a striped pattern and tote bags."
+    }
+  ],
+  "process": [
+    [
+      "Brief",
+      "We talk through your business, your audience and what the design has to achieve."
+    ],
+    [
+      "Concepts",
+      "I present directions shown on real applications, so you can judge them in context."
+    ],
+    [
+      "Refinement",
+      "We polish the chosen direction together until every detail works."
+    ],
+    [
+      "Handover",
+      "You get all source files and guidelines, ready for print, web and social."
+    ]
+  ],
+  "cv": {
+    "name": "Iskandar Norkulov",
+    "role": "Graphic and brand identity designer",
+    "bio": [
+      "Graphic designer based in Tashkent, focused on brand identity and visual communication. I build brands from the logo up: identity systems, brand guidelines, packaging, print and the social media content that keeps a brand visible every day.",
+      "Since 2017 I have worked with startups, schools, banks and insurance companies in Uzbekistan and ten other countries. A background in UI/UX and product design helps my identities work as well on screen as they do in print. No brief yet? I'll help you shape one."
+    ],
+    "expertise": [
+      [
+        "Graphic design",
+        "2018-07-01"
+      ],
+      [
+        "UI/UX design",
+        "2021-03-04"
+      ]
+    ],
+    "jobs": [
+      {
+        "company": "Inter Nation English School",
+        "period": "June 2023 – present",
+        "role": "Graphic Designer, Marketing department",
+        "tags": "Social media design, print design, motion design",
+        "points": [
+          "Sole graphic designer for the company, working within the marketing team.",
+          "Create all social media visuals for Instagram, YouTube and Telegram, including the main and Samarkand branch accounts: posts, stories, animations and video covers.",
+          "Design POS materials, print collateral and outdoor advertising.",
+          "Work with the marketing team on campaigns and overall strategy, and keep the brand consistent across every channel."
+        ],
+        "links": [
+          [
+            "Inter Nation English School",
+            "inter-nation"
+          ]
+        ]
+      },
+      {
+        "company": "Ultraluxe Designs",
+        "period": "2017 – present",
+        "role": "Founder and designer (freelance)",
+        "tags": "Branding, logo design, packaging, social media design, 3D",
+        "points": [
+          "Logos, identity systems and brand guidelines for clients in 11 countries.",
+          "Clients include Gorinvestment, Mverse, Online Pizza, BMC Coffee, Visual Addiction and Lieblingsgarn."
+        ],
+        "links": [
+          [
+            "Gorinvestment",
+            "gorinvestment"
+          ],
+          [
+            "Mverse",
+            "mverse"
+          ],
+          [
+            "Online Pizza",
+            "onlinepizza"
+          ],
+          [
+            "BMC Coffee",
+            "bmc"
+          ],
+          [
+            "Visual Addiction",
+            "visualaddiction"
+          ],
+          [
+            "Lieblingsgarn",
+            "lieblingsgarn"
+          ]
+        ]
+      },
+      {
+        "company": "United Marketing",
+        "period": "November 2022 – June 2023",
+        "role": "Graphic and UI/UX Designer",
+        "tags": "Branding, logo design, packaging, social media design, 3D, UI design, motion design",
+        "points": [
+          "Created static and motion content for the social media of Euroasia Insurance, Agisept, ART Discoveries Group and Asia Alliance Bank.",
+          "Designed POS materials, logos and brand identities, as well as UI/UX for client projects."
+        ],
+        "links": [
+          [
+            "Euroasia Insurance",
+            "euroasia-insurance"
+          ],
+          [
+            "Agisept",
+            "agisept"
+          ],
+          [
+            "Asia Alliance Bank",
+            "asia-alliance-bank"
+          ]
+        ]
+      },
+      {
+        "company": "International IT Forces (IITF)",
+        "period": "January 2022 – November 2022",
+        "role": "Product Designer",
+        "tags": "Product design, UX research, user flows, wireframing, prototyping, usability testing",
+        "points": [
+          "Led every stage of design at the company, from research and user flows to wireframes, prototypes and final UI.",
+          "Designed products for startups: a CRM for the BSpace fintech app, an ERP system for private schools, Yubor (a money-transfer app for CIS citizens), the admin panel for MyWork (a job platform for construction workers) and the iConsult web app for video conferences and seminars."
+        ],
+        "links": [
+          [
+            "ERP system",
+            "erp"
+          ],
+          [
+            "MyWork",
+            "mywork"
+          ],
+          [
+            "iConsult",
+            "iconsult"
+          ]
+        ]
+      },
+      {
+        "company": "World.uz",
+        "period": "May 2019 – June 2020",
+        "role": "Social Media Marketing Manager and Lead Designer",
+        "tags": "Social media marketing, graphic design, motion design, ad targeting, photography",
+        "points": [
+          "Ran marketing, advertising, content, photography and design for the company, and served as lead designer for all 13 branches.",
+          "Grew the audience across Instagram, Telegram, Facebook and YouTube from 10K to 30K+ followers in one year, while improving follower retention."
+        ],
+        "links": []
+      }
+    ],
+    "awards": [
+      [
+        "1st place, University Logo Competition",
+        "March 2020",
+        "Winning logo for the Economics with Finance module at Westminster International University in Tashkent.",
+        "economics-with-finance"
+      ]
+    ],
+    "education": [
+      [
+        "Westminster International University in Tashkent",
+        "September 2018 – May 2022",
+        "BSc in Business Information Systems"
+      ]
+    ],
+    "languages": [
+      [
+        "English",
+        "C2"
+      ],
+      [
+        "Russian",
+        "Fluent"
+      ],
+      [
+        "Uzbek",
+        "Fluent"
+      ]
+    ]
+  }
+}
