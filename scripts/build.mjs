@@ -150,7 +150,7 @@ ${LANGS.filter((l) => l !== ctx.lang).map((l) => `<meta property="og:locale:alte
 <link rel="icon" href="${ctx.R}assets/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700${ctx.lang === "ru" ? "&family=Montserrat:wght@400;500;600;700" : ""}&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="${ctx.R}assets/css/style.css">
 ${jsonld}${analyticsHead(ctx.R)}
 </head>`;
@@ -661,7 +661,7 @@ function build404() {
 <link rel="icon" href="assets/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 ${analyticsHead("")}
 </head>
