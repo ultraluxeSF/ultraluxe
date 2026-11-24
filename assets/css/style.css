@@ -30,12 +30,10 @@
 html {
   -webkit-text-size-adjust: 100%;
   background: #ffffff;
-  overscroll-behavior-y: none;
 }
 html.has-smooth { scroll-behavior: auto; }
 body {
   margin: 0;
-  overscroll-behavior-y: none;
   background: var(--paper);
   color: var(--ink);
   font-family: "Golos Text", system-ui, sans-serif;
