@@ -296,11 +296,16 @@ function buildHome(lang) {
   const groups = I18N.groups[lang];
   const count = (c) => projects.filter((p) => p.category === c).length;
   const startsGroup = (p, i) => i === 0 || projects[i - 1].category !== p.category;
+  // Long groups show their first SHOW cards; the rest open with a "See more" button.
+  const SHOW = 8;
+  const posInGroup = (p, i) => projects.slice(0, i).filter((x) => x.category === p.category).length;
+  const moreButton = (c) => `
+      <button type="button" class="show-more" data-more="${c}" data-cat="${c}" aria-expanded="false">${t.showMore}<span>+${count(c) - SHOW}</span></button>`;
   const cards = projects
     .map(
       (p, i) => `${startsGroup(p, i) ? `
       <div class="group-head" data-cat="${p.category}"><h3>${esc(groups[p.category])}</h3><span>${count(p.category)}</span></div>` : ""}
-      <article class="card" data-cat="${p.category}">
+      <article class="card${posInGroup(p, i) >= SHOW ? " is-extra" : ""}" data-cat="${p.category}">
         <a href="work/${p.slug}/" data-project="${p.slug}">
           <div class="media${p.hover ? " has-hover" : ""}">
             <img class="thumb" data-fade src="${asset(p.thumb, R)}" alt="${esc(p.title)}" loading="lazy" decoding="async">${
@@ -309,7 +314,7 @@ function buildHome(lang) {
             <div class="caption"><h3>${esc(p.title)}</h3><span>${cats[p.category]}${p.year ? ", " + p.year : ""}</span></div>
           </div>
         </a>
-      </article>`
+      </article>${posInGroup(p, i) === count(p.category) - 1 && count(p.category) > SHOW ? moreButton(p.category) : ""}`
     )
     .join("");
   const data = projects.map((p) => ({

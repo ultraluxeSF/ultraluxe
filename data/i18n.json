@@ -72,7 +72,8 @@
    "seeLogo": "See the logo",
    "city": "Tashkent",
    "cvTitle": "CV",
-   "cvDesc": "CV of {name}: {role} in Tashkent, Uzbekistan."
+   "cvDesc": "CV of {name}: {role} in Tashkent, Uzbekistan.",
+   "showMore": "See more"
   },
   "ru": {
    "skip": "Перейти к содержимому",
@@ -141,7 +142,8 @@
    "seeLogo": "Смотреть логотип",
    "city": "Ташкент",
    "cvTitle": "Резюме",
-   "cvDesc": "Резюме: {name}, {role}, Ташкент, Узбекистан."
+   "cvDesc": "Резюме: {name}, {role}, Ташкент, Узбекистан.",
+   "showMore": "Посмотреть больше"
   },
   "uz": {
    "skip": "Asosiy qismga o‘tish",
@@ -210,7 +212,8 @@
    "seeLogo": "Logotipni ko‘rish",
    "city": "Toshkent",
    "cvTitle": "Rezyume",
-   "cvDesc": "Rezyume: {name}, {role}, Toshkent, O‘zbekiston."
+   "cvDesc": "Rezyume: {name}, {role}, Toshkent, O‘zbekiston.",
+   "showMore": "Ko‘proq ko‘rish"
   }
  },
  "cats": {

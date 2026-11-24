@@ -334,6 +334,15 @@
     var cards = works.querySelectorAll(".card");
     var rows = works.querySelectorAll(".row");
     var groupHeads = works.querySelectorAll(".group-head");
+    var moreButtons = works.querySelectorAll(".show-more");
+    moreButtons.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var c = btn.getAttribute("data-more");
+        works.querySelectorAll('.card.is-extra[data-cat="' + c + '"]').forEach(function (el) { el.classList.add("is-open"); });
+        btn.setAttribute("aria-expanded", "true");
+        btn.hidden = true;
+      });
+    });
     var filterButtons = works.querySelectorAll("[data-filter]");
     var viewButtons = works.querySelectorAll("[data-view-btn]");
 
@@ -341,7 +350,7 @@
       btn.addEventListener("click", function () {
         var f = btn.getAttribute("data-filter");
         filterButtons.forEach(function (b) { b.setAttribute("aria-pressed", String(b === btn)); });
-        [cards, rows, groupHeads].forEach(function (list) {
+        [cards, rows, groupHeads, moreButtons].forEach(function (list) {
           list.forEach(function (el) {
             el.classList.toggle("is-hidden", f !== "all" && el.getAttribute("data-cat") !== f);
           });

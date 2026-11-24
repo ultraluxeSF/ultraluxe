@@ -586,9 +586,12 @@ html.viewer-open, html.viewer-open body { overflow: hidden; }
   .nav-cta { padding: 8px 14px; }
   .logo-mark { width: 28px; height: 28px; }
   .brand .brand-name { display: none; }
-  .hero { padding-top: 96px; justify-content: flex-end; }
+  /* On phones the head sits in the normal flow above the headline, so the
+     headline, badge and head can never overlap, whatever the screen height. */
+  .hero { padding-top: 80px; justify-content: flex-start; }
+  .hero > .wrap { margin-top: auto; }
   .hero h1 { font-size: 13.2vw; letter-spacing: -0.031em; }
-  .hero-head { height: 34vh; right: auto; left: 50%; top: calc(72px + 19vh); transform: translate(-50%, -50%); }
+  .hero-head { position: relative; right: auto; left: auto; top: auto; transform: none; height: clamp(210px, 34svh, 330px); margin: 4px auto 40px; }
   .hero-badge { right: -18%; }
   .hero-foot { flex-direction: column; align-items: flex-start; }
   .hero-actions .btn { padding: 13px 20px; }
@@ -675,3 +678,26 @@ body { overflow-x: clip; }
 @media (max-width: 760px) {
   .group-head { padding: 12px 0 10px; margin-top: 28px; }
 }
+
+/* Phones held sideways: little height, so keep the head small and to the right of the headline */
+@media (max-height: 560px) and (orientation: landscape) {
+  .hero { padding-top: 76px; }
+  .hero h1 { font-size: min(7.2vw, 15vh); }
+  .hero-head { height: 52vh; top: calc(50% - 10px); right: 5vw; }
+  .hero-badge { right: 0; bottom: -2%; }
+}
+
+/* ---------- "See more" in long groups of All work ---------- */
+.grid .card.is-extra:not(.is-open) { display: none; }
+.show-more {
+  grid-column: 1 / -1; justify-self: center; margin-top: 20px;
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 14px 26px; border-radius: 999px; border: 1.5px solid var(--ink);
+  background: transparent; color: var(--ink); font: inherit; font-weight: 500; cursor: pointer;
+  transition: background-color 0.25s, color 0.25s;
+}
+.show-more span { font-size: 0.8125rem; color: var(--muted); transition: color 0.25s; }
+.show-more:hover { background: var(--ink); color: var(--paper); }
+.show-more:hover span { color: var(--paper); }
+.show-more[hidden], .show-more.is-hidden { display: none; }
+.works[data-view="index"] .show-more { display: none; }
