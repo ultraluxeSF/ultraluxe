@@ -20,6 +20,7 @@ const asset = (p, R) => (fs.existsSync(path.join(ROOT, decodeURIComponent(p))) ?
 const OG_IMAGE = SITE_URL + "images/og-image.jpg";
 const GA_ID = "G-FDHWKRH7W0";
 const YM_ID = 54894073;
+const CLARITY_ID = "zjbpoh70qd";
 
 const LOGO = fs.readFileSync(path.join(ROOT, "assets/logo-inline.svg"), "utf8");
 // branding and graphic work first, UI/UX last; original order kept within each group
@@ -109,6 +110,11 @@ function analyticsHead(R) {
       m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a);
     })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
     ym(${YM_ID}, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true });
+    (function (c, l, a, r, i, t, y) {
+      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+      t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "${CLARITY_ID}");
   })();
 </script>
 <script src="${R}assets/js/analytics.js" defer></script>`;
